@@ -19,4 +19,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./          # root of your repo
-          server-dir: /public_html/
+          server-dir: /home/u922452030/domains/deluxefoodstuff.com/public_html
+
