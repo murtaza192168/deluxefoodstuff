@@ -1,22 +1,24 @@
-name: Deploy to Hostinger via FTP
+name: FTP Deploy to Hostinger
 
 on:
   push:
     branches:
-      - main
+      - main  # Change if your main branch has a different name
 
 jobs:
-  ftp-deploy:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
       - name: Deploy via FTP
-        uses: sebastianpopp/ftp-action@v2
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
-          host: ${{ secrets.FTP_HOST }}
+          server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./          # root of your repo
-          server-dir: /public_html/
+          server-dir: /home/u922452030/domains/deluxefoodstuff.com/public_html
+
