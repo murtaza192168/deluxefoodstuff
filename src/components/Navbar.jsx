@@ -8,7 +8,7 @@ export default function Navbar() {
       <Toolbar>
         <Link to="/" style={{ textDecoration: "none" }}>
       <img 
-        src="/src/assets/CompanyLogo.png" 
+        src="/images/CompanyLogo.png" 
         alt="Delux Enterprise Logo" 
         style={{
           height: "70px",
