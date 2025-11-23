@@ -64,7 +64,7 @@ export default function Hero() {
         }}
       >
         <Typography variant="h2" sx={{ fontWeight: 700 }}>
-          Deluxe Food Stuff
+          Delux Enterprise
         </Typography>
 
         <Typography variant="h5" sx={{ mt: 2, opacity: 0.9 }}>

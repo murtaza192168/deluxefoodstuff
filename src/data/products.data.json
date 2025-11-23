@@ -1,0 +1,76 @@
+[
+  {
+    "category": "Arabic",
+    "items": [
+      { "name": "Maling Foul Mademas", "description": "", "img": "src/assets/images/arabic/foul.png", "unit": "400g"},
+      { "name": "Halawala", "description": "", "img": "src/assets/images/arabic/halawa.png", "unit": "1kg"},
+      { "name": "Zatar & Sumak Powder", "description": "", "img": "src/assets/images/arabic/zatarSumak.png", "unit": "1kg" },
+      
+      { "name": "Tahina Paste", "description": "", "img": "src/assets/images/arabic/tahina.png", "unit": "1kg" },
+      { "name": "Luncheon Meat", "description": "", "img": "src/assets/images/arabic/luncheon.png", "unit": "340g" },
+      { "name": "CN Stock Powder", "description": "", "img": "src/assets/images/arabic/stock.png", "unit": "1kg" },
+      { "name": "Dry Black Lemon", "description": "", "img": "src/assets/images/arabic/blacklemon.png", "unit": "100g" }
+    ]
+  },
+  {
+    "category": "Sushi",
+    "items": [
+        { "name": "Wasabi Paste", "img": "src/assets/images/sushi/wasabi_pst.png" },
+      { "name": "Sushi Vinegar", "img": "src/assets/images/sushi/vinegar.png", "unit": "500ml/ 1.8L" },
+      { "name": "Seaweed Sheet (Nori)", "img": "src/assets/images/sushi/nori.png", "unit": "50/10 sheets" },
+      { "name": "Glutinous Rice", "img": "src/assets/images/sushi/glutinous.png", "unit": "1kg 2kg"},
+      { "name": "Sushi Rice", "img": "src/assets/images/sushi/sushi_rice.png", "unit": "1kg 2kg"},
+      { "name": "Rice Paper", "img": "src/assets/images/sushi/ricepaper.png", "unit": "50pcs" },
+      { "name": "Golden Curry Cube", "img": "src/assets/images/sushi/goldencurry.png", "unit": "220g" },
+      { "name": "Togarashi Powder", "img": "src/assets/images/sushi/togarashi.png", "unit": "500g" },
+      { "name": "Sitake Mushroom", "img": "src/assets/images/sushi/sitake.png", "unit": "1kg"}
+    ]
+  },
+  {
+    "category": "Bakery",
+    "items": [
+      { "name": "Lotus Biscoff Spread", "img": "src/assets/images/bakery/biscoff_spread.png", "unit": "400g" },
+      { "name": "Lotus Biscoff Biscuit", "img": "src/assets/images/bakery/biscoff_biscuit.png", "unit": "200g" },
+      { "name": "Nutella", "img": "src/assets/images/bakery/nutella.png", "unit": "750g" },
+      { "name": "Ladyfinger Biscuit", "img": "src/assets/images/bakery/ladyfinger.png", "unit": "200g" },
+      { "name": "Carnation Milk", "img": "src/assets/images/bakery/carnation.png", "unit": "395g" },
+      { "name": "Philadelphia Cream Cheese", "img": "src/assets/images/bakery/philadelphia.png", "unit": "250g" }
+    ]
+  },
+  {
+    "category": "Korean",
+    "items": [
+      { "name": "Rice Vermicelli", "img": "src/assets/images/korean/vermecelli.png", "unit": "500g" },
+      { "name": "Rice Stick Noodles", "img": "src/assets/images/korean/rice_stick.png", "unit": "500g" },
+      
+      { "name": "Gochujang Paste", "img": "src/assets/images/korean/gochujang.png", "unit": "500g" },
+      { "name": "Gochugaru Powder", "img": "src/assets/images/korean/gochugaru.png", "unit": "100g" },
+      { "name": "Korean Noodles", "img": "src/assets/images/korean/noodles.png", "unit": "300g" }
+
+       ]
+  },
+  { "category": "Coffee",
+    "items": 
+    [
+    { "name": "Nescafe Original", "img": "src/assets/images/coffee/original.png", "unit": "200g" },
+    { "name": "Nescafe Classic", "img": "src/assets/images/coffee/classic.png", "unit": "200g" },
+    { "name": "Nescafe Matinal", "img": "src/assets/images/coffee/matinal.png", "unit": "200g" },
+    { "name": "Nescafe Gold Blend", "img": "src/assets/images/coffee/gold.png", "unit": "100g/200g" },
+
+      { "name": "Davidoff Fine Aroma", "img": "src/assets/images/coffee/fine.png", "unit": "100g" },
+      { "name": "Davidoff Esp57", "img": "src/assets/images/coffee/esp57.png", "unit": "100g" }
+   ]
+},
+      
+      
+   
+  {
+    "category": "Olive Oil",
+    "items": [
+      { "name": "Olive Oil (Pomace)", "img": "src/assets/images/oo/oo_pom.png", "unit": "1L/5L" },
+      { "name": "Olive Oil (Extra Virgin)", "img": "src/assets/images/oo/oo_ev.png", "unit": "1L/5L" },
+      { "name": "Olive Oil (Extra Light)", "img": "src/assets/images/oo/oo_el.png", "unit": "1L/5L" }
+     
+    ]
+  }
+]
