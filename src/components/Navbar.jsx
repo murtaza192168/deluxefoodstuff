@@ -1,14 +1,24 @@
 import React from "react";
-import { AppBar, Toolbar, Typography, Button } from "@mui/material";
+import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <AppBar position="sticky">
+    <AppBar position="sticky" sx={{ backgroundColor: "primary.main" }}>
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          Deluxe Food Stuff
-        </Typography>
+        <Link to="/" style={{ textDecoration: "none" }}>
+      <img 
+        src="/src/assets/CompanyLogo.png" 
+        alt="Delux Enterprise Logo" 
+        style={{
+          height: "70px",
+          width: "auto",
+          marginRight: "16px",
+          objectFit: "contain",
+        }}
+      />
+    </Link>
+    <Box sx={{ flexGrow: 1 }} />
 
         <Button color="inherit" component={Link} to="/">Home</Button>
         <Button color="inherit" component={Link} to="/products">Products</Button>
@@ -18,3 +28,4 @@ export default function Navbar() {
     </AppBar>
   );
 }
+<Button color="inherit" component={Link} to="/about">About</Button>
