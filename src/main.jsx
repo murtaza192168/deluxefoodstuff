@@ -11,14 +11,31 @@ import "slick-carousel/slick/slick-theme.css";
 // Define Material UI theme
 const theme = createTheme({
   palette: {
-    primary: { main: "#2E7D32" },  // Green
-    secondary: { main: "#6D4C41" }, // Brown
-    background: { default: "#fafafa" },
+    primary: {
+      main: "#2A342E", // Dark green/teal
+      contrastText: "#FFFFFF",
+    },
+    secondary: {
+      main: "#D5B36A", // Primary gold
+      contrastText: "#2A342E",
+    },
+    background: {
+      default: "#FFFFFF",
+      paper: "#E7D6A3", // Cream gold for soft sections
+    },
+    text: {
+      primary: "#2A342E",
+      secondary: "#7D2D37", // maroon
+    },
+    accent: {
+      main: "#7D2D37", // custom accent (not native MUI but for consistency)
+    },
   },
   typography: {
     fontFamily: "'Poppins', 'Roboto', sans-serif",
   },
 });
+
 
 // Render root
 createRoot(document.getElementById("root")).render(
