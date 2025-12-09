@@ -138,7 +138,7 @@ export default function Navbar() {
 
           <ListItem sx={{ color: gold }} button component="a" href="https://www.instagram.com/info.deluxfoodstuff?igsh=aHkxYmp4amp3ZzZ1" target="_blank">
             <Instagram sx={{ mr: 1 }} /> Instagram
-          </ListIte
+          </ListItem>
         </List>
       </Drawer>
     </>

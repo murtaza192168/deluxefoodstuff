@@ -1,4 +1,3 @@
-// src/pages/ProductsCatalog.jsx
 import React, { useState } from "react";
 import {
   Container,
@@ -27,50 +26,67 @@ function CategoryPanel({ items }) {
 export default function ProductsCatalog() {
   const categories = productsData.map((c) => c.category);
   const [tab, setTab] = useState(0);
+  const [search, setSearch] = useState("");
 
   return (
     <Container sx={{ py: 6 }}>
       <Typography
         variant="h4"
         gutterBottom
-        sx={{
-          fontWeight: 800,
-          color: "#2A342E",
-          mb: 4,
-        }}
+        sx={{ fontWeight: 700, color: "primary.main" }}
       >
         Product Catalogue
       </Typography>
 
-      {/* Tabs */}
-      <Box sx={{ borderBottom: 1, borderColor: "#D5B36A", mb: 3 }}>
+      {/* Category Tabs */}
+      <Box sx={{ borderBottom: 1, borderColor: "divider", mb: 3 }}>
         <Tabs
           value={tab}
           onChange={(e, v) => setTab(v)}
           variant="scrollable"
           scrollButtons="auto"
-          TabIndicatorProps={{ style: { backgroundColor: "#D5B36A" } }}
+          allowScrollButtonsMobile
+          sx={{
+            "& .MuiTab-root": { fontWeight: 600, textTransform: "none" },
+            "& .Mui-selected": { color: "#D5B36A !important" },
+          }}
         >
           {categories.map((cat) => (
-            <Tab
-              key={cat}
-              label={cat}
-              sx={{
-                textTransform: "none",
-                fontWeight: 700,
-                color: "#2A342E",
-                "&.Mui-selected": {
-                  color: "#D5B36A",
-                },
-              }}
-            />
+            <Tab key={cat} label={cat} />
           ))}
         </Tabs>
       </Box>
 
+      {/* Search Bar */}
+      <Box sx={{ mb: 4, display: "flex", justifyContent: "center" }}>
+        <input
+          type="text"
+          placeholder="Search products..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          style={{
+            width: "100%",
+            maxWidth: "450px",
+            padding: "12px 18px",
+            fontSize: "16px",
+            borderRadius: "30px",
+            border: "2px solid #C2A05B",
+            outline: "none",
+            color: "#2A342E",
+          }}
+        />
+      </Box>
+
       <Divider sx={{ mb: 4 }} />
 
-      <CategoryPanel items={productsData[tab].items} />
+      {/* Filter + Category Display */}
+      <Box>
+        <CategoryPanel
+          items={productsData[tab].items.filter((it) =>
+            it.name.toLowerCase().includes(search.toLowerCase())
+          )}
+        />
+      </Box>
     </Container>
   );
 }
