@@ -14,12 +14,13 @@ import productsData from "../data/products.data.json";
 function CategoryPanel({ items }) {
   return (
     <Grid container spacing={3}>
-      {items.map((it) => (
-        <Grid key={it.name} item xs={12} sm={6} md={4} lg={3}>
-          <ProductCard item={it} />
-        </Grid>
-      ))}
+  {items.map((it) => (
+    <Grid key={it.name} item xs={12} sm={6} md={4} lg={3}>
+      <ProductCard item={it} />
     </Grid>
+  ))}
+</Grid>
+
   );
 }
 

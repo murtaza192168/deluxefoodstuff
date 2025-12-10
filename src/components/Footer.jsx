@@ -1,60 +1,198 @@
 import React from "react";
-import { Box, Container, Typography, IconButton, Stack } from "@mui/material";
-import { Instagram, WhatsApp, LocationOn } from "@mui/icons-material";
+import {
+  Box,
+  Typography,
+  Grid,
+  IconButton,
+  Link as MuiLink,
+} from "@mui/material";
+import { Link } from "react-router-dom";
+import { Email, Instagram, WhatsApp } from "@mui/icons-material";
 
 export default function Footer() {
+  const gold = "#D4AF37";
+
   return (
     <Box
       sx={{
-        backgroundColor: "#2A342E",
-        color: "#E7D6A3",
-        py: 4,
-        mt: 8,
+        background: "#111",
+        color: gold,
+        padding: { xs: "35px 16px", md: "60px 20px" }, // smaller mobile padding
+        marginTop: "60px",
       }}
     >
-      <Container>
-        {/* Company Name */}
-        <Typography
-          variant="h5"
-          sx={{ fontWeight: 700, mb: 2, color: "#D5B36A" }}
+      {/* ================= MAIN GRID ================= */}
+      <Grid
+        container
+        spacing={{ xs: 2, md: 5 }} // tighter spacing on mobile
+        alignItems="center" 
+        sx={{
+          flexDirection: { xs: "column", md: "row" },
+        }}
+      >
+        {/* ---------- LOGO COLUMN ---------- */}
+        <Grid
+          item
+          xs={12}
+          md={3}
+          sx={{
+            textAlign: { xs: "center", md: "left" },
+          }}
         >
-          Delux Enterprise
-        </Typography>
+          <img
+            src="/images/CompanyLogo.png"
+            alt="Delux Enterprise Logo"
+            style={{
+              width: "110px",          // reduced size for mobile
+              maxWidth: "80%",
+              objectFit: "contain",
+              filter: "brightness(1.1) contrast(1.1)",
+              marginBottom: "10px",   // tighter
+            }}
+          />
+        </Grid>
 
-        {/* Address */}
-        <Stack direction="row" spacing={1} alignItems="flex-start" sx={{ mb: 3 }}>
-          <LocationOn sx={{ color: "#D5B36A" }} />
-          <Typography variant="body1" sx={{ maxWidth: 400, lineHeight: 1.6 }}>
-            Shop 305, Crawford Market, Opp. Sarang Street, Dhobi Talao,
-            CST Area, Fort, Mumbai – 400001, Maharashtra, India
-          </Typography>
-        </Stack>
-
-        {/* Social & Contact Icons */}
-        <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
-          <IconButton
-            href="https://wa.me/919324789432"
-            target="_blank"
-            sx={{ color: "#E7D6A3", "&:hover": { color: "#D5B36A" } }}
+        {/* ---------- RIGHT SIDE CONTENT ---------- */}
+        <Grid item xs={12} md={9}>
+          <Grid
+            container
+            spacing={{ xs: 2, md: 3 }} // better compact spacing
+            sx={{
+              display: "flex",
+              justifyContent: {
+                xs: "center",
+                md: "space-between",
+              },
+              textAlign: { xs: "center", md: "left" },
+            }}
           >
-            <WhatsApp fontSize="large" />
-          </IconButton>
+            {/* ========== BRANDING BLOCK ========== */}
+            <Grid item xs={12} md={4}>
+              <Typography
+                variant="h6"
+                sx={{ fontWeight: 700, mb: 0.5, fontSize: { xs: "18px", md: "20px" } }}
+              >
+                Delux Enterprise
+              </Typography>
 
-          
+              <Typography
+                variant="body2"
+                sx={{
+                  color: "#ccc",
+                  lineHeight: 1.4,  // tighter
+                  fontSize: "14px",
+                }}
+              >
+                304/305, M. J. Phule Market, Crowford Market, Mumbai – 400001
+              </Typography>
+            </Grid>
 
-          <IconButton
-            href="https://www.instagram.com/info.deluxfoodstuff?igsh=aHkxYmp4amp3ZzZ1"
-            target="_blank"
-            sx={{ color: "#E7D6A3", "&:hover": { color: "#D5B36A" } }}
-          >
-            <Instagram fontSize="large" />
-          </IconButton>
-        </Stack>
+            {/* ========== QUICK LINKS ========== */}
+            <Grid item xs={12} md={4}>
+              <Typography
+                variant="h6"
+                sx={{ fontWeight: 600, mb: 1, fontSize: { xs: "17px", md: "19px" } }}
+              >
+                Quick Links
+              </Typography>
 
-        <Typography variant="body2" sx={{ mt: 3, opacity: 0.7 }}>
-          © {new Date().getFullYear()} Delux Enterprise. All Rights Reserved.
-        </Typography>
-      </Container>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "6px", // tighter mobile spacing
+                }}
+              >
+                {[
+                  { label: "Home", path: "/" },
+                  { label: "Products", path: "/products" },
+                  { label: "About", path: "/about" },
+                ].map((item, index) => (
+                  <MuiLink
+                    key={index}
+                    component={Link}
+                    to={item.path}
+                    underline="none"
+                    onClick={() => window.scrollTo(0, 0)}
+                    sx={{
+                      color: "#ccc",
+                      fontSize: "14px",
+                      "&:hover": { color: gold },
+                    }}
+                  >
+                    {item.label}
+                  </MuiLink>
+                ))}
+              </Box>
+            </Grid>
+
+            {/* ========== CONNECT WITH US ========== */}
+            <Grid item xs={12} md={4}>
+              <Typography
+                variant="h6"
+                sx={{ fontWeight: 600, mb: 1, fontSize: { xs: "17px", md: "19px" } }}
+              >
+                Connect With Us
+              </Typography>
+
+              
+
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: { xs: "center", md: "flex-start" },
+                  gap: { xs: 1.2, md: 2 }, // tighter icon spacing on mobile
+                }}
+              >
+                <IconButton
+                  component="a"
+                  href="https://wa.me/919324789432"
+                  target="_blank"
+                  sx={{ color: gold, padding: "6px" }}
+                >
+                  <WhatsApp />
+                </IconButton>
+
+                <IconButton
+                  component="a"
+                  href="mailto:info.deluxfoodstuffs@gmail.com"
+                  sx={{ color: gold, padding: "6px" }}
+                >
+                  <Email />
+                </IconButton>
+
+                <IconButton
+                  component="a"
+                  href="https://instagram.com/info.deluxfoodstuff"
+                  target="_blank"
+                  sx={{ color: gold, padding: "6px" }}
+                >
+                  <Instagram />
+                </IconButton>
+              </Box>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      {/* ---------- Divider ---------- */}
+      <Box
+        sx={{
+          height: "1px",
+          background: "rgba(255,255,255,0.2)",
+          mt: { xs: 4, md: 6 },
+          mb: 2,
+        }}
+      />
+
+      {/* ---------- Copyright ---------- */}
+      <Typography
+        variant="body2"
+        align="center"
+        sx={{ color: "#aaa", fontSize: "13px" }}
+      >
+        © {new Date().getFullYear()} Delux Enterprise. All Rights Reserved.
+      </Typography>
     </Box>
   );
 }
