@@ -3,7 +3,7 @@ import { Container, Typography, Box, Grid } from "@mui/material";
 
 export default function About() {
   return (
-    <Container sx={{ py: 8 }}>
+    <Container sx={{ py: 8, pt: { xs: "90px", sm: "100px", md: "110px", lg: "120px" }, scrollMarginTop: { xs: "90px", sm: "100px", md: "110px", lg: "120px" } }} >
       {/* Heading */}
       <Typography
         variant="h4"

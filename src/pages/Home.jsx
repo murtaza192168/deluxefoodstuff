@@ -12,14 +12,9 @@ export default function Home() {
       <Stats />
       <Testimonials />
 
-      {/* <Container sx={{ py: 8 }}>
-        <Typography variant="h4" gutterBottom>
-          Why Choose Deluxe Food Stuff?
-        </Typography>
-        <Typography variant="body1" color="text.secondary">
-          We bring the world’s most trusted food ingredients straight to your kitchen.
-        </Typography>
-      </Container> */}
+      <Container sx={{ py: 8, pt: { xs: "90px", sm: "100px", md: "110px", lg: "120px" }, scrollMarginTop: { xs: "90px", sm: "100px", md: "110px", lg: "120px" }}}>
+        
+      </Container>
     </>
   );
 }

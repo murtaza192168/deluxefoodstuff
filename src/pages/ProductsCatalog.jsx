@@ -29,7 +29,7 @@ export default function ProductsCatalog() {
   const [search, setSearch] = useState("");
 
   return (
-    <Container maxWidth="xl" sx={{ py: 6 }}>
+    <Container maxWidth="xl" sx={{ py: 6, pt: { xs: "90px", sm: "100px", md: "110px", lg: "120px" }, scrollMarginTop: { xs: "90px", sm: "100px", md: "110px", lg: "120px" }}}>
       <Typography
         variant="h4"
         gutterBottom
