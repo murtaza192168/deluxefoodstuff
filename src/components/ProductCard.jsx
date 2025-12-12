@@ -1,5 +1,4 @@
-// src/components/ProductCard.jsx
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import {
   Card,
   CardMedia,
@@ -11,6 +10,26 @@ import {
 } from "@mui/material";
 
 export default function ProductCard({ item }) {
+  const imgRef = useRef();
+  const [isVisible, setIsVisible] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    if (imgRef.current) observer.observe(imgRef.current);
+  }, []);
+
   return (
     <Card
       sx={{
@@ -26,17 +45,36 @@ export default function ProductCard({ item }) {
         },
       }}
     >
-      <CardMedia
-        component="img"
-        image={item.img}
-        alt={item.name}
+      {/* LAZY LOAD IMAGE WRAPPER */}
+      <Box
+        ref={imgRef}
         sx={{
-          height: 180,
-          objectFit: "contain",
-          p: 2,
+          width: "100%",
+          height: 220,
           background: "#fff",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          p: 2,
+          borderBottom: "1px solid #eee",
         }}
-      />
+      >
+        {isVisible && (
+          <CardMedia
+            component="img"
+            src={item.img}
+            alt={item.name}
+            onLoad={() => setLoaded(true)}
+            sx={{
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+              opacity: loaded ? 1 : 0,
+              transition: "opacity 0.8s ease",
+            }}
+          />
+        )}
+      </Box>
 
       <CardContent sx={{ flexGrow: 1 }}>
         <Typography
@@ -58,10 +96,7 @@ export default function ProductCard({ item }) {
             <Chip
               label={item.unit}
               size="small"
-              sx={{
-                bgcolor: "#E7D6A3",
-                fontWeight: 600,
-              }}
+              sx={{ bgcolor: "#E7D6A3", fontWeight: 600 }}
             />
           )}
         </Box>
@@ -77,9 +112,10 @@ export default function ProductCard({ item }) {
             fontWeight: 600,
             "&:hover": { backgroundColor: "#1E2723" },
           }}
-          href={`https://wa.me/919324789432?text=Hello,%20I%20am%20interested%20in%20${encodeURIComponent(
-            item.name
+          href={`https://wa.me/919324789432?text=${encodeURIComponent(
+            `Can I get details about this product: ${item.name}?`
           )}`}
+          target="_blank"
         >
           Enquire
         </Button>

@@ -13,14 +13,13 @@ import productsData from "../data/products.data.json";
 
 function CategoryPanel({ items }) {
   return (
-    <Grid container spacing={3}>
-  {items.map((it) => (
-    <Grid key={it.name} item xs={12} sm={6} md={4} lg={3}>
-      <ProductCard item={it} />
+    <Grid container spacing={4} justifyContent="center">
+      {items.map((it) => (
+        <Grid key={it.name} item xs={12} sm={6} md={4} lg={3} xl={3}>
+          <ProductCard item={it} />
+        </Grid>
+      ))}
     </Grid>
-  ))}
-</Grid>
-
   );
 }
 
@@ -30,17 +29,30 @@ export default function ProductsCatalog() {
   const [search, setSearch] = useState("");
 
   return (
-    <Container sx={{ py: 6 }}>
+    <Container maxWidth="xl" sx={{ py: 6 }}>
       <Typography
         variant="h4"
         gutterBottom
-        sx={{ fontWeight: 700, color: "primary.main" }}
+        sx={{
+          fontWeight: 700,
+          color: "primary.main",
+          textAlign: "center",
+          mb: 4,
+        }}
       >
         Product Catalogue
       </Typography>
 
       {/* Category Tabs */}
-      <Box sx={{ borderBottom: 1, borderColor: "divider", mb: 3 }}>
+      <Box
+        sx={{
+          borderBottom: 1,
+          borderColor: "divider",
+          mb: 4,
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
         <Tabs
           value={tab}
           onChange={(e, v) => setTab(v)}
@@ -48,7 +60,11 @@ export default function ProductsCatalog() {
           scrollButtons="auto"
           allowScrollButtonsMobile
           sx={{
-            "& .MuiTab-root": { fontWeight: 600, textTransform: "none" },
+            "& .MuiTab-root": {
+              fontWeight: 600,
+              textTransform: "none",
+              fontSize: "15px",
+            },
             "& .Mui-selected": { color: "#D5B36A !important" },
           }}
         >
@@ -59,7 +75,7 @@ export default function ProductsCatalog() {
       </Box>
 
       {/* Search Bar */}
-      <Box sx={{ mb: 4, display: "flex", justifyContent: "center" }}>
+      <Box sx={{ mb: 5, display: "flex", justifyContent: "center" }}>
         <input
           type="text"
           placeholder="Search products..."
@@ -68,7 +84,7 @@ export default function ProductsCatalog() {
           style={{
             width: "100%",
             maxWidth: "450px",
-            padding: "12px 18px",
+            padding: "14px 20px",
             fontSize: "16px",
             borderRadius: "30px",
             border: "2px solid #C2A05B",
@@ -80,14 +96,12 @@ export default function ProductsCatalog() {
 
       <Divider sx={{ mb: 4 }} />
 
-      {/* Filter + Category Display */}
-      <Box>
-        <CategoryPanel
-          items={productsData[tab].items.filter((it) =>
-            it.name.toLowerCase().includes(search.toLowerCase())
-          )}
-        />
-      </Box>
+      {/* Product Grid */}
+      <CategoryPanel
+        items={productsData[tab].items.filter((it) =>
+          it.name.toLowerCase().includes(search.toLowerCase())
+        )}
+      />
     </Container>
   );
 }

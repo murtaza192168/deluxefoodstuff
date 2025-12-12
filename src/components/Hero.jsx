@@ -1,85 +1,98 @@
 import React from "react";
 import Slider from "react-slick";
-import { Box, Typography, Button, Container } from "@mui/material";
+import { Box, Container, Typography, Button } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 
-const heroImages = [
-  "/hero-chinese.webp",
-  "/hero-arabic.webp",
-  "/hero-thai.webp",
-  "/hero-japanese.jpg"
+
+/*
+ Place hero images in /public/hero-1.jpg, /public/hero-2.jpg, /public/hero-3.jpg
+ Keep images large (1920x1080) for best look.
+*/
+
+const slides = [
+  { img: "/hero-arabic.webp", title: "Arabic Pantry • Authentic Flavours" },
+  { img: "/hero-japanese.jpg", title: "Sushi Essentials • Premium Quality" },
+  { img: "/hero-bakery.jpg", title: "Bakery & Pantry • Trusted Brands" },
+  { img: "/hero-thai.webp", title: "Thai Pantry • LEE KUM KEE" },
 ];
 
 export default function Hero() {
+  const theme = useTheme();
+  const isSm = useMediaQuery(theme.breakpoints.down("sm"));
+
   const settings = {
     autoplay: true,
-    autoplaySpeed: 3000,
-    dots: false,
+    autoplaySpeed: 3200,
+    dots: true,
     arrows: false,
     infinite: true,
-    speed: 800,
+    speed: 1000,
     fade: true,
+    pauseOnHover: false,
+    customPaging: i => <div style={{width:10,height:6,background: 'rgba(255,255,255,0.4)',borderRadius:6}}/>
   };
 
   return (
-    <Box sx={{ position: "relative", width: "100%", height: { xs: "70vh", md: "90vh" } }}>
+    <Box component="section" sx={{ position: "relative", mb: 4 }}>
       <Slider {...settings}>
-       {heroImages.map((img, idx) => (
-  <Box
-    key={idx}
-    sx={{
-      width: "100%",
-      height: { xs: "70vh", md: "90vh" },
-      backgroundImage: `url(${img})`,
-      backgroundSize: "cover",
+        {slides.map((s, idx) => (
+          <Box
+            key={idx}
+            sx={{
+              height: { xs: "100vh", md: "88vh" },
+              backgroundImage: `url(${s.img})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundColor: "black",
+              backgroundPosition: "center",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              position: "relative",
+            }}
+            role="img"
+            aria-label={s.title}
+          >
+            {/* overlay */}
+            <Box sx={{
+              position: "absolute",
+              inset: 0,
+              background: "linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45))"
+            }}/>
 
-      // ✅ Centering logic
-      backgroundPosition:
-        img.includes("hero-arabic") ? "center 35%" : "center",
+            {/* content */}
+            <Container sx={{ position: "relative", zIndex: 2, textAlign: "center", color: "primary.contrastText", display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
 
-      backgroundRepeat: "no-repeat",
-    }}
-  >
-    <Box
-      sx={{
-        position: "absolute",
-        inset: 0,
-        backgroundColor: "rgba(0, 0, 0, 0.45)",
-      }}
-    />
-  </Box>
-))}
+    height: "100%", }}>
+              <Typography variant={isSm ? "h4" : "h2"} sx={{ fontWeight: 800, letterSpacing: 0.4 }}>
+                {s.title}
+              </Typography>
+              <Typography sx={{ mt: 2, maxWidth: 720, mx: "auto", fontSize: isSm ? "0.95rem" : "1.125rem", color: "rgba(255,255,255,0.92)" }}>
+                Supplying premium imported ingredients to restaurants, caterers & resellers across India.
+              </Typography>
 
+              <Button
+                variant="contained"
+                color="secondary"
+                href="/products"
+                sx={{
+                  mt: 4,
+                  px: 4,
+                  py: 1.25,
+                  borderRadius: 3,
+                  fontWeight: 700,
+                }}
+              >
+                Explore Products
+              </Button>
+            </Container>
+          </Box>
+        ))}
       </Slider>
-
-      {/* Text Layer */}
-      <Container
-        sx={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          textAlign: "center",
-          zIndex: 3,
-          color: "#fff",
-        }}
-      >
-        <Typography variant="h2" sx={{ fontWeight: 700 }}>
-          Delux Enterprise
-        </Typography>
-
-        <Typography variant="h5" sx={{ mt: 2, opacity: 0.9 }}>
-          Authentic Ingredients. Global Flavours. Trusted Supply.
-        </Typography>
-
-        <Button
-          variant="contained"
-          color="primary"
-          sx={{ mt: 4, px: 6, py: 1.6, fontSize: "1.1rem" }}
-          href="/products"
-        >
-          Explore Products
-        </Button>
-      </Container>
     </Box>
   );
 }
