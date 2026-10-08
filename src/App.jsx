@@ -9,6 +9,7 @@ import ProductsCatalog from "./pages/ProductsCatalog";
 import About from "./pages/About";
 // import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import EnquiryDrawer from "./enquiry/EnquiryDrawer";
 
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/testimonials" element={<Testimonials />} /> */}
       </Routes>
       <Footer />
+      <EnquiryDrawer />
     </>
   );
 }

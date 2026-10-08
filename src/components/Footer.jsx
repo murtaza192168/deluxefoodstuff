@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FaWhatsapp, FaInstagram, FaRegEnvelope } from "react-icons/fa";
 import Logo from "/images/CompanyLogo.png";
 import company, { navItems } from "../data/company";
-import categories from "../data/products.data.json";
+import catalogue from "../data/catalogue.json";
 import { brand, fonts } from "../theme";
 
 const headingSx = {
@@ -45,19 +45,19 @@ export default function Footer() {
           </Grid>
 
           {/* Product ranges */}
-          <Grid size={{ xs: 6, md: 2.5 }}>
+          <Grid size={{ xs: 12, sm: 6, md: 3 }}>
             <Typography sx={headingSx}>Ranges</Typography>
             <Stack>
-              {categories.map((c) => (
-                <Box key={c.category} component={Link} to="/products" sx={linkSx}>
-                  {c.category}
+              {catalogue.categories.map((c) => (
+                <Box key={c.id} component={Link} to={`/products?category=${c.id}`} sx={linkSx}>
+                  {c.name}
                 </Box>
               ))}
             </Stack>
           </Grid>
 
           {/* Company */}
-          <Grid size={{ xs: 6, md: 2 }}>
+          <Grid size={{ xs: 12, sm: 6, md: 1.5 }}>
             <Typography sx={headingSx}>Company</Typography>
             <Stack>
               {navItems.map((item) => (

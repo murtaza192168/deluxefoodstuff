@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
   AppBar,
+  Badge,
   Box,
   Button,
   Container,
@@ -9,12 +10,13 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { HiMenuAlt3, HiX, HiOutlineClipboardList } from "react-icons/hi";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import Logo from "/images/CompanyLogo.png";
 import company, { navItems } from "../data/company";
 import { brand, fonts } from "../theme";
+import useEnquiry from "../enquiry/useEnquiry";
 
 const linkSx = {
   position: "relative",
@@ -44,6 +46,22 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { pathname } = useLocation();
+  const { count, setOpen: setEnquiryOpen } = useEnquiry();
+
+  const enquiryButton = (
+    <IconButton
+      aria-label={`Enquiry list, ${count} ${count === 1 ? "product" : "products"}`}
+      onClick={() => setEnquiryOpen(true)}
+      sx={{ color: brand.ink }}
+    >
+      <Badge
+        badgeContent={count}
+        sx={{ "& .MuiBadge-badge": { backgroundColor: brand.gold, color: "#fff", fontWeight: 600 } }}
+      >
+        <HiOutlineClipboardList size={24} />
+      </Badge>
+    </IconButton>
+  );
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -166,6 +184,7 @@ export default function Navbar() {
                 {item.label}
               </Box>
             ))}
+            {enquiryButton}
             <Button
               variant="contained"
               color="primary"
@@ -179,14 +198,13 @@ export default function Navbar() {
             </Button>
           </Stack>
 
-          {/* Mobile toggle */}
-          <IconButton
-            aria-label="Open menu"
-            onClick={() => setOpen(true)}
-            sx={{ display: { xs: "inline-flex", md: "none" }, color: brand.ink }}
-          >
-            <HiMenuAlt3 size={26} />
-          </IconButton>
+          {/* Mobile actions */}
+          <Stack direction="row" alignItems="center" sx={{ display: { xs: "flex", md: "none" } }}>
+            {enquiryButton}
+            <IconButton aria-label="Open menu" onClick={() => setOpen(true)} sx={{ color: brand.ink }}>
+              <HiMenuAlt3 size={26} />
+            </IconButton>
+          </Stack>
         </Container>
       </Box>
 
