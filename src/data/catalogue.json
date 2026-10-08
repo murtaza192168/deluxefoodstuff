@@ -82,7 +82,6 @@
     "Hutesa",
     "Huy Fong (Rooster)",
     "Indomie",
-    "Jivo",
     "Kara",
     "Kewpie",
     "Kikkoman",
@@ -545,7 +544,7 @@
         101
       ],
       "source": "catalogue",
-      "toConfirm": "Is 'Rooster' the Huy Fong brand?",
+      "toConfirm": "",
       "origin": null,
       "featured": false
     },
@@ -758,28 +757,7 @@
         152
       ],
       "source": "catalogue",
-      "toConfirm": "PDF says 'Banana Sauce'; usually sold as Banana Ketchup",
-      "origin": null,
-      "featured": false
-    },
-    {
-      "id": "jivo-pomace-olive-oil",
-      "name": "Jivo Pomace Olive Oil",
-      "brands": [
-        "Jivo"
-      ],
-      "category": "Oils",
-      "cuisines": [
-        "Continental"
-      ],
-      "packSizes": [],
-      "variants": [],
-      "image": "/images/oo/oo_pom.png",
-      "catalogueRefs": [
-        2
-      ],
-      "source": "catalogue",
-      "toConfirm": "Is the pomace oil photo on the website Jivo?",
+      "toConfirm": "",
       "origin": null,
       "featured": false
     },
@@ -3101,6 +3079,26 @@
       ],
       "variants": [],
       "image": "/images/coffee/esp57.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "pomace-olive-oil",
+      "name": "Pomace Olive Oil",
+      "brands": [],
+      "category": "Oils",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "1 L",
+        "5 L"
+      ],
+      "variants": [],
+      "image": "/images/oo/oo_pom.png",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
