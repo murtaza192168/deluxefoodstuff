@@ -1,252 +1,269 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AppBar,
-  Toolbar,
-  Typography,
   Box,
-  IconButton,
+  Button,
+  Container,
   Drawer,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
+  IconButton,
+  Stack,
+  Typography,
 } from "@mui/material";
-import { HiMenu, HiX } from "react-icons/hi";
+import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import Logo from "/images/CompanyLogo.png"
+import { NavLink, Link, useLocation } from "react-router-dom";
+import Logo from "/images/CompanyLogo.png";
+import company, { navItems } from "../data/company";
+import { brand, fonts } from "../theme";
+
+const linkSx = {
+  position: "relative",
+  color: brand.text,
+  fontSize: 15,
+  fontWeight: 500,
+  textDecoration: "none",
+  py: 1,
+  transition: "color .2s",
+  "&::after": {
+    content: '""',
+    position: "absolute",
+    left: 0,
+    right: 0,
+    bottom: 2,
+    height: "1px",
+    backgroundColor: brand.gold,
+    transform: "scaleX(0)",
+    transition: "transform .25s",
+  },
+  "&:hover": { color: brand.ink },
+  "&:hover::after, &.active::after": { transform: "scaleX(1)" },
+  "&.active": { color: brand.ink },
+};
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const gold = "#D4AF37";
-  const dark = "#0E0E0E";
+  const [scrolled, setScrolled] = useState(false);
+  const { pathname } = useLocation();
 
-  const navItems = [
-    { label: "Home", path: "/" },
-    { label: "Products", path: "/products" },
-    { label: "About", path: "/about" },
-  ];
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Start each page at the top when navigating.
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
-    <AppBar
-      position="fixed"
-      sx={{
-        backgroundColor: "dark",
-    height: { xs: 70, sm: 78, md: 88, lg: 96 },
-    display: "flex",
-    justifyContent: "center",
-    boxShadow: "0px 2px 8px rgba(0,0,0,0.08)",
-        animation: "slideDown 0.6s ease",
-        "@keyframes slideDown": {
-          "0%": { transform: "translateY(-60px)", opacity: 0 },
-          "100%": { transform: "translateY(0)", opacity: 1 },
-        },
-      }}
-    >
-      <Toolbar sx={{ display: "flex", justifyContent: "space-between",  alignItems: "center",
-      width: "100%", }}>
-        {/* Logo */}
-        <Box
-  component={Link}
-  sx={{
-    to: "/",
-
-   height: { xs: 42, sm: 48, md: 60, lg: 68 },
-        cursor: "pointer",
-    width: "auto",
-    objectFit: "contain",
-      transition: "0.3s ease",
-      filter: "drop-shadow(0px 2px 2px rgba(0,0,0,0.4))",
-      "&:hover": {
-        transform: "scale(1.06)",
-      },
-
-
-    display: "flex",
-    alignItems: "center",
-    textDecoration: "none",
-    animation: "fadeIn 1s ease",
-    "@keyframes fadeIn": {
-      "0%": { opacity: 0 },
-      "100%": { opacity: 1 },
-    },
-    
-  }}
->
-  <Box
-    component="img"
-    src={Logo}
-    alt="Delux Enterprise Logo"
-    sx={{
-      height: { xs: 36, sm: 42, md: 50 }, // responsive sizes
-      width: "auto",
-      objectFit: "contain",
-      filter: "drop-shadow(0px 2px 2px rgba(0,0,0,0.4))",
-      cursor: "pointer",
-      transition: "0.3s ease",
-      "&:hover": {
-        transform: "scale(1.05)",
-      },
-    }}
-  />
-</Box>
-
-
-        {/* Desktop Menu */}
-        <Box
-          sx={{
-            display: { xs: "none", md: "flex" },
-            gap: 3,
-            alignItems: "center",
-          }}
+    <AppBar position="fixed" elevation={0} sx={{ background: "transparent" }}>
+      {/* Utility bar */}
+      <Box
+        sx={{
+          display: { xs: "none", md: "block" },
+          backgroundColor: brand.ink,
+          color: "rgba(255,255,255,0.78)",
+          fontSize: 12.5,
+        }}
+      >
+        <Container
+          maxWidth="lg"
+          sx={{ height: 36, display: "flex", alignItems: "center", justifyContent: "space-between" }}
         >
-          {navItems.map((item, index) => (
-            <Typography
-              key={index}
-              component={Link}
-              to={item.path}
-              sx={{
-                color: gold,
-                textDecoration: "none",
-                fontWeight: 500,
-                position: "relative",
-                opacity: 0,
-                animation: `fadeUp 0.6s ease forwards`,
-                animationDelay: `${0.2 + index * 0.15}s`,
-                "@keyframes fadeUp": {
-                  "0%": { opacity: 0, transform: "translateY(10px)" },
-                  "100%": { opacity: 1, transform: "translateY(0)" },
-                },
-                "&:after": {
-                  content: '""',
-                  position: "absolute",
-                  left: 0,
-                  bottom: -3,
-                  width: "0%",
-                  height: "2px",
-                  backgroundColor: gold,
-                  transition: "0.3s",
-                },
-                "&:hover:after": {
-                  width: "100%",
-                },
-              }}
+          <Box component="span">
+            {company.address.line1}, {company.address.line2}
+          </Box>
+          <Stack direction="row" spacing={3} alignItems="center">
+            <Box
+              component="a"
+              href={`mailto:${company.email}`}
+              sx={{ color: "inherit", textDecoration: "none", "&:hover": { color: "#fff" } }}
             >
-              {item.label}
-            </Typography>
-          ))}
+              {company.email}
+            </Box>
+            <Box
+              component="a"
+              href={company.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: "inherit", textDecoration: "none", "&:hover": { color: "#fff" } }}
+            >
+              {company.phoneDisplay}
+            </Box>
+          </Stack>
+        </Container>
+      </Box>
 
-          {/* Social Icons */}
-          <IconButton
-            href="https://wa.me/919324789432"
-            target="_blank"
-            sx={{
-              color: gold,
-              fontSize: "22px",
-              transition: "0.3s",
-              "&:hover": {
-                transform: "scale(1.15)",
-              },
-            }}
-          >
-            <FaWhatsapp />
-          </IconButton>
-
-          <IconButton
-            href="https://www.instagram.com/info.deluxfoodstuff?igsh=aHkxYmp4amp3ZzZ1"
-            target="_blank"
-            sx={{
-              color: gold,
-              fontSize: "22px",
-              transition: "0.3s",
-              "&:hover": {
-                transform: "scale(1.15)",
-              },
-            }}
-          >
-            <FaInstagram />
-          </IconButton>
-        </Box>
-
-        {/* Hamburger Icon */}
-        <IconButton
-          onClick={() => setOpen(true)}
+      {/* Main bar */}
+      <Box
+        sx={{
+          backgroundColor: scrolled ? "rgba(255,255,255,0.97)" : brand.ivory,
+          borderBottom: `1px solid ${brand.line}`,
+          backdropFilter: scrolled ? "saturate(140%) blur(6px)" : "none",
+          transition: "background-color .25s",
+        }}
+      >
+        <Container
+          maxWidth="lg"
           sx={{
-            display: { xs: "block", md: "none" },
-            color: gold,
-            transition: "0.3s",
-            "&:hover": { transform: "scale(1.15)" },
+            height: { xs: 64, md: 72 },
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
           }}
         >
-          <HiMenu size={28} />
-        </IconButton>
-      </Toolbar>
+          {/* Brand */}
+          <Box
+            component={Link}
+            to="/"
+            sx={{ display: "flex", alignItems: "center", gap: 1.5, textDecoration: "none" }}
+          >
+            <Box
+              component="img"
+              src={Logo}
+              alt=""
+              sx={{ height: { xs: 44, md: 52 }, width: "auto" }}
+            />
+            <Box sx={{ lineHeight: 1 }}>
+              <Typography
+                sx={{
+                  fontFamily: fonts.serif,
+                  fontWeight: 700,
+                  fontSize: { xs: 21, md: 24 },
+                  color: brand.ink,
+                  lineHeight: 1,
+                }}
+              >
+                {company.name}
+              </Typography>
+              <Typography
+                sx={{
+                  display: { xs: "none", sm: "block" },
+                  fontSize: 10.5,
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  color: brand.muted,
+                  mt: 0.5,
+                }}
+              >
+                Crawford Market · Mumbai
+              </Typography>
+            </Box>
+          </Box>
 
-      {/* Mobile Drawer */}
+          {/* Desktop navigation */}
+          <Stack
+            component="nav"
+            direction="row"
+            spacing={4}
+            alignItems="center"
+            sx={{ display: { xs: "none", md: "flex" } }}
+          >
+            {navItems.map((item) => (
+              <Box key={item.path} component={NavLink} to={item.path} end sx={linkSx}>
+                {item.label}
+              </Box>
+            ))}
+            <Button
+              variant="contained"
+              color="primary"
+              href={company.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              startIcon={<FaWhatsapp size={16} />}
+              sx={{ height: 40 }}
+            >
+              Enquire
+            </Button>
+          </Stack>
+
+          {/* Mobile toggle */}
+          <IconButton
+            aria-label="Open menu"
+            onClick={() => setOpen(true)}
+            sx={{ display: { xs: "inline-flex", md: "none" }, color: brand.ink }}
+          >
+            <HiMenuAlt3 size={26} />
+          </IconButton>
+        </Container>
+      </Box>
+
+      {/* Mobile drawer */}
       <Drawer
         anchor="right"
         open={open}
         onClose={() => setOpen(false)}
         PaperProps={{
           sx: {
-            background: dark,
-            width: "70%",
-            color: gold,
-            paddingTop: 4,
-            animation: "drawerSlide 0.4s ease",
-            "@keyframes drawerSlide": {
-              "0%": { transform: "translateX(100%)" },
-              "100%": { transform: "translateX(0)" },
-            },
+            width: "min(86vw, 360px)",
+            backgroundColor: brand.ivory,
+            display: "flex",
+            flexDirection: "column",
           },
         }}
       >
-        <Box sx={{ textAlign: "right", pr: 2 }}>
-          <IconButton onClick={() => setOpen(false)} sx={{ color: gold }}>
-            <HiX size={28} />
+        <Box sx={{ display: "flex", justifyContent: "flex-end", p: 1.5 }}>
+          <IconButton aria-label="Close menu" onClick={() => setOpen(false)} sx={{ color: brand.ink }}>
+            <HiX size={26} />
           </IconButton>
         </Box>
 
-        <List>
-          {navItems.map((item, i) => (
-            <ListItem key={i} disablePadding>
-              <ListItemButton
-                component={Link}
-                to={item.path}
-                onClick={() => setOpen(false)}
-                sx={{
-                  textAlign: "center",
-                  opacity: 0,
-                  animation: `fadeInMenu 0.5s ease forwards`,
-                  animationDelay: `${0.1 + i * 0.12}s`,
-                  "@keyframes fadeInMenu": {
-                    "0%": { opacity: 0, transform: "translateX(20px)" },
-                    "100%": { opacity: 1, transform: "translateX(0)" },
-                  },
-                }}
-              >
-                <ListItemText primary={item.label} sx={{ color: gold }} />
-              </ListItemButton>
-            </ListItem>
+        <Stack component="nav" sx={{ px: 3 }}>
+          {navItems.map((item) => (
+            <Box
+              key={item.path}
+              component={NavLink}
+              to={item.path}
+              end
+              onClick={() => setOpen(false)}
+              sx={{
+                fontFamily: fonts.serif,
+                fontSize: 30,
+                fontWeight: 600,
+                color: brand.ink,
+                textDecoration: "none",
+                py: 1.25,
+                borderBottom: `1px solid ${brand.line}`,
+                "&.active": { color: brand.gold },
+              }}
+            >
+              {item.label}
+            </Box>
           ))}
-        </List>
+        </Stack>
 
-        {/* Drawer Social Icons */}
-        <Box sx={{ mt: 4, display: "flex", justifyContent: "center", gap: 3 }}>
-          <IconButton
-            href="https://wa.me/919324789432"
+        <Box sx={{ mt: "auto", p: 3 }}>
+          <Button
+            fullWidth
+            variant="contained"
+            href={company.whatsapp}
             target="_blank"
-            sx={{ color: gold, fontSize: "24px" }}
+            rel="noopener noreferrer"
+            startIcon={<FaWhatsapp size={18} />}
+            sx={{ height: 48, mb: 3 }}
           >
-            <FaWhatsapp />
-          </IconButton>
-
+            Enquire on WhatsApp
+          </Button>
+          <Typography variant="body2" color="text.secondary">
+            {company.address.line1}
+            <br />
+            {company.address.line2}
+          </Typography>
+          <Typography variant="body2" sx={{ mt: 1 }}>
+            <Box component="a" href={`mailto:${company.email}`} sx={{ color: brand.ink }}>
+              {company.email}
+            </Box>
+          </Typography>
           <IconButton
-            href="https://www.instagram.com/info.deluxfoodstuff?igsh=aHkxYmp4amp3ZzZ1"
+            aria-label="Instagram"
+            href={company.instagram}
             target="_blank"
-            sx={{ color: gold, fontSize: "24px" }}
+            rel="noopener noreferrer"
+            sx={{ mt: 1, ml: -1, color: brand.ink }}
           >
-            <FaInstagram />
+            <FaInstagram size={20} />
           </IconButton>
         </Box>
       </Drawer>
