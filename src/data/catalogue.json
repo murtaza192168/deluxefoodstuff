@@ -158,7 +158,9 @@
         1
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "lee-kum-kee-soy-sauce",
@@ -177,7 +179,9 @@
         4
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "lee-kum-kee-oyster-sauce",
@@ -196,7 +200,9 @@
         85
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "lee-kum-kee-sauce-range",
@@ -215,7 +221,9 @@
         43
       ],
       "source": "catalogue",
-      "toConfirm": "Which other Lee Kum Kee sauces do you stock?"
+      "toConfirm": "Which other Lee Kum Kee sauces do you stock?",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "golden-crown-kasundi-mustard",
@@ -235,7 +243,9 @@
         45
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "panich-sriracha-sauce",
@@ -254,7 +264,9 @@
         8
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "mae-pranom-sweet-chilli-sauce",
@@ -273,7 +285,9 @@
         9
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "chef-art-peri-peri-marinade",
@@ -294,7 +308,9 @@
         17
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "del-monte-tomato-ketchup",
@@ -315,7 +331,9 @@
         19
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "american-garden-yellow-mustard",
@@ -334,7 +352,9 @@
         46
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "american-garden-mayonnaise",
@@ -355,7 +375,9 @@
         104
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "mang-tomas-all-purpose-sauce",
@@ -374,7 +396,9 @@
         47
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "kimball-sauces",
@@ -393,7 +417,9 @@
         48
       ],
       "source": "catalogue",
-      "toConfirm": "Which Kimball sauces?"
+      "toConfirm": "Which Kimball sauces?",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "woh-hup-sauces",
@@ -412,7 +438,9 @@
         86
       ],
       "source": "catalogue",
-      "toConfirm": "Which Woh Hup sauces?"
+      "toConfirm": "Which Woh Hup sauces?",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "sprig-sauces",
@@ -431,7 +459,9 @@
         88
       ],
       "source": "catalogue",
-      "toConfirm": "Which Sprig sauces?"
+      "toConfirm": "Which Sprig sauces?",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "kikkoman-soy-sauce",
@@ -451,7 +481,9 @@
         144
       ],
       "source": "catalogue",
-      "toConfirm": "Listed twice (#89, #144), merged"
+      "toConfirm": "Listed twice (#89, #144), merged",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "yoka-mirin",
@@ -470,7 +502,9 @@
         90
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "umai-cooking-sake",
@@ -489,7 +523,9 @@
         91
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "sriracha-chilli-sauce",
@@ -509,7 +545,9 @@
         101
       ],
       "source": "catalogue",
-      "toConfirm": "Is 'Rooster' the Huy Fong brand?"
+      "toConfirm": "Is 'Rooster' the Huy Fong brand?",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "flying-goose-sriracha-mayo",
@@ -528,7 +566,9 @@
         102
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "safa-hot-sauce",
@@ -547,7 +587,9 @@
         103
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "lao-gan-ma-crispy-chilli-oil",
@@ -566,7 +608,9 @@
         128
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "nong-porn-fermented-fish-sauce",
@@ -585,7 +629,9 @@
         131
       ],
       "source": "catalogue",
-      "toConfirm": "Check brand spelling ('Nongporn' in PDF)"
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "tiparos-fish-sauce",
@@ -604,7 +650,9 @@
         132
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "pantai-chilli-oil",
@@ -623,7 +671,9 @@
         141
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "umai-kimchi-sauce",
@@ -642,7 +692,9 @@
         147
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "healthy-boy-dek-som-boon-sauces",
@@ -664,7 +716,9 @@
         148
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "kewpie-mayonnaise",
@@ -683,7 +737,9 @@
         149
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "ufc-banana-ketchup",
@@ -702,7 +758,9 @@
         152
       ],
       "source": "catalogue",
-      "toConfirm": "PDF says 'Banana Sauce'; usually sold as Banana Ketchup"
+      "toConfirm": "PDF says 'Banana Sauce'; usually sold as Banana Ketchup",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "jivo-pomace-olive-oil",
@@ -721,7 +779,9 @@
         2
       ],
       "source": "catalogue",
-      "toConfirm": "Is the pomace oil photo on the website Jivo?"
+      "toConfirm": "Is the pomace oil photo on the website Jivo?",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "sano-olive-oil",
@@ -744,7 +804,9 @@
         81
       ],
       "source": "catalogue",
-      "toConfirm": "Merged #3 and #81"
+      "toConfirm": "Merged #3 and #81",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "figaro-olive-oil",
@@ -763,7 +825,9 @@
         79
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "solas-olive-oil",
@@ -782,7 +846,9 @@
         80
       ],
       "source": "catalogue",
-      "toConfirm": "Check brand spelling"
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "agata-olive-oil",
@@ -801,7 +867,9 @@
         82
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "basso-olive-oil",
@@ -820,7 +888,9 @@
         83
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "yoka-sesame-oil",
@@ -839,7 +909,9 @@
         77
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "double-dragon-sesame-oil",
@@ -858,7 +930,9 @@
         78
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "urbani-truffle-oil",
@@ -877,7 +951,9 @@
         154
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "al-ameera-tahina-paste",
@@ -900,7 +976,9 @@
         7
       ],
       "source": "catalogue",
-      "toConfirm": "PDF says 'Al Am'; assumed Al Ameera"
+      "toConfirm": "PDF says 'Al Am'; assumed Al Ameera",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "safa-tomato-paste",
@@ -923,7 +1001,9 @@
         11
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "real-thai-curry-paste",
@@ -949,7 +1029,9 @@
         113
       ],
       "source": "catalogue",
-      "toConfirm": "Merged #44, #111-113"
+      "toConfirm": "Merged #44, #111-113",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "namjai-thai-curry-paste",
@@ -973,7 +1055,9 @@
         114
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "knorr-aromat-seasoning-powder",
@@ -995,7 +1079,9 @@
         99
       ],
       "source": "catalogue",
-      "toConfirm": "Listed twice (#16, #99), merged"
+      "toConfirm": "Listed twice (#16, #99), merged",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "knorr-chicken-powder",
@@ -1014,7 +1100,9 @@
         100
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "knorr-demi-glace-powder",
@@ -1033,7 +1121,9 @@
         109
       ],
       "source": "catalogue",
-      "toConfirm": "PDF says 'K Demiglace'; assumed Knorr"
+      "toConfirm": "PDF says 'K Demiglace'; assumed Knorr",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "knorr-lime-seasoning",
@@ -1052,7 +1142,9 @@
         122
       ],
       "source": "catalogue",
-      "toConfirm": "PDF says 'K Lime Seasoning'; assumed Knorr"
+      "toConfirm": "PDF says 'K Lime Seasoning'; assumed Knorr",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "nature-smith-onion-powder",
@@ -1073,7 +1165,9 @@
         22
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "nature-smith-garlic-powder",
@@ -1094,7 +1188,9 @@
         23
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "nature-smith-seasonings-powders",
@@ -1113,7 +1209,9 @@
         87
       ],
       "source": "catalogue",
-      "toConfirm": "Which other Nature Smith items?"
+      "toConfirm": "Which other Nature Smith items?",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "nature-smith-zaatar",
@@ -1132,7 +1230,9 @@
         108
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "nature-smith-sumac-powder",
@@ -1151,7 +1251,9 @@
         107
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "natures-choice-zaatar",
@@ -1170,7 +1272,9 @@
         105
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "natures-choice-sumac-powder",
@@ -1189,7 +1293,9 @@
         106
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "paprika-powder",
@@ -1208,7 +1314,9 @@
         24
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "cajun-spice-powder",
@@ -1227,7 +1335,9 @@
         25
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "maggi-chicken-stock-cubes",
@@ -1246,7 +1356,9 @@
         33
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "calnort-chicken-stock-powder",
@@ -1267,7 +1379,9 @@
         49
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "tom-yum-stock-cubes",
@@ -1284,7 +1398,9 @@
         96
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "maggi-seasoning-imported",
@@ -1305,7 +1421,9 @@
         151
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "samyang-buldak-noodles",
@@ -1324,7 +1442,9 @@
         27
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "golden-crown-hakka-noodles",
@@ -1345,7 +1465,30 @@
         28
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "reggia-pasta",
+      "name": "Reggia Pasta",
+      "brands": [
+        "Reggia"
+      ],
+      "category": "Noodles, Pasta & Vermicelli",
+      "cuisines": [
+        "Italian"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        133
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": "Italy",
+      "featured": true
     },
     {
       "id": "gustaro-pasta",
@@ -1372,26 +1515,9 @@
         32
       ],
       "source": "catalogue",
-      "toConfirm": "Merged #29-32. Are all four Gustaro? Check brand spelling"
-    },
-    {
-      "id": "reggia-pasta",
-      "name": "Reggia Pasta",
-      "brands": [
-        "Reggia"
-      ],
-      "category": "Noodles, Pasta & Vermicelli",
-      "cuisines": [
-        "Italian"
-      ],
-      "packSizes": [],
-      "variants": [],
-      "image": null,
-      "catalogueRefs": [
-        133
-      ],
-      "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "Merged #29-32",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "yoka-japanese-noodles",
@@ -1413,7 +1539,9 @@
         115
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "umai-japanese-noodles",
@@ -1436,7 +1564,9 @@
         116
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "udon-soba-ramen-noodles",
@@ -1459,7 +1589,9 @@
         64
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "umai-sweet-potato-noodles",
@@ -1478,7 +1610,9 @@
         117
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "star-lion-rice-vermicelli",
@@ -1499,7 +1633,9 @@
         121
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "korean-noodles",
@@ -1518,7 +1654,9 @@
         157
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "indomie-instant-noodles",
@@ -1537,7 +1675,9 @@
         158
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "sushi-rice",
@@ -1557,7 +1697,9 @@
         68
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "sticky-glutinous-rice",
@@ -1577,7 +1719,9 @@
         69
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "jasmine-rice",
@@ -1594,7 +1738,9 @@
         70
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "arborio-rice",
@@ -1615,7 +1761,9 @@
         123
       ],
       "source": "catalogue",
-      "toConfirm": "Merged #71 and #123"
+      "toConfirm": "Merged #71 and #123",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "freshos-black-rice",
@@ -1634,7 +1782,9 @@
         110
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "freshos-polenta",
@@ -1653,7 +1803,9 @@
         124
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "glutinous-rice-flour",
@@ -1670,7 +1822,9 @@
         67
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "potato-starch",
@@ -1692,7 +1846,9 @@
         61
       ],
       "source": "catalogue",
-      "toConfirm": "Merged #58, #59, #61"
+      "toConfirm": "Merged #58, #59, #61",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "wheat-starch",
@@ -1709,11 +1865,13 @@
         60
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
-      "id": "carnation-condensed-milk",
-      "name": "Carnation Condensed Milk",
+      "id": "carnation-milk",
+      "name": "Carnation Milk",
       "brands": [
         "Carnation"
       ],
@@ -1724,13 +1882,18 @@
       "packSizes": [
         "395 g"
       ],
-      "variants": [],
+      "variants": [
+        "Condensed",
+        "Evaporated"
+      ],
       "image": "/images/bakery/carnation.png",
       "catalogueRefs": [
         36
       ],
       "source": "catalogue",
-      "toConfirm": "PDF says 'Carnation Milkmaid'. Condensed or evaporated?"
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "lucky-cow-evaporated-milk",
@@ -1749,7 +1912,9 @@
         53
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "safa-evaporated-milk",
@@ -1768,7 +1933,9 @@
         54
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "maggi-coconut-milk-powder",
@@ -1788,7 +1955,9 @@
         119
       ],
       "source": "catalogue",
-      "toConfirm": "#119 'Maggi Cmp' read as Coconut Milk Powder, merged"
+      "toConfirm": "#119 'Maggi Cmp' read as Coconut Milk Powder, merged",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "habit-coconut-milk-powder",
@@ -1807,7 +1976,9 @@
         120
       ],
       "source": "catalogue",
-      "toConfirm": "'Habit Cmp' read as Coconut Milk Powder"
+      "toConfirm": "'Habit Cmp' read as Coconut Milk Powder",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "coconut-milk-coconut-cream",
@@ -1833,7 +2004,9 @@
         130
       ],
       "source": "catalogue",
-      "toConfirm": "Merged #56, #57, #130. Check 'Praohom' spelling"
+      "toConfirm": "Merged #56, #57, #130",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "lotus-biscoff-biscuits",
@@ -1854,7 +2027,9 @@
         40
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "marini-ladyfinger-biscuits",
@@ -1877,7 +2052,9 @@
         155
       ],
       "source": "catalogue",
-      "toConfirm": "Listed three times, merged"
+      "toConfirm": "Listed three times, merged",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "panko-breadcrumbs",
@@ -1894,7 +2071,9 @@
         18
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "tempura-batter-mix",
@@ -1914,7 +2093,9 @@
         84
       ],
       "source": "catalogue",
-      "toConfirm": "Merged #26 and #84"
+      "toConfirm": "Merged #26 and #84",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "hup-seng-cream-crackers",
@@ -1933,7 +2114,9 @@
         97
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "weetabix",
@@ -1952,7 +2135,9 @@
         98
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "quaker-oats-imported",
@@ -1971,7 +2156,9 @@
         159
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "nutella-hazelnut-spread",
@@ -1994,7 +2181,9 @@
         35
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "lotus-biscoff-spread",
@@ -2016,7 +2205,9 @@
         150
       ],
       "source": "catalogue",
-      "toConfirm": "Listed twice, merged"
+      "toConfirm": "Listed twice, merged",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "al-ameera-halawa",
@@ -2037,7 +2228,9 @@
         50
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "st-dalfour-fruit-spread",
@@ -2056,7 +2249,9 @@
         136
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "stute-jam",
@@ -2075,7 +2270,9 @@
         137
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "capilano-honey",
@@ -2094,7 +2291,9 @@
         138
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "monin-syrups",
@@ -2118,7 +2317,9 @@
         145
       ],
       "source": "catalogue",
-      "toConfirm": "Merged #20, #21, #145"
+      "toConfirm": "Merged #20, #21, #145",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "hersheys-syrups",
@@ -2145,7 +2346,9 @@
         160
       ],
       "source": "catalogue",
-      "toConfirm": "Merged five lines"
+      "toConfirm": "Merged five lines",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "maple-joe-maple-syrup",
@@ -2164,7 +2367,9 @@
         51
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "al-barakah-date-syrup",
@@ -2184,7 +2389,9 @@
         126
       ],
       "source": "catalogue",
-      "toConfirm": "Listed twice, merged"
+      "toConfirm": "Listed twice, merged",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "nescafe-coffee",
@@ -2214,7 +2421,9 @@
         127
       ],
       "source": "catalogue",
-      "toConfirm": "Merged #74-76, #127"
+      "toConfirm": "Merged #74-76, #127",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "milo",
@@ -2237,7 +2446,9 @@
         73
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "lipton-yellow-label-tea",
@@ -2259,7 +2470,9 @@
         156
       ],
       "source": "catalogue",
-      "toConfirm": "Listed twice, merged"
+      "toConfirm": "Listed twice, merged",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "twinings-green-tea",
@@ -2278,7 +2491,9 @@
         139
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "olives",
@@ -2306,7 +2521,9 @@
         95
       ],
       "source": "catalogue",
-      "toConfirm": "Merged #12, #13, #95"
+      "toConfirm": "Merged #12, #13, #95",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "kalamata-olives",
@@ -2326,7 +2543,9 @@
         142
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "gherkins",
@@ -2345,7 +2564,9 @@
         14
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "sarwar-sliced-jalape-os",
@@ -2366,7 +2587,9 @@
         15
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "old-el-paso-jalape-os",
@@ -2387,7 +2610,9 @@
         153
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "maling-ful-medames",
@@ -2408,7 +2633,9 @@
         94
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "austin-canned-beans-vegetables",
@@ -2434,7 +2661,9 @@
         135
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "dried-shiitake-mushrooms",
@@ -2454,7 +2683,9 @@
         161
       ],
       "source": "catalogue",
-      "toConfirm": "Listed twice, merged"
+      "toConfirm": "Listed twice, merged",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "umai-porcini-mushrooms",
@@ -2473,7 +2704,9 @@
         118
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "black-fungus",
@@ -2490,7 +2723,9 @@
         92
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "white-fungus",
@@ -2507,7 +2742,9 @@
         93
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "pickled-sushi-ginger",
@@ -2528,7 +2765,9 @@
         129
       ],
       "source": "catalogue",
-      "toConfirm": "Check 'Woldko' spelling"
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "freshos-hearts-of-palm",
@@ -2547,7 +2786,9 @@
         140
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "water-chestnuts",
@@ -2567,7 +2808,9 @@
         143
       ],
       "source": "catalogue",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "de-best-maraschino-cherries",
@@ -2586,7 +2829,9 @@
         146
       ],
       "source": "catalogue",
-      "toConfirm": "Check brand spelling ('Debest' in PDF)"
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "luncheon-meat",
@@ -2603,7 +2848,9 @@
       "image": "/images/arabic/luncheon.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "dried-black-lemon-loomi",
@@ -2620,7 +2867,9 @@
       "image": "/images/arabic/blacklemon.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "wasabi-paste",
@@ -2635,7 +2884,9 @@
       "image": "/images/sushi/wasabi_pst.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "sushi-vinegar",
@@ -2653,7 +2904,9 @@
       "image": "/images/sushi/vinegar.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "nori-seaweed-sheets",
@@ -2671,7 +2924,9 @@
       "image": "/images/sushi/nori.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "rice-paper",
@@ -2688,7 +2943,9 @@
       "image": "/images/sushi/ricepaper.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "golden-curry-sauce-mix",
@@ -2707,7 +2964,9 @@
       "image": "/images/sushi/goldencurry.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "togarashi-powder",
@@ -2724,7 +2983,9 @@
       "image": "/images/sushi/togarashi.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "philadelphia-cream-cheese",
@@ -2743,7 +3004,9 @@
       "image": "/images/bakery/philadelphia.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "rice-stick-noodles",
@@ -2760,7 +3023,9 @@
       "image": "/images/korean/rice_stick.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "gochujang-korean-chilli-paste",
@@ -2777,7 +3042,9 @@
       "image": "/images/korean/gochujang.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "gochugaru-korean-chilli-flakes",
@@ -2794,7 +3061,9 @@
       "image": "/images/korean/gochugaru.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "davidoff-fine-aroma-coffee",
@@ -2813,7 +3082,9 @@
       "image": "/images/coffee/fine.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "davidoff-espresso-57-coffee",
@@ -2832,7 +3103,9 @@
       "image": "/images/coffee/esp57.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "extra-virgin-olive-oil",
@@ -2850,7 +3123,9 @@
       "image": "/images/oo/oo_ev.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     },
     {
       "id": "extra-light-olive-oil",
@@ -2868,7 +3143,9 @@
       "image": "/images/oo/oo_el.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": ""
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
     }
   ]
 }
