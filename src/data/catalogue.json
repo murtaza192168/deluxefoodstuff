@@ -204,8 +204,8 @@
       "featured": false
     },
     {
-      "id": "lee-kum-kee-sauce-range",
-      "name": "Lee Kum Kee Sauce Range",
+      "id": "lee-kum-kee-sauces",
+      "name": "Lee Kum Kee Sauces",
       "brands": [
         "Lee Kum Kee"
       ],
@@ -220,7 +220,7 @@
         43
       ],
       "source": "catalogue",
-      "toConfirm": "Which other Lee Kum Kee sauces do you stock?",
+      "toConfirm": "",
       "origin": null,
       "featured": false
     },
@@ -416,7 +416,7 @@
         48
       ],
       "source": "catalogue",
-      "toConfirm": "Which Kimball sauces?",
+      "toConfirm": "",
       "origin": null,
       "featured": false
     },
@@ -437,7 +437,7 @@
         86
       ],
       "source": "catalogue",
-      "toConfirm": "Which Woh Hup sauces?",
+      "toConfirm": "",
       "origin": null,
       "featured": false
     },
@@ -458,7 +458,7 @@
         88
       ],
       "source": "catalogue",
-      "toConfirm": "Which Sprig sauces?",
+      "toConfirm": "",
       "origin": null,
       "featured": false
     },
@@ -954,7 +954,7 @@
         7
       ],
       "source": "catalogue",
-      "toConfirm": "PDF says 'Al Am'; assumed Al Ameera",
+      "toConfirm": "",
       "origin": null,
       "featured": false
     },
@@ -1099,7 +1099,7 @@
         109
       ],
       "source": "catalogue",
-      "toConfirm": "PDF says 'K Demiglace'; assumed Knorr",
+      "toConfirm": "",
       "origin": null,
       "featured": false
     },
@@ -1120,7 +1120,7 @@
         122
       ],
       "source": "catalogue",
-      "toConfirm": "PDF says 'K Lime Seasoning'; assumed Knorr",
+      "toConfirm": "",
       "origin": null,
       "featured": false
     },
@@ -1171,8 +1171,8 @@
       "featured": false
     },
     {
-      "id": "nature-smith-seasonings-powders",
-      "name": "Nature Smith Seasonings & Powders",
+      "id": "nature-smith-seasonings-spices",
+      "name": "Nature Smith Seasonings & Spices",
       "brands": [
         "Nature Smith"
       ],
@@ -1181,13 +1181,22 @@
         "Continental"
       ],
       "packSizes": [],
-      "variants": [],
+      "variants": [
+        "Cayenne Pepper",
+        "Fajita Seasoning",
+        "Za'atar",
+        "Sumac",
+        "Smoked Paprika",
+        "Paprika Powder",
+        "Sweet Paprika Powder",
+        "and more"
+      ],
       "image": null,
       "catalogueRefs": [
         87
       ],
       "source": "catalogue",
-      "toConfirm": "Which other Nature Smith items?",
+      "toConfirm": "",
       "origin": null,
       "featured": false
     },
