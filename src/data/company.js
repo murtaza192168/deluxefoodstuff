@@ -9,7 +9,7 @@ const company = {
     line2: "Crawford Market, Dhobi Talao, Fort, Mumbai 400001",
   },
   gstin: "27AICPM2320B1ZZ",
-  mapUrl: "https://www.google.com/maps/search/?api=1&query=M.+J.+Phule+Market+Crawford+Market+Mumbai+400001",
+  mapUrl: "https://share.google/PKSmjCwpK2OAdr9sp",
   phoneDisplay: "+91 93247 89432",
   whatsapp: "https://wa.me/919324789432",
   email: "info.deluxfoodstuffs@gmail.com",
