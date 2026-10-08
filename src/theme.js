@@ -43,6 +43,8 @@ const theme = createTheme({
     button: { textTransform: "none", fontWeight: 600, letterSpacing: "0.01em" },
   },
   components: {
+    // Cormorant defaults to old-style figures (137 reads as "I37"); use lining figures site-wide.
+    MuiCssBaseline: { styleOverrides: { body: { fontVariantNumeric: "lining-nums" } } },
     MuiButton: {
       defaultProps: { disableElevation: true },
       styleOverrides: { root: { borderRadius: 2, paddingInline: 20 } },

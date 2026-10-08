@@ -90,6 +90,7 @@ export default function Footer() {
                 {company.email}
               </Box>
             </Stack>
+            <Typography sx={{ mt: 2, fontSize: 13, color: "rgba(255,255,255,0.5)" }}>GSTIN {company.gstin}</Typography>
           </Grid>
         </Grid>
       </Container>
