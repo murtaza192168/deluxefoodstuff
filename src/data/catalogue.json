@@ -63,16 +63,16 @@
     "Carnation",
     "Chef Art",
     "Davidoff",
-    "DD",
     "De Best",
     "Dek Som Boon",
     "Del Monte",
+    "Double Dragon",
     "Elita",
     "Fiamma",
     "Figaro",
     "Flying Goose",
     "Freshos",
-    "GC",
+    "Golden Crown",
     "Golden Star",
     "Gustaro",
     "Habit",
@@ -103,10 +103,10 @@
     "Milo",
     "Monin",
     "Mr. Hung",
+    "Namjai",
     "Nature Smith",
-    "NC",
+    "Nature's Choice",
     "Nescafé",
-    "NMJ",
     "Nong Porn",
     "Nutella",
     "Old El Paso",
@@ -123,11 +123,11 @@
     "Samyang",
     "Sano",
     "Sarwar",
-    "SL",
     "Solas",
     "Song Heng",
     "Sprig",
     "St. Dalfour",
+    "Star Lion",
     "Stute",
     "Tiparos",
     "Twinings",
@@ -218,10 +218,10 @@
       "toConfirm": "Which other Lee Kum Kee sauces do you stock?"
     },
     {
-      "id": "kasundi-mustard",
-      "name": "Kasundi Mustard",
+      "id": "golden-crown-kasundi-mustard",
+      "name": "Golden Crown Kasundi Mustard",
       "brands": [
-        "GC"
+        "Golden Crown"
       ],
       "category": "Sauces, Condiments & Marinades",
       "cuisines": [
@@ -235,7 +235,7 @@
         45
       ],
       "source": "catalogue",
-      "toConfirm": "Merged #5 and #45. What does 'GC' stand for?"
+      "toConfirm": ""
     },
     {
       "id": "panich-sriracha-sauce",
@@ -842,10 +842,10 @@
       "toConfirm": ""
     },
     {
-      "id": "dd-sesame-oil",
-      "name": "DD Sesame Oil",
+      "id": "double-dragon-sesame-oil",
+      "name": "Double Dragon Sesame Oil",
       "brands": [
-        "DD"
+        "Double Dragon"
       ],
       "category": "Oils",
       "cuisines": [
@@ -858,7 +858,7 @@
         78
       ],
       "source": "catalogue",
-      "toConfirm": "What does 'DD' stand for?"
+      "toConfirm": ""
     },
     {
       "id": "urbani-truffle-oil",
@@ -952,10 +952,10 @@
       "toConfirm": "Merged #44, #111-113"
     },
     {
-      "id": "nmj-thai-curry-paste",
-      "name": "NMJ Thai Curry Paste",
+      "id": "namjai-thai-curry-paste",
+      "name": "Namjai Thai Curry Paste",
       "brands": [
-        "NMJ"
+        "Namjai"
       ],
       "category": "Pastes & Curry Pastes",
       "cuisines": [
@@ -973,7 +973,7 @@
         114
       ],
       "source": "catalogue",
-      "toConfirm": "What does 'NMJ' stand for?"
+      "toConfirm": ""
     },
     {
       "id": "knorr-aromat-seasoning-powder",
@@ -1154,10 +1154,10 @@
       "toConfirm": ""
     },
     {
-      "id": "nc-zaatar",
-      "name": "NC Za'atar",
+      "id": "natures-choice-zaatar",
+      "name": "Nature's Choice Za'atar",
       "brands": [
-        "NC"
+        "Nature's Choice"
       ],
       "category": "Spices, Seasonings & Stock Powders",
       "cuisines": [
@@ -1170,13 +1170,13 @@
         105
       ],
       "source": "catalogue",
-      "toConfirm": "What does 'NC' stand for?"
+      "toConfirm": ""
     },
     {
-      "id": "nc-sumac-powder",
-      "name": "NC Sumac Powder",
+      "id": "natures-choice-sumac-powder",
+      "name": "Nature's Choice Sumac Powder",
       "brands": [
-        "NC"
+        "Nature's Choice"
       ],
       "category": "Spices, Seasonings & Stock Powders",
       "cuisines": [
@@ -1189,7 +1189,7 @@
         106
       ],
       "source": "catalogue",
-      "toConfirm": "What does 'NC' stand for?"
+      "toConfirm": ""
     },
     {
       "id": "paprika-powder",
@@ -1208,7 +1208,7 @@
         24
       ],
       "source": "catalogue",
-      "toConfirm": "Which brand?"
+      "toConfirm": ""
     },
     {
       "id": "cajun-spice-powder",
@@ -1227,7 +1227,7 @@
         25
       ],
       "source": "catalogue",
-      "toConfirm": "Which brand?"
+      "toConfirm": ""
     },
     {
       "id": "maggi-chicken-stock-cubes",
@@ -1284,7 +1284,7 @@
         96
       ],
       "source": "catalogue",
-      "toConfirm": "Which brand?"
+      "toConfirm": ""
     },
     {
       "id": "maggi-seasoning-imported",
@@ -1327,10 +1327,10 @@
       "toConfirm": ""
     },
     {
-      "id": "hakka-noodles",
-      "name": "Hakka Noodles",
+      "id": "golden-crown-hakka-noodles",
+      "name": "Golden Crown Hakka Noodles",
       "brands": [
-        "GC"
+        "Golden Crown"
       ],
       "category": "Noodles, Pasta & Vermicelli",
       "cuisines": [
@@ -1345,7 +1345,7 @@
         28
       ],
       "source": "catalogue",
-      "toConfirm": "What does 'GC' stand for?"
+      "toConfirm": ""
     },
     {
       "id": "gustaro-pasta",
@@ -1459,7 +1459,7 @@
         64
       ],
       "source": "catalogue",
-      "toConfirm": "#62-64 have no brand; same as Yoka/Umai above?"
+      "toConfirm": ""
     },
     {
       "id": "umai-sweet-potato-noodles",
@@ -1481,10 +1481,10 @@
       "toConfirm": ""
     },
     {
-      "id": "rice-vermicelli",
-      "name": "Rice Vermicelli",
+      "id": "star-lion-rice-vermicelli",
+      "name": "Star Lion Rice Vermicelli",
       "brands": [
-        "SL"
+        "Star Lion"
       ],
       "category": "Noodles, Pasta & Vermicelli",
       "cuisines": [
@@ -1499,7 +1499,7 @@
         121
       ],
       "source": "catalogue",
-      "toConfirm": "What does 'SL' stand for?"
+      "toConfirm": ""
     },
     {
       "id": "korean-noodles",
@@ -1518,7 +1518,7 @@
         157
       ],
       "source": "catalogue",
-      "toConfirm": "Which brand?"
+      "toConfirm": ""
     },
     {
       "id": "indomie-instant-noodles",
@@ -1557,7 +1557,7 @@
         68
       ],
       "source": "catalogue",
-      "toConfirm": "Which brand?"
+      "toConfirm": ""
     },
     {
       "id": "sticky-glutinous-rice",
@@ -1577,7 +1577,7 @@
         69
       ],
       "source": "catalogue",
-      "toConfirm": "Which brand?"
+      "toConfirm": ""
     },
     {
       "id": "jasmine-rice",
@@ -1594,7 +1594,7 @@
         70
       ],
       "source": "catalogue",
-      "toConfirm": "Which brand?"
+      "toConfirm": ""
     },
     {
       "id": "arborio-rice",
@@ -1670,7 +1670,7 @@
         67
       ],
       "source": "catalogue",
-      "toConfirm": "Which brand?"
+      "toConfirm": ""
     },
     {
       "id": "potato-starch",
@@ -1709,7 +1709,7 @@
         60
       ],
       "source": "catalogue",
-      "toConfirm": "Which brand?"
+      "toConfirm": ""
     },
     {
       "id": "carnation-condensed-milk",
@@ -1894,7 +1894,7 @@
         18
       ],
       "source": "catalogue",
-      "toConfirm": "Which brand?"
+      "toConfirm": ""
     },
     {
       "id": "tempura-batter-mix",
@@ -2345,7 +2345,7 @@
         14
       ],
       "source": "catalogue",
-      "toConfirm": "Which brand?"
+      "toConfirm": ""
     },
     {
       "id": "sarwar-sliced-jalape-os",
@@ -2454,7 +2454,7 @@
         161
       ],
       "source": "catalogue",
-      "toConfirm": "Listed twice, merged. Which brand?"
+      "toConfirm": "Listed twice, merged"
     },
     {
       "id": "umai-porcini-mushrooms",
@@ -2490,7 +2490,7 @@
         92
       ],
       "source": "catalogue",
-      "toConfirm": "Which brand?"
+      "toConfirm": ""
     },
     {
       "id": "white-fungus",
@@ -2507,7 +2507,7 @@
         93
       ],
       "source": "catalogue",
-      "toConfirm": "Which brand?"
+      "toConfirm": ""
     },
     {
       "id": "pickled-sushi-ginger",
@@ -2603,7 +2603,7 @@
       "image": "/images/arabic/luncheon.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "dried-black-lemon-loomi",
@@ -2620,7 +2620,7 @@
       "image": "/images/arabic/blacklemon.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "wasabi-paste",
@@ -2635,7 +2635,7 @@
       "image": "/images/sushi/wasabi_pst.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "sushi-vinegar",
@@ -2653,7 +2653,7 @@
       "image": "/images/sushi/vinegar.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "nori-seaweed-sheets",
@@ -2671,7 +2671,7 @@
       "image": "/images/sushi/nori.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "rice-paper",
@@ -2688,7 +2688,7 @@
       "image": "/images/sushi/ricepaper.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "golden-curry-sauce-mix",
@@ -2707,7 +2707,7 @@
       "image": "/images/sushi/goldencurry.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "togarashi-powder",
@@ -2724,7 +2724,7 @@
       "image": "/images/sushi/togarashi.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "philadelphia-cream-cheese",
@@ -2743,7 +2743,7 @@
       "image": "/images/bakery/philadelphia.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "rice-stick-noodles",
@@ -2760,7 +2760,7 @@
       "image": "/images/korean/rice_stick.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "gochujang-korean-chilli-paste",
@@ -2777,7 +2777,7 @@
       "image": "/images/korean/gochujang.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "gochugaru-korean-chilli-flakes",
@@ -2794,7 +2794,7 @@
       "image": "/images/korean/gochugaru.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "davidoff-fine-aroma-coffee",
@@ -2813,7 +2813,7 @@
       "image": "/images/coffee/fine.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "davidoff-espresso-57-coffee",
@@ -2832,7 +2832,7 @@
       "image": "/images/coffee/esp57.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "extra-virgin-olive-oil",
@@ -2850,7 +2850,7 @@
       "image": "/images/oo/oo_ev.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     },
     {
       "id": "extra-light-olive-oil",
@@ -2868,7 +2868,7 @@
       "image": "/images/oo/oo_el.png",
       "catalogueRefs": [],
       "source": "website",
-      "toConfirm": "On the current website but not in the PDF. Still sold?"
+      "toConfirm": ""
     }
   ]
 }
