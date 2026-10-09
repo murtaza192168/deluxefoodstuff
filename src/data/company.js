@@ -11,6 +11,7 @@ const company = {
   gstin: "27AICPM2320B1ZZ",
   mapUrl: "https://share.google/PKSmjCwpK2OAdr9sp",
   phoneDisplay: "+91 93247 89432",
+  phoneTel: "+919324789432",
   whatsapp: "https://wa.me/919324789432",
   email: "info.deluxfoodstuffs@gmail.com",
   instagram: "https://www.instagram.com/info.deluxfoodstuff",
@@ -20,6 +21,7 @@ export const navItems = [
   { label: "Home", path: "/" },
   { label: "Products", path: "/products" },
   { label: "About", path: "/about" },
+  { label: "Contact", path: "/contact" },
 ];
 
 export default company;
