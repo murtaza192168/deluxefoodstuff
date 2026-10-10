@@ -58,6 +58,7 @@
     "Austin",
     "Basso",
     "Buono",
+    "Buono Tartufi",
     "Calnort",
     "Capilano",
     "Carnation",
@@ -931,6 +932,27 @@
       "source": "catalogue",
       "toConfirm": "",
       "origin": null,
+      "featured": false
+    },
+    {
+      "id": "buono-tartufi-white-truffle-olive-oil",
+      "name": "Buono Tartufi White Truffle Flavoured Olive Oil",
+      "brands": [
+        "Buono Tartufi"
+      ],
+      "category": "Oils",
+      "cuisines": [
+        "Italian"
+      ],
+      "packSizes": [
+        "250 ml"
+      ],
+      "variants": [],
+      "image": "/images/products/buono-tartufi-white-truffle-olive-oil.webp",
+      "catalogueRefs": [],
+      "source": "shop",
+      "toConfirm": "",
+      "origin": "Italy",
       "featured": false
     },
     {

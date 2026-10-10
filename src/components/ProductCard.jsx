@@ -62,7 +62,13 @@ export default function ProductCard({ product }) {
             alt={product.name}
             loading="lazy"
             onError={() => setImgFailed(true)}
-            sx={{ width: "100%", height: "100%", objectFit: "contain", p: 2.5 }}
+            sx={
+              // Studio photos (ivory backdrop, 4:3) fill the frame; older cut-outs sit inside with padding.
+              // Pinned to the 4:3 frame so every card's image area is the same height.
+              product.image.startsWith("/images/products/")
+                ? { position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }
+                : { position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "contain", p: 2.5 }
+            }
           />
         ) : (
           <NameTile product={product} />
