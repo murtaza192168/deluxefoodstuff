@@ -20,6 +20,7 @@ const company = {
 export const navItems = [
   { label: "Home", path: "/" },
   { label: "Products", path: "/products" },
+  { label: "Brands", path: "/brands" },
   { label: "About", path: "/about" },
   { label: "Contact", path: "/contact" },
 ];

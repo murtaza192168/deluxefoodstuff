@@ -265,10 +265,27 @@ export default function Home() {
               <Typography variant="h2" sx={{ fontSize: { xs: 34, md: 42 }, mb: 2 }}>
                 {brands.length} brands from around the world
               </Typography>
-              <Typography sx={{ color: "rgba(255,255,255,0.7)" }}>
+              <Typography sx={{ color: "rgba(255,255,255,0.7)", mb: 3 }}>
                 Genuine imported products from established manufacturers in Japan, Korea, Thailand, the Middle
                 East, Europe and the Americas.
               </Typography>
+              <Box
+                component={Link}
+                to="/brands"
+                sx={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 1,
+                  color: "#fff",
+                  fontWeight: 600,
+                  fontSize: 15,
+                  textDecoration: "none",
+                  borderBottom: `1px solid ${brand.goldLight}`,
+                  pb: 0.5,
+                }}
+              >
+                View all brands <HiArrowRight size={16} />
+              </Box>
             </Grid>
             <Grid size={{ xs: 12, md: 8 }}>
               <Box sx={{ display: "flex", flexWrap: "wrap", columnGap: { xs: 2.5, md: 3.5 }, rowGap: { xs: 1, md: 1.5 } }}>

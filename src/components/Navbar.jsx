@@ -90,8 +90,12 @@ export default function Navbar() {
           maxWidth="lg"
           sx={{ height: 36, display: "flex", alignItems: "center", justifyContent: "space-between" }}
         >
-          <Box component="span">
+          {/* Full address on wide screens; a short version where it would crowd the contacts. */}
+          <Box component="span" sx={{ display: { md: "none", lg: "inline" } }}>
             {company.address.line1}, {company.address.line2}
+          </Box>
+          <Box component="span" sx={{ display: { md: "inline", lg: "none" } }}>
+            Crawford Market, Mumbai
           </Box>
           <Stack direction="row" spacing={3} alignItems="center">
             <Box
@@ -160,7 +164,7 @@ export default function Navbar() {
               </Typography>
               <Typography
                 sx={{
-                  display: { xs: "none", sm: "block" },
+                  display: { xs: "none", sm: "block", md: "none", lg: "block" },
                   fontSize: 10.5,
                   letterSpacing: "0.18em",
                   textTransform: "uppercase",

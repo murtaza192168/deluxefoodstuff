@@ -113,8 +113,9 @@ function ProductGrid({ items }) {
 export default function ProductsCatalog() {
   const [params, setParams] = useSearchParams();
   const activeCategory = categories.some((c) => c.id === params.get("category")) ? params.get("category") : null;
+  // Brand lives in the URL (?brand=) so the Brands page can link straight to a brand's products.
+  const brandFilter = allBrands.includes(params.get("brand")) ? params.get("brand") : null;
   const [query, setQuery] = useState("");
-  const [brandFilter, setBrandFilter] = useState(null);
   const [cuisine, setCuisine] = useState("");
   const { count, setOpen } = useEnquiry();
 
@@ -139,8 +140,15 @@ export default function ProductsCatalog() {
   const elsewhere = activeCategory && shown === 0 ? filtered.length : 0;
   const hasFilters = Boolean(query || brandFilter || cuisine);
 
+  const updateParams = (changes) => {
+    const next = { category: activeCategory, brand: brandFilter, ...changes };
+    setParams(Object.fromEntries(Object.entries(next).filter(([, v]) => v)), { replace: true });
+  };
+
+  const setBrandFilter = (value) => updateParams({ brand: value });
+
   const selectCategory = (id) => {
-    setParams(id ? { category: id } : {}, { replace: true });
+    updateParams({ category: id });
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
