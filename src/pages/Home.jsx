@@ -44,6 +44,24 @@ const steps = [
   { title: "Confirm your order", text: "Confirm on WhatsApp or by phone and we get your order ready." },
 ];
 
+const shopPhotos = [
+  {
+    src: "/images/home/dry-goods.webp",
+    alt: "Shelves of pasta, arborio rice, tea and spice mixes",
+    caption: "Pasta, rice, tea and spice mixes",
+  },
+  {
+    src: "/images/home/oils-syrups.webp",
+    alt: "Monin syrups above a row of olive oils",
+    caption: "Monin syrups and olive oils",
+  },
+  {
+    src: "/images/home/premium.webp",
+    alt: "Buono Tartufi black truffle sauce and whole black truffle jars",
+    caption: "Italian truffle range",
+  },
+];
+
 const pageX = { px: { xs: 2, sm: 3 } };
 
 function SectionHeading({ overline, title, action }) {
@@ -161,13 +179,13 @@ export default function Home() {
             <Grid size={{ xs: 12, md: 5 }}>
               <Box
                 component="img"
-                src="/images/home/chef.webp"
-                alt="Chef plating a dish in a restaurant kitchen"
+                src="/images/home/sauces.webp"
+                alt={`Imported sauces, vinegars and oils on the shelves at ${company.name}`}
                 sx={{
                   width: "100%",
                   aspectRatio: { xs: "4 / 3", md: "4 / 5" },
                   objectFit: "cover",
-                  objectPosition: "center 30%",
+                  objectPosition: "center top",
                   display: "block",
                 }}
               />
@@ -330,16 +348,46 @@ export default function Home() {
         </Grid>
       </Container>
 
+      {/* Inside the shop */}
+      <Container maxWidth="lg" sx={{ ...pageX, pb: { xs: 8, md: 12 } }}>
+        <SectionHeading overline="Inside the shop" title="Stocked from floor to ceiling" />
+        <Grid container spacing={{ xs: 2, md: 2.5 }}>
+          {shopPhotos.map((photo) => (
+            <Grid key={photo.src} size={{ xs: 12, sm: 4 }}>
+              <Box component="figure" sx={{ m: 0 }}>
+                <Box
+                  component="img"
+                  src={photo.src}
+                  alt={photo.alt}
+                  loading="lazy"
+                  sx={{ width: "100%", aspectRatio: "4 / 3", objectFit: "cover", display: "block" }}
+                />
+                <Typography component="figcaption" variant="body2" color="text.secondary" sx={{ mt: 1.25 }}>
+                  {photo.caption}
+                </Typography>
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+
       {/* Visit */}
       <Container maxWidth="lg" sx={{ ...pageX, pb: { xs: 2, md: 4 } }}>
         <Grid container sx={{ backgroundColor: brand.paper, border: `1px solid ${brand.line}` }}>
           <Grid size={{ xs: 12, md: 7 }}>
             <Box
               component="img"
-              src="/images/home/shop.webp"
-              alt={`The ${company.tradingName} shop at Crawford Market`}
+              src="/images/home/storefront.webp"
+              alt={`${company.name}, shops 304 and 305 at Crawford Market`}
               loading="lazy"
-              sx={{ width: "100%", height: "100%", minHeight: { xs: 220, md: 420 }, objectFit: "cover", display: "block" }}
+              sx={{
+                width: "100%",
+                height: "100%",
+                minHeight: { xs: 220, md: 420 },
+                objectFit: "cover",
+                objectPosition: "center top",
+                display: "block",
+              }}
             />
           </Grid>
           <Grid size={{ xs: 12, md: 5 }}>
