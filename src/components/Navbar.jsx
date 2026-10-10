@@ -97,6 +97,8 @@ export default function Navbar() {
             <Box
               component="a"
               href={`mailto:${company.email}`}
+              target="_blank"
+              rel="noopener noreferrer"
               sx={{ color: "inherit", textDecoration: "none", "&:hover": { color: "#fff" } }}
             >
               {company.email}
@@ -270,7 +272,7 @@ export default function Navbar() {
             {company.address.line2}
           </Typography>
           <Typography variant="body2" sx={{ mt: 1 }}>
-            <Box component="a" href={`mailto:${company.email}`} sx={{ color: brand.ink }}>
+            <Box component="a" href={`mailto:${company.email}`} target="_blank" rel="noopener noreferrer" sx={{ color: brand.ink }}>
               {company.email}
             </Box>
           </Typography>

@@ -47,33 +47,63 @@ const faqs = [
   },
 ];
 
-function ContactRow({ icon, label, children, href, external }) {
+// Links open in a new window: mailto:/tel: links that replace the current page are
+// blocked when the site is shown inside an embedded preview.
+function ContactRow({ icon, label, children, href, action }) {
   return (
-    <Box
-      component={href ? "a" : "div"}
-      href={href}
-      target={external ? "_blank" : undefined}
-      rel={external ? "noopener noreferrer" : undefined}
-      sx={{
-        display: "flex",
-        gap: 2,
-        py: 2.5,
-        borderBottom: `1px solid ${brand.line}`,
-        color: "inherit",
-        textDecoration: "none",
-        "&:hover .value": href ? { color: brand.gold } : {},
-      }}
-    >
-      <Box sx={{ color: brand.gold, pt: 0.25, flexShrink: 0 }}>{icon}</Box>
-      <Box sx={{ minWidth: 0 }}>
-        <Typography sx={{ fontSize: 12, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: brand.muted }}>
-          {label}
-        </Typography>
-        <Box className="value" sx={{ fontSize: 16, color: brand.ink, mt: 0.25, overflowWrap: "anywhere", transition: "color .2s" }}>
-          {children}
+    <Stack direction="row" alignItems="center" spacing={1} sx={{ borderBottom: `1px solid ${brand.line}` }}>
+      <Box
+        component="a"
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        sx={{
+          flex: 1,
+          minWidth: 0,
+          display: "flex",
+          gap: 2,
+          py: 2.5,
+          color: "inherit",
+          textDecoration: "none",
+          "&:hover .value": { color: brand.gold },
+        }}
+      >
+        <Box sx={{ color: brand.gold, pt: 0.25, flexShrink: 0 }}>{icon}</Box>
+        <Box sx={{ minWidth: 0 }}>
+          <Typography sx={{ fontSize: 12, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: brand.muted }}>
+            {label}
+          </Typography>
+          <Box className="value" sx={{ fontSize: 16, color: brand.ink, mt: 0.25, overflowWrap: "anywhere", transition: "color .2s" }}>
+            {children}
+          </Box>
         </Box>
       </Box>
-    </Box>
+      {action}
+    </Stack>
+  );
+}
+
+function CopyButton({ text }) {
+  const [copied, setCopied] = useState(false);
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      // Clipboard API unavailable (older browser or blocked frame): fall back to a hidden textarea.
+      const area = document.createElement("textarea");
+      area.value = text;
+      document.body.appendChild(area);
+      area.select();
+      document.execCommand("copy");
+      area.remove();
+    }
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+  return (
+    <Button size="small" variant="outlined" onClick={copy} sx={{ flexShrink: 0, borderColor: brand.line, minWidth: 76 }}>
+      {copied ? "Copied" : "Copy"}
+    </Button>
   );
 }
 
@@ -137,20 +167,24 @@ export default function Contact() {
               <ContactRow icon={<HiOutlinePhone size={22} />} label="Call / WhatsApp" href={`tel:${company.phoneTel}`}>
                 {company.phoneDisplay}
               </ContactRow>
-              <ContactRow icon={<HiOutlineMail size={22} />} label="Email" href={`mailto:${company.email}`}>
+              <ContactRow
+                icon={<HiOutlineMail size={22} />}
+                label="Email"
+                href={`mailto:${company.email}`}
+                action={<CopyButton text={company.email} />}
+              >
                 {company.email}
               </ContactRow>
               <ContactRow
                 icon={<HiOutlineLocationMarker size={22} />}
                 label="Shop · Get directions"
                 href={company.mapUrl}
-                external
               >
                 {company.address.line1}
                 <br />
                 {company.address.line2}
               </ContactRow>
-              <ContactRow icon={<FaInstagram size={20} />} label="Instagram" href={company.instagram} external>
+              <ContactRow icon={<FaInstagram size={20} />} label="Instagram" href={company.instagram}>
                 @info.deluxfoodstuff
               </ContactRow>
             </Box>
@@ -264,6 +298,8 @@ export default function Contact() {
                       ? `mailto:${company.email}?subject=${encodeURIComponent("Trade enquiry")}&body=${encodeURIComponent(message)}`
                       : undefined
                   }
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={send}
                   startIcon={<HiOutlineMail size={18} />}
                   sx={{ height: 50, flex: 1, borderColor: brand.ink }}

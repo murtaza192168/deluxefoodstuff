@@ -86,7 +86,13 @@ export default function Footer() {
               <Box component="a" href={company.whatsapp} target="_blank" rel="noopener noreferrer" sx={linkSx}>
                 WhatsApp {company.phoneDisplay}
               </Box>
-              <Box component="a" href={`mailto:${company.email}`} sx={{ ...linkSx, wordBreak: "break-all" }}>
+              <Box
+                component="a"
+                href={`mailto:${company.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{ ...linkSx, wordBreak: "break-all" }}
+              >
                 {company.email}
               </Box>
             </Stack>
@@ -121,7 +127,7 @@ export default function Footer() {
                 key={s.label}
                 aria-label={s.label}
                 href={s.href}
-                target={s.href.startsWith("http") ? "_blank" : undefined}
+                target="_blank"
                 rel="noopener noreferrer"
                 sx={{ color: "rgba(255,255,255,0.7)", "&:hover": { color: brand.goldLight } }}
               >
