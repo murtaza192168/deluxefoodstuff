@@ -1,125 +1,173 @@
-import React, { useRef, useEffect, useState } from "react";
-import {
-  Card,
-  CardMedia,
-  CardContent,
-  Typography,
-  Box,
-  Chip,
-  Button,
-} from "@mui/material";
+import React, { useState } from "react";
+import { Box, Button, Stack, Typography } from "@mui/material";
+import { HiCheck, HiPlus } from "react-icons/hi";
+import useEnquiry from "../enquiry/useEnquiry";
+import { brand, fonts } from "../theme";
 
-export default function ProductCard({ item }) {
-  const imgRef = useRef();
-  const [isVisible, setIsVisible] = useState(false);
-  const [loaded, setLoaded] = useState(false);
+// Shown when a product has no photo yet: the brand (or product) name set as a label.
+function NameTile({ product }) {
+  return (
+    <Box
+      sx={{
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        px: 2,
+        backgroundColor: brand.ivory,
+        backgroundImage: `linear-gradient(${brand.line}, ${brand.line})`,
+        backgroundSize: "40px 1px",
+        backgroundPosition: "center calc(50% + 30px)",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <Typography
+        sx={{ fontFamily: fonts.serif, fontWeight: 600, fontSize: 24, lineHeight: 1.15, color: brand.ink, pb: 4 }}
+      >
+        {product.brands[0] ?? product.name}
+      </Typography>
+    </Box>
+  );
+}
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.disconnect();
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    if (imgRef.current) observer.observe(imgRef.current);
-  }, []);
+export default function ProductCard({ product }) {
+  const { has, add, remove } = useEnquiry();
+  const [imgFailed, setImgFailed] = useState(false);
+  const added = has(product.id);
+  const details = product.variants.length ? product.variants : [];
+  const badge = product.featured ? (product.origin ? `Imported from ${product.origin}` : "Featured") : null;
 
   return (
-    <Card
+    <Box
+      component="article"
       sx={{
         height: "100%",
         display: "flex",
         flexDirection: "column",
-        borderRadius: 2,
-        boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-        transition: "0.3s",
-        "&:hover": {
-          transform: "translateY(-6px)",
-          boxShadow: "0 6px 18px rgba(0,0,0,0.15)",
-        },
+        backgroundColor: brand.paper,
+        border: `1px solid ${product.featured ? brand.gold : brand.line}`,
+        transition: "border-color .2s, box-shadow .2s",
+        "&:hover": { borderColor: brand.gold, boxShadow: "0 10px 30px -18px rgba(28,38,33,.35)" },
       }}
     >
-      {/* LAZY LOAD IMAGE WRAPPER */}
-      <Box
-        ref={imgRef}
-        sx={{
-          width: "100%",
-          height: 220,
-          background: "#fff",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          p: 2,
-          borderBottom: "1px solid #eee",
-        }}
-      >
-        {isVisible && (
-          <CardMedia
+      {/* Image */}
+      <Box sx={{ position: "relative", aspectRatio: "4 / 3", borderBottom: `1px solid ${brand.line}` }}>
+        {product.image && !imgFailed ? (
+          <Box
             component="img"
-            src={item.img}
-            alt={item.name}
-            onLoad={() => setLoaded(true)}
-            sx={{
-              width: "100%",
-              height: "100%",
-              objectFit: "contain",
-              opacity: loaded ? 1 : 0,
-              transition: "opacity 0.8s ease",
-            }}
+            src={product.image}
+            alt={product.name}
+            loading="lazy"
+            onError={() => setImgFailed(true)}
+            sx={
+              // Studio photos (ivory backdrop, 4:3) fill the frame; older cut-outs sit inside with padding.
+              // Pinned to the 4:3 frame so every card's image area is the same height.
+              product.image.startsWith("/images/products/")
+                ? { position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }
+                : { position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "contain", p: 2.5 }
+            }
           />
+        ) : (
+          <NameTile product={product} />
+        )}
+        {badge && (
+          <Box
+            sx={{
+              position: "absolute",
+              top: 10,
+              left: 10,
+              px: 1,
+              py: 0.25,
+              fontSize: 11,
+              fontWeight: 600,
+              letterSpacing: "0.06em",
+              textTransform: "uppercase",
+              color: "#fff",
+              backgroundColor: brand.ink,
+            }}
+          >
+            {badge}
+          </Box>
         )}
       </Box>
 
-      <CardContent sx={{ flexGrow: 1 }}>
-        <Typography
-          variant="h6"
-          gutterBottom
-          sx={{ fontWeight: 700, color: "#2A342E" }}
-        >
-          {item.name}
+      {/* Details */}
+      <Box sx={{ p: 2, flex: 1, display: "flex", flexDirection: "column" }}>
+        {product.brands.length > 0 && (
+          <Typography
+            sx={{
+              fontSize: 11,
+              fontWeight: 600,
+              letterSpacing: "0.12em",
+              textTransform: "uppercase",
+              color: brand.gold,
+              mb: 0.5,
+            }}
+          >
+            {product.brands.join(" · ")}
+          </Typography>
+        )}
+        <Typography component="h3" sx={{ fontWeight: 600, fontSize: 15.5, lineHeight: 1.35, color: brand.text }}>
+          {product.name}
         </Typography>
 
-        {item.description && (
-          <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-            {item.description}
+        {details.length > 0 && (
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx={{
+              mt: 0.75,
+              fontSize: 13,
+              display: "-webkit-box",
+              WebkitLineClamp: 2,
+              WebkitBoxOrient: "vertical",
+              overflow: "hidden",
+            }}
+          >
+            {details.join(" · ")}
           </Typography>
         )}
 
-        <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", mb: 1 }}>
-          {item.unit && (
-            <Chip
-              label={item.unit}
-              size="small"
-              sx={{ bgcolor: "#E7D6A3", fontWeight: 600 }}
-            />
-          )}
-        </Box>
-      </CardContent>
+        {product.packSizes.length > 0 && (
+          <Stack direction="row" spacing={0.75} sx={{ mt: 1, flexWrap: "wrap", rowGap: 0.75 }}>
+            {product.packSizes.map((s) => (
+              <Box
+                key={s}
+                sx={{ fontSize: 12, px: 0.75, py: 0.125, border: `1px solid ${brand.line}`, color: brand.muted }}
+              >
+                {s}
+              </Box>
+            ))}
+          </Stack>
+        )}
 
-      <Box sx={{ p: 2, pt: 0 }}>
+        <Box sx={{ flex: 1 }} />
         <Button
           fullWidth
-          variant="contained"
+          variant={added ? "contained" : "outlined"}
+          color="primary"
+          onClick={() => (added ? remove(product.id) : add(product))}
+          startIcon={added ? <HiCheck size={16} /> : <HiPlus size={16} />}
+          aria-pressed={added}
+          aria-label={`${added ? "Remove" : "Add"} ${product.name} ${added ? "from" : "to"} enquiry`}
           sx={{
-            backgroundColor: "#2A342E",
-            color: "white",
-            fontWeight: 600,
-            "&:hover": { backgroundColor: "#1E2723" },
+            mt: 2,
+            height: 38,
+            ...(added ? {} : { borderColor: brand.line, "&:hover": { borderColor: brand.ink } }),
           }}
-          href={`https://wa.me/919324789432?text=${encodeURIComponent(
-            `Can I get details about this product: ${item.name}?`
-          )}`}
-          target="_blank"
         >
-          Enquire
+          {/* Shorter label on phones, where cards sit two to a row. */}
+          <Box component="span" sx={{ display: { xs: "inline", sm: "none" } }}>
+            {added ? "Added" : "Add"}
+          </Box>
+          <Box component="span" sx={{ display: { xs: "none", sm: "inline" } }}>
+            {added ? "Added to enquiry" : "Add to enquiry"}
+          </Box>
         </Button>
       </Box>
-    </Card>
+    </Box>
   );
 }

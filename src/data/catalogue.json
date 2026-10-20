@@ -1,0 +1,3180 @@
+{
+  "categories": [
+    {
+      "id": "sauces-condiments-marinades",
+      "name": "Sauces, Condiments & Marinades"
+    },
+    {
+      "id": "oils",
+      "name": "Oils"
+    },
+    {
+      "id": "pastes-curry-pastes",
+      "name": "Pastes & Curry Pastes"
+    },
+    {
+      "id": "spices-seasonings-stock-powders",
+      "name": "Spices, Seasonings & Stock Powders"
+    },
+    {
+      "id": "noodles-pasta-vermicelli",
+      "name": "Noodles, Pasta & Vermicelli"
+    },
+    {
+      "id": "rice-grains-starches",
+      "name": "Rice, Grains & Starches"
+    },
+    {
+      "id": "dairy-milk-coconut-products",
+      "name": "Dairy, Milk & Coconut Products"
+    },
+    {
+      "id": "biscuits-crackers-cereal-batters",
+      "name": "Biscuits, Crackers, Cereal & Batters"
+    },
+    {
+      "id": "spreads-jams-honey",
+      "name": "Spreads, Jams & Honey"
+    },
+    {
+      "id": "syrups-toppings",
+      "name": "Syrups & Toppings"
+    },
+    {
+      "id": "tea-coffee",
+      "name": "Tea & Coffee"
+    },
+    {
+      "id": "canned-preserved-asian-specialty",
+      "name": "Canned, Preserved & Asian Specialty"
+    }
+  ],
+  "brands": [
+    "Agata",
+    "Al Ameera",
+    "Al Barakah",
+    "American Garden",
+    "Arancia",
+    "Austin",
+    "Basso",
+    "Buono",
+    "Buono Tartufi",
+    "Calnort",
+    "Capilano",
+    "Carnation",
+    "Chef Art",
+    "Davidoff",
+    "De Best",
+    "Dek Som Boon",
+    "Del Monte",
+    "Double Dragon",
+    "Elita",
+    "Fiamma",
+    "Figaro",
+    "Flying Goose",
+    "Freshos",
+    "Golden Crown",
+    "Golden Star",
+    "Gustaro",
+    "Habit",
+    "Hershey's",
+    "HP",
+    "Hup Seng",
+    "Hutesa",
+    "Huy Fong (Rooster)",
+    "Indomie",
+    "Kara",
+    "Kewpie",
+    "Kikkoman",
+    "Kimball",
+    "Knorr",
+    "Lao Gan Ma",
+    "Lee Kum Kee",
+    "Leng Heng",
+    "Lipton",
+    "Lotus",
+    "Lucky Cow",
+    "Mae Pranom",
+    "Maggi",
+    "Maling",
+    "Mang Tomas",
+    "Maple Joe",
+    "Marini",
+    "Milo",
+    "Monin",
+    "Mr. Hung",
+    "Namjai",
+    "Nature Smith",
+    "Nature's Choice",
+    "Nescafé",
+    "Nong Porn",
+    "Nutella",
+    "Old El Paso",
+    "Panich",
+    "Pantai",
+    "Philadelphia",
+    "Prao Hom",
+    "Quaker",
+    "Real Thai",
+    "Reggia",
+    "Rocket",
+    "S&B",
+    "Safa",
+    "Samyang",
+    "Sano",
+    "Sarwar",
+    "Solas",
+    "Song Heng",
+    "Sprig",
+    "St. Dalfour",
+    "Star Lion",
+    "Stute",
+    "Tiparos",
+    "Twinings",
+    "UFC",
+    "Ukemochi",
+    "Umai",
+    "Urbani",
+    "Weetabix",
+    "Woh Hup",
+    "Woldko",
+    "Yoka"
+  ],
+  "products": [
+    {
+      "id": "hp-sauce",
+      "name": "HP Sauce",
+      "brands": [
+        "HP"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        1
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "lee-kum-kee-soy-sauce",
+      "name": "Lee Kum Kee Soy Sauce",
+      "brands": [
+        "Lee Kum Kee"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Chinese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        4
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "lee-kum-kee-oyster-sauce",
+      "name": "Lee Kum Kee Oyster Sauce",
+      "brands": [
+        "Lee Kum Kee"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Chinese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        85
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "lee-kum-kee-sauces",
+      "name": "Lee Kum Kee Sauces",
+      "brands": [
+        "Lee Kum Kee"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Chinese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        43
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "golden-crown-kasundi-mustard",
+      "name": "Golden Crown Kasundi Mustard",
+      "brands": [
+        "Golden Crown"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Indian"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        5,
+        45
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "panich-sriracha-sauce",
+      "name": "Panich Sriracha Sauce",
+      "brands": [
+        "Panich"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        8
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "mae-pranom-sweet-chilli-sauce",
+      "name": "Mae Pranom Sweet Chilli Sauce",
+      "brands": [
+        "Mae Pranom"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        9
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "chef-art-peri-peri-marinade",
+      "name": "Chef Art Peri Peri Marinade",
+      "brands": [
+        "Chef Art"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "1 kg"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        17
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "del-monte-tomato-ketchup",
+      "name": "Del Monte Tomato Ketchup",
+      "brands": [
+        "Del Monte"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "1 kg"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        19
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "american-garden-yellow-mustard",
+      "name": "American Garden Yellow Mustard",
+      "brands": [
+        "American Garden"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        46
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "american-garden-mayonnaise",
+      "name": "American Garden Mayonnaise",
+      "brands": [
+        "American Garden"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "1 kg"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        104
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "mang-tomas-all-purpose-sauce",
+      "name": "Mang Tomas All-Purpose Sauce",
+      "brands": [
+        "Mang Tomas"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Filipino"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        47
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "kimball-sauces",
+      "name": "Kimball Sauces",
+      "brands": [
+        "Kimball"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Malaysian"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        48
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "woh-hup-sauces",
+      "name": "Woh Hup Sauces",
+      "brands": [
+        "Woh Hup"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Chinese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        86
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "sprig-sauces",
+      "name": "Sprig Sauces",
+      "brands": [
+        "Sprig"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        88
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "kikkoman-soy-sauce",
+      "name": "Kikkoman Soy Sauce",
+      "brands": [
+        "Kikkoman"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        89,
+        144
+      ],
+      "source": "catalogue",
+      "toConfirm": "Listed twice (#89, #144), merged",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "yoka-mirin",
+      "name": "Yoka Mirin",
+      "brands": [
+        "Yoka"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        90
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "umai-cooking-sake",
+      "name": "Umai Cooking Sake",
+      "brands": [
+        "Umai"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        91
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "sriracha-chilli-sauce",
+      "name": "Sriracha Chilli Sauce",
+      "brands": [
+        "Flying Goose",
+        "Huy Fong (Rooster)"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        101
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "flying-goose-sriracha-mayo",
+      "name": "Flying Goose Sriracha Mayo",
+      "brands": [
+        "Flying Goose"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        102
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "safa-hot-sauce",
+      "name": "Safa Hot Sauce",
+      "brands": [
+        "Safa"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Arabic"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        103
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "lao-gan-ma-crispy-chilli-oil",
+      "name": "Lao Gan Ma Crispy Chilli Oil",
+      "brands": [
+        "Lao Gan Ma"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Chinese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        128
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "nong-porn-fermented-fish-sauce",
+      "name": "Nong Porn Fermented Fish Sauce",
+      "brands": [
+        "Nong Porn"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        131
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "tiparos-fish-sauce",
+      "name": "Tiparos Fish Sauce",
+      "brands": [
+        "Tiparos"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        132
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "pantai-chilli-oil",
+      "name": "Pantai Chilli Oil",
+      "brands": [
+        "Pantai"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        141
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "umai-kimchi-sauce",
+      "name": "Umai Kimchi Sauce",
+      "brands": [
+        "Umai"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Korean"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        147
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "healthy-boy-dek-som-boon-sauces",
+      "name": "Healthy Boy (Dek Som Boon) Sauces",
+      "brands": [
+        "Dek Som Boon"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [
+        "Oyster Sauce",
+        "Soy Sauce"
+      ],
+      "image": null,
+      "catalogueRefs": [
+        148
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "kewpie-mayonnaise",
+      "name": "Kewpie Mayonnaise",
+      "brands": [
+        "Kewpie"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        149
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "ufc-banana-ketchup",
+      "name": "UFC Banana Ketchup",
+      "brands": [
+        "UFC"
+      ],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Filipino"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        152
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "sano-olive-oil",
+      "name": "Sano Olive Oil",
+      "brands": [
+        "Sano"
+      ],
+      "category": "Oils",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [
+        "Pomace",
+        "Olive Oil"
+      ],
+      "image": null,
+      "catalogueRefs": [
+        3,
+        81
+      ],
+      "source": "catalogue",
+      "toConfirm": "Merged #3 and #81",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "figaro-olive-oil",
+      "name": "Figaro Olive Oil",
+      "brands": [
+        "Figaro"
+      ],
+      "category": "Oils",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        79
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "solas-olive-oil",
+      "name": "Solas Olive Oil",
+      "brands": [
+        "Solas"
+      ],
+      "category": "Oils",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        80
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "agata-olive-oil",
+      "name": "Agata Olive Oil",
+      "brands": [
+        "Agata"
+      ],
+      "category": "Oils",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        82
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "basso-olive-oil",
+      "name": "Basso Olive Oil",
+      "brands": [
+        "Basso"
+      ],
+      "category": "Oils",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        83
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "yoka-sesame-oil",
+      "name": "Yoka Sesame Oil",
+      "brands": [
+        "Yoka"
+      ],
+      "category": "Oils",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        77
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "double-dragon-sesame-oil",
+      "name": "Double Dragon Sesame Oil",
+      "brands": [
+        "Double Dragon"
+      ],
+      "category": "Oils",
+      "cuisines": [
+        "Chinese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        78
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "urbani-truffle-oil",
+      "name": "Urbani Truffle Oil",
+      "brands": [
+        "Urbani"
+      ],
+      "category": "Oils",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        154
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "buono-tartufi-white-truffle-olive-oil",
+      "name": "Buono Tartufi White Truffle Flavoured Olive Oil",
+      "brands": [
+        "Buono Tartufi"
+      ],
+      "category": "Oils",
+      "cuisines": [
+        "Italian"
+      ],
+      "packSizes": [
+        "250 ml"
+      ],
+      "variants": [],
+      "image": "/images/products/buono-tartufi-white-truffle-olive-oil.webp",
+      "catalogueRefs": [],
+      "source": "shop",
+      "toConfirm": "",
+      "origin": "Italy",
+      "featured": false
+    },
+    {
+      "id": "al-ameera-tahina-paste",
+      "name": "Al Ameera Tahina Paste",
+      "brands": [
+        "Al Ameera"
+      ],
+      "category": "Pastes & Curry Pastes",
+      "cuisines": [
+        "Arabic"
+      ],
+      "packSizes": [
+        "400 g",
+        "1 kg"
+      ],
+      "variants": [],
+      "image": "/images/arabic/tahina.png",
+      "catalogueRefs": [
+        6,
+        7
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "safa-tomato-paste",
+      "name": "Safa Tomato Paste",
+      "brands": [
+        "Safa"
+      ],
+      "category": "Pastes & Curry Pastes",
+      "cuisines": [
+        "Arabic"
+      ],
+      "packSizes": [
+        "400 g",
+        "800 g"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        10,
+        11
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "real-thai-curry-paste",
+      "name": "Real Thai Curry Paste",
+      "brands": [
+        "Real Thai"
+      ],
+      "category": "Pastes & Curry Pastes",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [
+        "Green Curry",
+        "Red Curry",
+        "Tom Kha"
+      ],
+      "image": null,
+      "catalogueRefs": [
+        44,
+        111,
+        112,
+        113
+      ],
+      "source": "catalogue",
+      "toConfirm": "Merged #44, #111-113",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "namjai-thai-curry-paste",
+      "name": "Namjai Thai Curry Paste",
+      "brands": [
+        "Namjai"
+      ],
+      "category": "Pastes & Curry Pastes",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [
+        "Red Curry",
+        "Yellow Curry",
+        "Green Curry",
+        "Tom Yum"
+      ],
+      "image": null,
+      "catalogueRefs": [
+        114
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "knorr-aromat-seasoning-powder",
+      "name": "Knorr Aromat Seasoning Powder",
+      "brands": [
+        "Knorr"
+      ],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "500 g"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        16,
+        99
+      ],
+      "source": "catalogue",
+      "toConfirm": "Listed twice (#16, #99), merged",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "knorr-chicken-powder",
+      "name": "Knorr Chicken Powder",
+      "brands": [
+        "Knorr"
+      ],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Chinese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        100
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "knorr-demi-glace-powder",
+      "name": "Knorr Demi-Glace Powder",
+      "brands": [
+        "Knorr"
+      ],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        109
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "knorr-lime-seasoning",
+      "name": "Knorr Lime Seasoning",
+      "brands": [
+        "Knorr"
+      ],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        122
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "nature-smith-onion-powder",
+      "name": "Nature Smith Onion Powder",
+      "brands": [
+        "Nature Smith"
+      ],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "400 g"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        22
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "nature-smith-garlic-powder",
+      "name": "Nature Smith Garlic Powder",
+      "brands": [
+        "Nature Smith"
+      ],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "400 g"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        23
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "nature-smith-seasonings-spices",
+      "name": "Nature Smith Seasonings & Spices",
+      "brands": [
+        "Nature Smith"
+      ],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [
+        "Cayenne Pepper",
+        "Fajita Seasoning",
+        "Za'atar",
+        "Sumac",
+        "Smoked Paprika",
+        "Paprika Powder",
+        "Sweet Paprika Powder",
+        "and more"
+      ],
+      "image": null,
+      "catalogueRefs": [
+        87
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "nature-smith-zaatar",
+      "name": "Nature Smith Za'atar",
+      "brands": [
+        "Nature Smith"
+      ],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Arabic"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": "/images/arabic/zatarSumak.png",
+      "catalogueRefs": [
+        108
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "nature-smith-sumac-powder",
+      "name": "Nature Smith Sumac Powder",
+      "brands": [
+        "Nature Smith"
+      ],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Arabic"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": "/images/arabic/zatarSumak.png",
+      "catalogueRefs": [
+        107
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "natures-choice-zaatar",
+      "name": "Nature's Choice Za'atar",
+      "brands": [
+        "Nature's Choice"
+      ],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Arabic"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        105
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "natures-choice-sumac-powder",
+      "name": "Nature's Choice Sumac Powder",
+      "brands": [
+        "Nature's Choice"
+      ],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Arabic"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        106
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "paprika-powder",
+      "name": "Paprika Powder",
+      "brands": [],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "400 g"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        24
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "cajun-spice-powder",
+      "name": "Cajun Spice Powder",
+      "brands": [],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "400 g"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        25
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "maggi-chicken-stock-cubes",
+      "name": "Maggi Chicken Stock Cubes",
+      "brands": [
+        "Maggi"
+      ],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        33
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "calnort-chicken-stock-powder",
+      "name": "Calnort Chicken Stock Powder",
+      "brands": [
+        "Calnort"
+      ],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Arabic"
+      ],
+      "packSizes": [
+        "1 kg"
+      ],
+      "variants": [],
+      "image": "/images/arabic/stock.png",
+      "catalogueRefs": [
+        49
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "tom-yum-stock-cubes",
+      "name": "Tom Yum Stock Cubes",
+      "brands": [],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        96
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "maggi-seasoning-imported",
+      "name": "Maggi Seasoning (Imported)",
+      "brands": [
+        "Maggi"
+      ],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "200 g"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        151
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "samyang-buldak-noodles",
+      "name": "Samyang Buldak Noodles",
+      "brands": [
+        "Samyang"
+      ],
+      "category": "Noodles, Pasta & Vermicelli",
+      "cuisines": [
+        "Korean"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        27
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "golden-crown-hakka-noodles",
+      "name": "Golden Crown Hakka Noodles",
+      "brands": [
+        "Golden Crown"
+      ],
+      "category": "Noodles, Pasta & Vermicelli",
+      "cuisines": [
+        "Chinese"
+      ],
+      "packSizes": [
+        "1 kg"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        28
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "reggia-pasta",
+      "name": "Reggia Pasta",
+      "brands": [
+        "Reggia"
+      ],
+      "category": "Noodles, Pasta & Vermicelli",
+      "cuisines": [
+        "Italian"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        133
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": "Italy",
+      "featured": true
+    },
+    {
+      "id": "gustaro-pasta",
+      "name": "Gustaro Pasta",
+      "brands": [
+        "Gustaro"
+      ],
+      "category": "Noodles, Pasta & Vermicelli",
+      "cuisines": [
+        "Italian"
+      ],
+      "packSizes": [],
+      "variants": [
+        "Penne",
+        "Macaroni",
+        "Spaghetti",
+        "Lasagne"
+      ],
+      "image": null,
+      "catalogueRefs": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "source": "catalogue",
+      "toConfirm": "Merged #29-32",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "yoka-japanese-noodles",
+      "name": "Yoka Japanese Noodles",
+      "brands": [
+        "Yoka"
+      ],
+      "category": "Noodles, Pasta & Vermicelli",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [],
+      "variants": [
+        "Soba",
+        "Ramen"
+      ],
+      "image": null,
+      "catalogueRefs": [
+        115
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "umai-japanese-noodles",
+      "name": "Umai Japanese Noodles",
+      "brands": [
+        "Umai"
+      ],
+      "category": "Noodles, Pasta & Vermicelli",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [],
+      "variants": [
+        "Soba",
+        "Udon",
+        "Ramen"
+      ],
+      "image": null,
+      "catalogueRefs": [
+        116
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "udon-soba-ramen-noodles",
+      "name": "Udon, Soba & Ramen Noodles",
+      "brands": [],
+      "category": "Noodles, Pasta & Vermicelli",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [],
+      "variants": [
+        "Udon",
+        "Soba",
+        "Ramen"
+      ],
+      "image": null,
+      "catalogueRefs": [
+        62,
+        63,
+        64
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "umai-sweet-potato-noodles",
+      "name": "Umai Sweet Potato Noodles",
+      "brands": [
+        "Umai"
+      ],
+      "category": "Noodles, Pasta & Vermicelli",
+      "cuisines": [
+        "Korean"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        117
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "star-lion-rice-vermicelli",
+      "name": "Star Lion Rice Vermicelli",
+      "brands": [
+        "Star Lion"
+      ],
+      "category": "Noodles, Pasta & Vermicelli",
+      "cuisines": [
+        "Asian"
+      ],
+      "packSizes": [
+        "500 g"
+      ],
+      "variants": [],
+      "image": "/images/korean/vermecelli.png",
+      "catalogueRefs": [
+        121
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "korean-noodles",
+      "name": "Korean Noodles",
+      "brands": [],
+      "category": "Noodles, Pasta & Vermicelli",
+      "cuisines": [
+        "Korean"
+      ],
+      "packSizes": [
+        "300 g"
+      ],
+      "variants": [],
+      "image": "/images/korean/noodles.png",
+      "catalogueRefs": [
+        157
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "indomie-instant-noodles",
+      "name": "Indomie Instant Noodles",
+      "brands": [
+        "Indomie"
+      ],
+      "category": "Noodles, Pasta & Vermicelli",
+      "cuisines": [
+        "Indonesian"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        158
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "sushi-rice",
+      "name": "Sushi Rice",
+      "brands": [],
+      "category": "Rice, Grains & Starches",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [
+        "1 kg",
+        "2 kg"
+      ],
+      "variants": [],
+      "image": "/images/sushi/sushi_rice.png",
+      "catalogueRefs": [
+        68
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "sticky-glutinous-rice",
+      "name": "Sticky (Glutinous) Rice",
+      "brands": [],
+      "category": "Rice, Grains & Starches",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [
+        "1 kg",
+        "2 kg"
+      ],
+      "variants": [],
+      "image": "/images/sushi/glutinous.png",
+      "catalogueRefs": [
+        69
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "jasmine-rice",
+      "name": "Jasmine Rice",
+      "brands": [],
+      "category": "Rice, Grains & Starches",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        70
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "arborio-rice",
+      "name": "Arborio Rice",
+      "brands": [
+        "Fiamma",
+        "Umai"
+      ],
+      "category": "Rice, Grains & Starches",
+      "cuisines": [
+        "Italian"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        71,
+        123
+      ],
+      "source": "catalogue",
+      "toConfirm": "Merged #71 and #123",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "freshos-black-rice",
+      "name": "Freshos Black Rice",
+      "brands": [
+        "Freshos"
+      ],
+      "category": "Rice, Grains & Starches",
+      "cuisines": [
+        "Asian"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        110
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "freshos-polenta",
+      "name": "Freshos Polenta",
+      "brands": [
+        "Freshos"
+      ],
+      "category": "Rice, Grains & Starches",
+      "cuisines": [
+        "Italian"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        124
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "glutinous-rice-flour",
+      "name": "Glutinous Rice Flour",
+      "brands": [],
+      "category": "Rice, Grains & Starches",
+      "cuisines": [
+        "Asian"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        67
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "potato-starch",
+      "name": "Potato Starch",
+      "brands": [
+        "Rocket",
+        "Freshos"
+      ],
+      "category": "Rice, Grains & Starches",
+      "cuisines": [
+        "Asian"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        58,
+        59,
+        61
+      ],
+      "source": "catalogue",
+      "toConfirm": "Merged #58, #59, #61",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "wheat-starch",
+      "name": "Wheat Starch",
+      "brands": [],
+      "category": "Rice, Grains & Starches",
+      "cuisines": [
+        "Asian"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        60
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "carnation-milk",
+      "name": "Carnation Milk",
+      "brands": [
+        "Carnation"
+      ],
+      "category": "Dairy, Milk & Coconut Products",
+      "cuisines": [
+        "Bakery"
+      ],
+      "packSizes": [
+        "395 g"
+      ],
+      "variants": [
+        "Condensed",
+        "Evaporated"
+      ],
+      "image": "/images/bakery/carnation.png",
+      "catalogueRefs": [
+        36
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "lucky-cow-evaporated-milk",
+      "name": "Lucky Cow Evaporated Milk",
+      "brands": [
+        "Lucky Cow"
+      ],
+      "category": "Dairy, Milk & Coconut Products",
+      "cuisines": [
+        "Bakery"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        53
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "safa-evaporated-milk",
+      "name": "Safa Evaporated Milk",
+      "brands": [
+        "Safa"
+      ],
+      "category": "Dairy, Milk & Coconut Products",
+      "cuisines": [
+        "Arabic"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        54
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "maggi-coconut-milk-powder",
+      "name": "Maggi Coconut Milk Powder",
+      "brands": [
+        "Maggi"
+      ],
+      "category": "Dairy, Milk & Coconut Products",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        55,
+        119
+      ],
+      "source": "catalogue",
+      "toConfirm": "#119 'Maggi Cmp' read as Coconut Milk Powder, merged",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "habit-coconut-milk-powder",
+      "name": "Habit Coconut Milk Powder",
+      "brands": [
+        "Habit"
+      ],
+      "category": "Dairy, Milk & Coconut Products",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        120
+      ],
+      "source": "catalogue",
+      "toConfirm": "'Habit Cmp' read as Coconut Milk Powder",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "coconut-milk-coconut-cream",
+      "name": "Coconut Milk & Coconut Cream",
+      "brands": [
+        "Kara",
+        "Prao Hom",
+        "Golden Star"
+      ],
+      "category": "Dairy, Milk & Coconut Products",
+      "cuisines": [
+        "Thai"
+      ],
+      "packSizes": [],
+      "variants": [
+        "Coconut Milk",
+        "Coconut Cream"
+      ],
+      "image": null,
+      "catalogueRefs": [
+        56,
+        57,
+        130
+      ],
+      "source": "catalogue",
+      "toConfirm": "Merged #56, #57, #130",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "lotus-biscoff-biscuits",
+      "name": "Lotus Biscoff Biscuits",
+      "brands": [
+        "Lotus"
+      ],
+      "category": "Biscuits, Crackers, Cereal & Batters",
+      "cuisines": [
+        "Bakery"
+      ],
+      "packSizes": [
+        "200 g"
+      ],
+      "variants": [],
+      "image": "/images/bakery/biscoff_biscuit.png",
+      "catalogueRefs": [
+        40
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "marini-ladyfinger-biscuits",
+      "name": "Marini Ladyfinger Biscuits",
+      "brands": [
+        "Marini"
+      ],
+      "category": "Biscuits, Crackers, Cereal & Batters",
+      "cuisines": [
+        "Bakery"
+      ],
+      "packSizes": [
+        "200 g"
+      ],
+      "variants": [],
+      "image": "/images/bakery/ladyfinger.png",
+      "catalogueRefs": [
+        66,
+        134,
+        155
+      ],
+      "source": "catalogue",
+      "toConfirm": "Listed three times, merged",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "panko-breadcrumbs",
+      "name": "Panko Breadcrumbs",
+      "brands": [],
+      "category": "Biscuits, Crackers, Cereal & Batters",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        18
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "tempura-batter-mix",
+      "name": "Tempura Batter Mix",
+      "brands": [
+        "Mr. Hung"
+      ],
+      "category": "Biscuits, Crackers, Cereal & Batters",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        26,
+        84
+      ],
+      "source": "catalogue",
+      "toConfirm": "Merged #26 and #84",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "hup-seng-cream-crackers",
+      "name": "Hup Seng Cream Crackers",
+      "brands": [
+        "Hup Seng"
+      ],
+      "category": "Biscuits, Crackers, Cereal & Batters",
+      "cuisines": [
+        "Bakery"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        97
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "weetabix",
+      "name": "Weetabix",
+      "brands": [
+        "Weetabix"
+      ],
+      "category": "Biscuits, Crackers, Cereal & Batters",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        98
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "quaker-oats-imported",
+      "name": "Quaker Oats (Imported)",
+      "brands": [
+        "Quaker"
+      ],
+      "category": "Biscuits, Crackers, Cereal & Batters",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        159
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "nutella-hazelnut-spread",
+      "name": "Nutella Hazelnut Spread",
+      "brands": [
+        "Nutella"
+      ],
+      "category": "Spreads, Jams & Honey",
+      "cuisines": [
+        "Bakery"
+      ],
+      "packSizes": [
+        "350 g",
+        "750 g"
+      ],
+      "variants": [],
+      "image": "/images/bakery/nutella.png",
+      "catalogueRefs": [
+        34,
+        35
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "lotus-biscoff-spread",
+      "name": "Lotus Biscoff Spread",
+      "brands": [
+        "Lotus"
+      ],
+      "category": "Spreads, Jams & Honey",
+      "cuisines": [
+        "Bakery"
+      ],
+      "packSizes": [
+        "400 g"
+      ],
+      "variants": [],
+      "image": "/images/bakery/biscoff_spread.png",
+      "catalogueRefs": [
+        41,
+        150
+      ],
+      "source": "catalogue",
+      "toConfirm": "Listed twice, merged",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "al-ameera-halawa",
+      "name": "Al Ameera Halawa",
+      "brands": [
+        "Al Ameera"
+      ],
+      "category": "Spreads, Jams & Honey",
+      "cuisines": [
+        "Arabic"
+      ],
+      "packSizes": [
+        "1 kg"
+      ],
+      "variants": [],
+      "image": "/images/arabic/halawa.png",
+      "catalogueRefs": [
+        50
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "st-dalfour-fruit-spread",
+      "name": "St. Dalfour Fruit Spread",
+      "brands": [
+        "St. Dalfour"
+      ],
+      "category": "Spreads, Jams & Honey",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        136
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "stute-jam",
+      "name": "Stute Jam",
+      "brands": [
+        "Stute"
+      ],
+      "category": "Spreads, Jams & Honey",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        137
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "capilano-honey",
+      "name": "Capilano Honey",
+      "brands": [
+        "Capilano"
+      ],
+      "category": "Spreads, Jams & Honey",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        138
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "monin-syrups",
+      "name": "Monin Syrups",
+      "brands": [
+        "Monin"
+      ],
+      "category": "Syrups & Toppings",
+      "cuisines": [
+        "Café"
+      ],
+      "packSizes": [
+        "700 ml",
+        "1 L"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        20,
+        21,
+        145
+      ],
+      "source": "catalogue",
+      "toConfirm": "Merged #20, #21, #145",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "hersheys-syrups",
+      "name": "Hershey's Syrups",
+      "brands": [
+        "Hershey's"
+      ],
+      "category": "Syrups & Toppings",
+      "cuisines": [
+        "Café"
+      ],
+      "packSizes": [],
+      "variants": [
+        "Chocolate",
+        "Caramel",
+        "Strawberry"
+      ],
+      "image": null,
+      "catalogueRefs": [
+        37,
+        38,
+        39,
+        125,
+        160
+      ],
+      "source": "catalogue",
+      "toConfirm": "Merged five lines",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "maple-joe-maple-syrup",
+      "name": "Maple Joe Maple Syrup",
+      "brands": [
+        "Maple Joe"
+      ],
+      "category": "Syrups & Toppings",
+      "cuisines": [
+        "Café"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        51
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "al-barakah-date-syrup",
+      "name": "Al Barakah Date Syrup",
+      "brands": [
+        "Al Barakah"
+      ],
+      "category": "Syrups & Toppings",
+      "cuisines": [
+        "Arabic"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        52,
+        126
+      ],
+      "source": "catalogue",
+      "toConfirm": "Listed twice, merged",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "nescafe-coffee",
+      "name": "Nescafé Coffee",
+      "brands": [
+        "Nescafé"
+      ],
+      "category": "Tea & Coffee",
+      "cuisines": [
+        "Café"
+      ],
+      "packSizes": [
+        "100 g",
+        "200 g"
+      ],
+      "variants": [
+        "Gold",
+        "Original",
+        "Classic",
+        "Matinal"
+      ],
+      "image": "/images/coffee/gold.png",
+      "catalogueRefs": [
+        74,
+        75,
+        76,
+        127
+      ],
+      "source": "catalogue",
+      "toConfirm": "Merged #74-76, #127",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "milo",
+      "name": "Milo",
+      "brands": [
+        "Milo"
+      ],
+      "category": "Tea & Coffee",
+      "cuisines": [
+        "Café"
+      ],
+      "packSizes": [],
+      "variants": [
+        "Pouch",
+        "Tin"
+      ],
+      "image": null,
+      "catalogueRefs": [
+        72,
+        73
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "lipton-yellow-label-tea",
+      "name": "Lipton Yellow Label Tea",
+      "brands": [
+        "Lipton"
+      ],
+      "category": "Tea & Coffee",
+      "cuisines": [
+        "Café"
+      ],
+      "packSizes": [
+        "100 tea bags"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        42,
+        156
+      ],
+      "source": "catalogue",
+      "toConfirm": "Listed twice, merged",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "twinings-green-tea",
+      "name": "Twinings Green Tea",
+      "brands": [
+        "Twinings"
+      ],
+      "category": "Tea & Coffee",
+      "cuisines": [
+        "Café"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        139
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "olives",
+      "name": "Olives",
+      "brands": [
+        "Figaro",
+        "Buono",
+        "Habit",
+        "Hutesa",
+        "Arancia"
+      ],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "450 g jar",
+        "3 kg"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        12,
+        13,
+        95
+      ],
+      "source": "catalogue",
+      "toConfirm": "Merged #12, #13, #95",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "kalamata-olives",
+      "name": "Kalamata Olives",
+      "brands": [
+        "Elita",
+        "Buono"
+      ],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        142
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "gherkins",
+      "name": "Gherkins",
+      "brands": [],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "680 g"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        14
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "sarwar-sliced-jalape-os",
+      "name": "Sarwar Sliced Jalapeños",
+      "brands": [
+        "Sarwar"
+      ],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Mexican"
+      ],
+      "packSizes": [
+        "3 kg"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        15
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "old-el-paso-jalape-os",
+      "name": "Old El Paso Jalapeños",
+      "brands": [
+        "Old El Paso"
+      ],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Mexican"
+      ],
+      "packSizes": [
+        "215 g"
+      ],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        153
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "maling-ful-medames",
+      "name": "Maling Ful Medames",
+      "brands": [
+        "Maling"
+      ],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Arabic"
+      ],
+      "packSizes": [
+        "400 g"
+      ],
+      "variants": [],
+      "image": "/images/arabic/foul.png",
+      "catalogueRefs": [
+        94
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "austin-canned-beans-vegetables",
+      "name": "Austin Canned Beans & Vegetables",
+      "brands": [
+        "Austin"
+      ],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [
+        "Chickpeas",
+        "Green Peas",
+        "Baked Beans",
+        "Black Beans",
+        "Kidney Beans",
+        "Sweet Corn"
+      ],
+      "image": null,
+      "catalogueRefs": [
+        135
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "dried-shiitake-mushrooms",
+      "name": "Dried Shiitake Mushrooms",
+      "brands": [],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [
+        "1 kg"
+      ],
+      "variants": [],
+      "image": "/images/sushi/sitake.png",
+      "catalogueRefs": [
+        65,
+        161
+      ],
+      "source": "catalogue",
+      "toConfirm": "Listed twice, merged",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "umai-porcini-mushrooms",
+      "name": "Umai Porcini Mushrooms",
+      "brands": [
+        "Umai"
+      ],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Italian"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        118
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "black-fungus",
+      "name": "Black Fungus",
+      "brands": [],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Chinese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        92
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "white-fungus",
+      "name": "White Fungus",
+      "brands": [],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Chinese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        93
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "pickled-sushi-ginger",
+      "name": "Pickled Sushi Ginger",
+      "brands": [
+        "Woldko",
+        "Song Heng",
+        "Leng Heng"
+      ],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        129
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "freshos-hearts-of-palm",
+      "name": "Freshos Hearts of Palm",
+      "brands": [
+        "Freshos"
+      ],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        140
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "water-chestnuts",
+      "name": "Water Chestnuts",
+      "brands": [
+        "Ukemochi",
+        "Freshos"
+      ],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Chinese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        143
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "de-best-maraschino-cherries",
+      "name": "De Best Maraschino Cherries",
+      "brands": [
+        "De Best"
+      ],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Bakery"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": null,
+      "catalogueRefs": [
+        146
+      ],
+      "source": "catalogue",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "luncheon-meat",
+      "name": "Luncheon Meat",
+      "brands": [],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Arabic"
+      ],
+      "packSizes": [
+        "340 g"
+      ],
+      "variants": [],
+      "image": "/images/arabic/luncheon.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "dried-black-lemon-loomi",
+      "name": "Dried Black Lemon (Loomi)",
+      "brands": [],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Arabic"
+      ],
+      "packSizes": [
+        "100 g"
+      ],
+      "variants": [],
+      "image": "/images/arabic/blacklemon.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "wasabi-paste",
+      "name": "Wasabi Paste",
+      "brands": [],
+      "category": "Pastes & Curry Pastes",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [],
+      "variants": [],
+      "image": "/images/sushi/wasabi_pst.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "sushi-vinegar",
+      "name": "Sushi Vinegar",
+      "brands": [],
+      "category": "Sauces, Condiments & Marinades",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [
+        "500 ml",
+        "1.8 L"
+      ],
+      "variants": [],
+      "image": "/images/sushi/vinegar.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "nori-seaweed-sheets",
+      "name": "Nori Seaweed Sheets",
+      "brands": [],
+      "category": "Canned, Preserved & Asian Specialty",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [
+        "10 sheets",
+        "50 sheets"
+      ],
+      "variants": [],
+      "image": "/images/sushi/nori.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "rice-paper",
+      "name": "Rice Paper",
+      "brands": [],
+      "category": "Rice, Grains & Starches",
+      "cuisines": [
+        "Vietnamese"
+      ],
+      "packSizes": [
+        "50 sheets"
+      ],
+      "variants": [],
+      "image": "/images/sushi/ricepaper.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "golden-curry-sauce-mix",
+      "name": "Golden Curry Sauce Mix",
+      "brands": [
+        "S&B"
+      ],
+      "category": "Pastes & Curry Pastes",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [
+        "220 g"
+      ],
+      "variants": [],
+      "image": "/images/sushi/goldencurry.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "togarashi-powder",
+      "name": "Togarashi Powder",
+      "brands": [],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Japanese"
+      ],
+      "packSizes": [
+        "500 g"
+      ],
+      "variants": [],
+      "image": "/images/sushi/togarashi.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "philadelphia-cream-cheese",
+      "name": "Philadelphia Cream Cheese",
+      "brands": [
+        "Philadelphia"
+      ],
+      "category": "Dairy, Milk & Coconut Products",
+      "cuisines": [
+        "Bakery"
+      ],
+      "packSizes": [
+        "250 g"
+      ],
+      "variants": [],
+      "image": "/images/bakery/philadelphia.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "rice-stick-noodles",
+      "name": "Rice Stick Noodles",
+      "brands": [],
+      "category": "Noodles, Pasta & Vermicelli",
+      "cuisines": [
+        "Asian"
+      ],
+      "packSizes": [
+        "500 g"
+      ],
+      "variants": [],
+      "image": "/images/korean/rice_stick.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "gochujang-korean-chilli-paste",
+      "name": "Gochujang (Korean Chilli Paste)",
+      "brands": [],
+      "category": "Pastes & Curry Pastes",
+      "cuisines": [
+        "Korean"
+      ],
+      "packSizes": [
+        "500 g"
+      ],
+      "variants": [],
+      "image": "/images/korean/gochujang.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "gochugaru-korean-chilli-flakes",
+      "name": "Gochugaru (Korean Chilli Flakes)",
+      "brands": [],
+      "category": "Spices, Seasonings & Stock Powders",
+      "cuisines": [
+        "Korean"
+      ],
+      "packSizes": [
+        "100 g"
+      ],
+      "variants": [],
+      "image": "/images/korean/gochugaru.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "davidoff-fine-aroma-coffee",
+      "name": "Davidoff Fine Aroma Coffee",
+      "brands": [
+        "Davidoff"
+      ],
+      "category": "Tea & Coffee",
+      "cuisines": [
+        "Café"
+      ],
+      "packSizes": [
+        "100 g"
+      ],
+      "variants": [],
+      "image": "/images/coffee/fine.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "davidoff-espresso-57-coffee",
+      "name": "Davidoff Espresso 57 Coffee",
+      "brands": [
+        "Davidoff"
+      ],
+      "category": "Tea & Coffee",
+      "cuisines": [
+        "Café"
+      ],
+      "packSizes": [
+        "100 g"
+      ],
+      "variants": [],
+      "image": "/images/coffee/esp57.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "pomace-olive-oil",
+      "name": "Pomace Olive Oil",
+      "brands": [],
+      "category": "Oils",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "1 L",
+        "5 L"
+      ],
+      "variants": [],
+      "image": "/images/oo/oo_pom.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "extra-virgin-olive-oil",
+      "name": "Extra Virgin Olive Oil",
+      "brands": [],
+      "category": "Oils",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "1 L",
+        "5 L"
+      ],
+      "variants": [],
+      "image": "/images/oo/oo_ev.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    },
+    {
+      "id": "extra-light-olive-oil",
+      "name": "Extra Light Olive Oil",
+      "brands": [],
+      "category": "Oils",
+      "cuisines": [
+        "Continental"
+      ],
+      "packSizes": [
+        "1 L",
+        "5 L"
+      ],
+      "variants": [],
+      "image": "/images/oo/oo_el.png",
+      "catalogueRefs": [],
+      "source": "website",
+      "toConfirm": "",
+      "origin": null,
+      "featured": false
+    }
+  ]
+}
