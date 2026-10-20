@@ -1,0 +1,23 @@
+# Hostinger (Apache/LiteSpeed) settings for this single-page React site.
+Options -MultiViews
+RewriteEngine On
+
+# Always use HTTPS.
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Serve real files directly; send every other path (/products, /brands, ...) to the app.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^ index.html [L]
+
+# Cache hashed build files and images for a long time; always re-check the page itself.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|webp|png|jpe?g|svg|mp4|woff2?)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
