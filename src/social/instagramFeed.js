@@ -10,7 +10,8 @@ const sizeUrl = (sizes, ...names) => names.map((n) => sizes?.[n]?.mediaUrl).find
 // Converts a Behold post into the shape the site renders. Tolerates missing fields so a
 // change in the feed degrades to "no image" for one post rather than breaking the page.
 function normalizePost(p) {
-  const type = p.mediaType === "VIDEO" ? (p.isReel ? "reel" : "video") : p.mediaType === "CAROUSEL_ALBUM" ? "carousel" : "image";
+  // Instagram publishes videos as reels; the feed only sometimes says so, so assume reel unless told otherwise.
+  const type = p.mediaType === "VIDEO" ? (p.isReel === false ? "video" : "reel") : p.mediaType === "CAROUSEL_ALBUM" ? "carousel" : "image";
   const isVideo = p.mediaType === "VIDEO";
   const image = sizeUrl(p.sizes, "medium", "large", "small") || (isVideo ? p.thumbnailUrl : p.mediaUrl);
   const children = (p.children || []).map((c) => ({
@@ -63,6 +64,7 @@ export async function loadInstagramFeed() {
   const rawPosts = Array.isArray(data) ? data : data.posts || [];
   return {
     profile: Array.isArray(data) ? {} : { username: data.username, picture: data.profilePictureUrl },
-    posts: rawPosts.map(normalizePost).filter((p) => p.image),
+    // Posts hidden in the Behold dashboard come through with visibility "hidden".
+    posts: rawPosts.filter((p) => !p.visibility || p.visibility === "visible").map(normalizePost).filter((p) => p.image),
   };
 }
