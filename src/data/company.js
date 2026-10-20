@@ -15,12 +15,17 @@ const company = {
   whatsapp: "https://wa.me/919324789432",
   email: "info.deluxfoodstuffs@gmail.com",
   instagram: "https://www.instagram.com/info.deluxfoodstuff",
+  instagramHandle: "info.deluxfoodstuff",
+  // JSON feed URL from Behold (behold.so) once the Instagram account is connected, e.g.
+  // "https://feeds.behold.so/XXXXXXXX". Can also be set at build time with VITE_INSTAGRAM_FEED_URL.
+  instagramFeedUrl: "",
 };
 
 export const navItems = [
   { label: "Home", path: "/" },
   { label: "Products", path: "/products" },
   { label: "Brands", path: "/brands" },
+  { label: "Posts", path: "/posts" },
   { label: "About", path: "/about" },
   { label: "Contact", path: "/contact" },
 ];

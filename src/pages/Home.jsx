@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
 import ProductCard from "../components/ProductCard";
+import InstagramGrid from "../social/InstagramGrid";
+import useInstagramFeed from "../social/useInstagramFeed";
 import catalogue from "../data/catalogue.json";
 import company from "../data/company";
 import { brand, fonts } from "../theme";
@@ -112,6 +114,7 @@ function ArrowLink({ to, children }) {
 }
 
 export default function Home() {
+  const instagram = useInstagramFeed();
   return (
     <Box sx={{ pt: { xs: "64px", md: "108px" } }}>
       {/* Hero */}
@@ -386,6 +389,16 @@ export default function Home() {
             </Grid>
           ))}
         </Grid>
+      </Container>
+
+      {/* Instagram */}
+      <Container maxWidth="lg" sx={{ ...pageX, pb: { xs: 8, md: 12 } }}>
+        <SectionHeading
+          overline="Posts & Reels"
+          title="From our Instagram"
+          action={<ArrowLink to="/posts">View all posts</ArrowLink>}
+        />
+        <InstagramGrid feed={instagram} limit={4} columns={{ xs: 6, md: 3 }} />
       </Container>
 
       {/* Visit */}
