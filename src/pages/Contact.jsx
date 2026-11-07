@@ -24,6 +24,7 @@ const businessTypes = [
   "Café / Bakery",
   "Caterer / Cloud kitchen",
   "Retailer / Distributor",
+  "Ship supplier / Ship provisions",
   "Other",
 ];
 

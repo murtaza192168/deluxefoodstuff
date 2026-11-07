@@ -35,8 +35,12 @@ const segments = [
     text: "Everyday staples in bulk, from stock powders and coconut milk to mayonnaise and ketchup.",
   },
   {
-    title: "Retailers",
-    text: "Imported brands for your shelves, supplied at trade rates with minimum order quantities.",
+    title: "Resellers & bulk buyers",
+    text: "Imported brands for your shelves or your own customers, at trade rates with minimum order quantities.",
+  },
+  {
+    title: "Ship provisions",
+    text: "Sauces, oils, coffee, tea and pantry staples for ship suppliers and chandlers."
   },
 ];
 
@@ -331,7 +335,7 @@ export default function Home() {
           <SectionHeading overline="Who we supply" title="Built for businesses that cook and sell food" />
           <Grid container spacing={{ xs: 4, md: 5 }}>
             {segments.map((s) => (
-              <Grid key={s.title} size={{ xs: 12, sm: 6, md: 3 }}>
+              <Grid key={s.title} size={{ xs: 12, sm: 6, md: 4, lg: 2.4 }}>
                 <Box sx={{ borderTop: `2px solid ${brand.gold}`, pt: 2.5 }}>
                   <Typography sx={{ fontFamily: fonts.serif, fontSize: 25, fontWeight: 600, color: brand.ink, mb: 1 }}>
                     {s.title}
