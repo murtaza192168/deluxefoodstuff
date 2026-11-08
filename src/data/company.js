@@ -18,7 +18,7 @@ const company = {
   instagram: "https://www.instagram.com/info.deluxfoodstuff",
   instagramHandle: "info.deluxfoodstuff",
   // Google Analytics 4 measurement ID ("G-XXXXXXXXXX"). Analytics stays off while this is empty.
-  gaMeasurementId: "",
+  gaMeasurementId: "G-M8BPP5MBGR",
   // JSON feed URL from Behold (behold.so) once the Instagram account is connected, e.g.
   // "https://feeds.behold.so/XXXXXXXX". Can also be set at build time with VITE_INSTAGRAM_FEED_URL.
   instagramFeedUrl: "https://feeds.behold.so/Cb1V8dDcU4PS9K6yCkBe",
