@@ -7,6 +7,7 @@ import catalogue from "../data/catalogue.json";
 import testimonials from "../data/testimonials";
 import company from "../data/company";
 import { brand, fonts } from "../theme";
+import usePageMeta from "../seo/usePageMeta";
 
 const FOUNDED = 1986;
 const IMPORTS_SINCE = 2000;
@@ -69,6 +70,11 @@ function Overline({ children, light }) {
 }
 
 export default function About() {
+  usePageMeta({
+    title: "Our Story Since 1986 | Delux Enterprise, Crawford Market Mumbai",
+    description: "From a family kirana shop in Crawford Market in 1986 to a wholesale supplier of imported food ingredients for restaurants, hotels, cafés and ship provisions.",
+    path: "/about",
+  });
   return (
     <Box sx={{ pt: { xs: "64px", md: "108px" } }}>
       {/* Opening */}

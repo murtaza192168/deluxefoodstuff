@@ -7,9 +7,10 @@ import Brands from "./pages/Brands";
 import Social from "./pages/Social";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
+import Analytics from "./seo/Analytics";
 import Footer from "./components/Footer";
 import EnquiryDrawer from "./enquiry/EnquiryDrawer";
-
 
 export default function App() {
   return (
@@ -22,9 +23,11 @@ export default function App() {
         <Route path="/posts" element={<Social />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
       <EnquiryDrawer />
+      <Analytics />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { HiOutlineSearch, HiArrowRight } from "react-icons/hi";
 import catalogue from "../data/catalogue.json";
 import { brand, fonts } from "../theme";
+import usePageMeta from "../seo/usePageMeta";
 
 const { products, categories } = catalogue;
 
@@ -19,6 +20,11 @@ const letterOf = (name) => name.normalize("NFD").replace(/[^A-Za-z0-9]/g, "").ch
 const letters = [...new Set(brandIndex.map((b) => letterOf(b.name)))].sort();
 
 export default function Brands() {
+  usePageMeta({
+    title: `${brandIndex.length} International Food Brands We Supply | Delux Enterprise`,
+    description: "Wholesale supplier of Lee Kum Kee, Kikkoman, Monin, Hershey's, Nutella, Lotus Biscoff, Reggia, Al Ameera and more imported food brands in Crawford Market, Mumbai.",
+    path: "/brands",
+  });
   const [query, setQuery] = useState("");
 
   const groups = useMemo(() => {
