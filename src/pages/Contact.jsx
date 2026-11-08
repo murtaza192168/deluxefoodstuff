@@ -18,6 +18,7 @@ import { HiOutlinePhone, HiOutlineMail, HiOutlineLocationMarker, HiPlus, HiArrow
 import useEnquiry from "../enquiry/useEnquiry";
 import company from "../data/company";
 import { brand, fonts } from "../theme";
+import usePageMeta from "../seo/usePageMeta";
 
 const businessTypes = [
   "Restaurant / Hotel",
@@ -119,6 +120,11 @@ function buildMessage(form) {
 }
 
 export default function Contact() {
+  usePageMeta({
+    title: "Contact Delux Enterprise | Imported Food Wholesale Enquiries, Mumbai",
+    description: "Trade enquiries for imported food ingredients: WhatsApp +91 93247 89432, email or visit Shop 304/305, Crawford Market, Mumbai. Prices and MOQ on request.",
+    path: "/contact",
+  });
   const { count, setOpen } = useEnquiry();
   const [form, setForm] = useState({ name: "", business: "", type: "", city: "", products: "" });
   const [touched, setTouched] = useState(false);
