@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Analytics from "./seo/Analytics";
+import DiwaliCelebration from "./festive/DiwaliCelebration";
 import Footer from "./components/Footer";
 import EnquiryDrawer from "./enquiry/EnquiryDrawer";
 
@@ -28,6 +29,7 @@ export default function App() {
       <Footer />
       <EnquiryDrawer />
       <Analytics />
+      <DiwaliCelebration />
     </>
   );
 }
