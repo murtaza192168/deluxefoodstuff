@@ -970,7 +970,7 @@
         "1 kg"
       ],
       "variants": [],
-      "image": "/images/arabic/tahina.png",
+      "image": "/images/arabic/tahina.webp",
       "catalogueRefs": [
         6,
         7
@@ -1234,7 +1234,7 @@
       ],
       "packSizes": [],
       "variants": [],
-      "image": "/images/arabic/zatarSumak.png",
+      "image": "/images/arabic/zatarSumak.webp",
       "catalogueRefs": [
         108
       ],
@@ -1255,7 +1255,7 @@
       ],
       "packSizes": [],
       "variants": [],
-      "image": "/images/arabic/zatarSumak.png",
+      "image": "/images/arabic/zatarSumak.webp",
       "catalogueRefs": [
         107
       ],
@@ -1383,7 +1383,7 @@
         "1 kg"
       ],
       "variants": [],
-      "image": "/images/arabic/stock.png",
+      "image": "/images/arabic/stock.webp",
       "catalogueRefs": [
         49
       ],
@@ -1637,7 +1637,7 @@
         "500 g"
       ],
       "variants": [],
-      "image": "/images/korean/vermecelli.png",
+      "image": "/images/korean/vermecelli.webp",
       "catalogueRefs": [
         121
       ],
@@ -1658,7 +1658,7 @@
         "300 g"
       ],
       "variants": [],
-      "image": "/images/korean/noodles.png",
+      "image": "/images/korean/noodles.webp",
       "catalogueRefs": [
         157
       ],
@@ -1701,7 +1701,7 @@
         "2 kg"
       ],
       "variants": [],
-      "image": "/images/sushi/sushi_rice.png",
+      "image": "/images/sushi/sushi_rice.webp",
       "catalogueRefs": [
         68
       ],
@@ -1723,7 +1723,7 @@
         "2 kg"
       ],
       "variants": [],
-      "image": "/images/sushi/glutinous.png",
+      "image": "/images/sushi/glutinous.webp",
       "catalogueRefs": [
         69
       ],
@@ -1895,7 +1895,7 @@
         "Condensed",
         "Evaporated"
       ],
-      "image": "/images/bakery/carnation.png",
+      "image": "/images/bakery/carnation.webp",
       "catalogueRefs": [
         36
       ],
@@ -2031,7 +2031,7 @@
         "200 g"
       ],
       "variants": [],
-      "image": "/images/bakery/biscoff_biscuit.png",
+      "image": "/images/bakery/biscoff_biscuit.webp",
       "catalogueRefs": [
         40
       ],
@@ -2054,7 +2054,7 @@
         "200 g"
       ],
       "variants": [],
-      "image": "/images/bakery/ladyfinger.png",
+      "image": "/images/bakery/ladyfinger.webp",
       "catalogueRefs": [
         66,
         134,
@@ -2184,7 +2184,7 @@
         "750 g"
       ],
       "variants": [],
-      "image": "/images/bakery/nutella.png",
+      "image": "/images/bakery/nutella.webp",
       "catalogueRefs": [
         34,
         35
@@ -2208,7 +2208,7 @@
         "400 g"
       ],
       "variants": [],
-      "image": "/images/bakery/biscoff_spread.png",
+      "image": "/images/bakery/biscoff_spread.webp",
       "catalogueRefs": [
         41,
         150
@@ -2232,7 +2232,7 @@
         "1 kg"
       ],
       "variants": [],
-      "image": "/images/arabic/halawa.png",
+      "image": "/images/arabic/halawa.webp",
       "catalogueRefs": [
         50
       ],
@@ -2422,7 +2422,7 @@
         "Classic",
         "Matinal"
       ],
-      "image": "/images/coffee/gold.png",
+      "image": "/images/coffee/gold.webp",
       "catalogueRefs": [
         74,
         75,
@@ -2637,7 +2637,7 @@
         "400 g"
       ],
       "variants": [],
-      "image": "/images/arabic/foul.png",
+      "image": "/images/arabic/foul.webp",
       "catalogueRefs": [
         94
       ],
@@ -2686,7 +2686,7 @@
         "1 kg"
       ],
       "variants": [],
-      "image": "/images/sushi/sitake.png",
+      "image": "/images/sushi/sitake.webp",
       "catalogueRefs": [
         65,
         161
@@ -2854,7 +2854,7 @@
         "340 g"
       ],
       "variants": [],
-      "image": "/images/arabic/luncheon.png",
+      "image": "/images/arabic/luncheon.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -2873,7 +2873,7 @@
         "100 g"
       ],
       "variants": [],
-      "image": "/images/arabic/blacklemon.png",
+      "image": "/images/arabic/blacklemon.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -2890,7 +2890,7 @@
       ],
       "packSizes": [],
       "variants": [],
-      "image": "/images/sushi/wasabi_pst.png",
+      "image": "/images/sushi/wasabi_pst.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -2910,7 +2910,7 @@
         "1.8 L"
       ],
       "variants": [],
-      "image": "/images/sushi/vinegar.png",
+      "image": "/images/sushi/vinegar.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -2930,7 +2930,7 @@
         "50 sheets"
       ],
       "variants": [],
-      "image": "/images/sushi/nori.png",
+      "image": "/images/sushi/nori.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -2949,7 +2949,7 @@
         "50 sheets"
       ],
       "variants": [],
-      "image": "/images/sushi/ricepaper.png",
+      "image": "/images/sushi/ricepaper.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -2970,7 +2970,7 @@
         "220 g"
       ],
       "variants": [],
-      "image": "/images/sushi/goldencurry.png",
+      "image": "/images/sushi/goldencurry.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -2989,7 +2989,7 @@
         "500 g"
       ],
       "variants": [],
-      "image": "/images/sushi/togarashi.png",
+      "image": "/images/sushi/togarashi.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -3010,7 +3010,7 @@
         "250 g"
       ],
       "variants": [],
-      "image": "/images/bakery/philadelphia.png",
+      "image": "/images/bakery/philadelphia.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -3029,7 +3029,7 @@
         "500 g"
       ],
       "variants": [],
-      "image": "/images/korean/rice_stick.png",
+      "image": "/images/korean/rice_stick.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -3048,7 +3048,7 @@
         "500 g"
       ],
       "variants": [],
-      "image": "/images/korean/gochujang.png",
+      "image": "/images/korean/gochujang.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -3067,7 +3067,7 @@
         "100 g"
       ],
       "variants": [],
-      "image": "/images/korean/gochugaru.png",
+      "image": "/images/korean/gochugaru.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -3088,7 +3088,7 @@
         "100 g"
       ],
       "variants": [],
-      "image": "/images/coffee/fine.png",
+      "image": "/images/coffee/fine.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -3109,7 +3109,7 @@
         "100 g"
       ],
       "variants": [],
-      "image": "/images/coffee/esp57.png",
+      "image": "/images/coffee/esp57.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -3129,7 +3129,7 @@
         "5 L"
       ],
       "variants": [],
-      "image": "/images/oo/oo_pom.png",
+      "image": "/images/oo/oo_pom.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -3149,7 +3149,7 @@
         "5 L"
       ],
       "variants": [],
-      "image": "/images/oo/oo_ev.png",
+      "image": "/images/oo/oo_ev.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
@@ -3169,7 +3169,7 @@
         "5 L"
       ],
       "variants": [],
-      "image": "/images/oo/oo_el.png",
+      "image": "/images/oo/oo_el.webp",
       "catalogueRefs": [],
       "source": "website",
       "toConfirm": "",
