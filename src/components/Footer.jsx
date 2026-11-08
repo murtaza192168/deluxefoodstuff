@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Container, Grid, IconButton, Stack, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { FaWhatsapp, FaInstagram, FaRegEnvelope } from "react-icons/fa";
-import Logo from "/images/CompanyLogo.png";
+import Logo from "/images/logo-192.webp";
 import company, { navItems } from "../data/company";
 import catalogue from "../data/catalogue.json";
 import { brand, fonts } from "../theme";

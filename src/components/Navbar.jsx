@@ -13,7 +13,7 @@ import {
 import { HiMenuAlt3, HiX, HiOutlineClipboardList } from "react-icons/hi";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { NavLink, Link, useLocation } from "react-router-dom";
-import Logo from "/images/CompanyLogo.png";
+import Logo from "/images/logo-192.webp";
 import company, { navItems } from "../data/company";
 import { brand, fonts } from "../theme";
 import useEnquiry from "../enquiry/useEnquiry";
