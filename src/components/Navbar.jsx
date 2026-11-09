@@ -17,6 +17,7 @@ import Logo from "/images/logo-192.webp";
 import company, { navItems } from "../data/company";
 import { brand, fonts } from "../theme";
 import useEnquiry from "../enquiry/useEnquiry";
+import useBump from "../motion/useBump";
 
 const linkSx = {
   position: "relative",
@@ -47,6 +48,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const { pathname } = useLocation();
   const { count, setOpen: setEnquiryOpen } = useEnquiry();
+  const bump = useBump(count);
 
   const enquiryButton = (
     <IconButton
@@ -55,6 +57,8 @@ export default function Navbar() {
       sx={{ color: brand.ink }}
     >
       <Badge
+        key={bump}
+        className={bump ? "dl-bump" : undefined}
         badgeContent={count}
         sx={{ "& .MuiBadge-badge": { backgroundColor: brand.gold, color: "#fff", fontWeight: 600 } }}
       >

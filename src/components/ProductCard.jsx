@@ -37,6 +37,7 @@ export default function ProductCard({ product }) {
   const { has, add, remove } = useEnquiry();
   const [imgFailed, setImgFailed] = useState(false);
   const added = has(product.id);
+  const [justAdded, setJustAdded] = useState(false);
   const details = product.variants.length ? product.variants : [];
   const badge = product.featured ? (product.origin ? `Imported from ${product.origin}` : "Featured") : null;
 
@@ -149,8 +150,24 @@ export default function ProductCard({ product }) {
           fullWidth
           variant={added ? "contained" : "outlined"}
           color="primary"
-          onClick={() => (added ? remove(product.id) : add(product))}
-          startIcon={added ? <HiCheck size={16} /> : <HiPlus size={16} />}
+          onClick={() => {
+            if (added) {
+              remove(product.id);
+              setJustAdded(false);
+            } else {
+              add(product);
+              setJustAdded(true);
+            }
+          }}
+          startIcon={
+            added ? (
+              <Box component="span" className={justAdded ? "dl-tick" : undefined}>
+                <HiCheck size={16} />
+              </Box>
+            ) : (
+              <HiPlus size={16} />
+            )
+          }
           aria-pressed={added}
           aria-label={`${added ? "Remove" : "Add"} ${product.name} ${added ? "from" : "to"} enquiry`}
           sx={{
