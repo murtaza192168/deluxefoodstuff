@@ -6,6 +6,7 @@ import useInstagramFeed from "../social/useInstagramFeed";
 import company from "../data/company";
 import { brand } from "../theme";
 import usePageMeta from "../seo/usePageMeta";
+import { pageMeta } from "../seo/pageMeta";
 
 const filters = [
   { id: "all", label: "All", test: () => true },
@@ -16,11 +17,7 @@ const filters = [
 const PAGE = 12;
 
 export default function Social() {
-  usePageMeta({
-    title: "Posts & Reels | Delux Enterprise Instagram",
-    description: "New arrivals, product spotlights and stories from Delux Enterprise, the imported food wholesaler in Crawford Market, Mumbai. Follow @info.deluxfoodstuff.",
-    path: "/posts",
-  });
+  usePageMeta({ ...pageMeta["/posts"], path: "/posts" });
   const feed = useInstagramFeed();
   const [filter, setFilter] = useState("all");
   const [shown, setShown] = useState(PAGE);
