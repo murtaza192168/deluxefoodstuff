@@ -92,10 +92,10 @@ export default function Navbar() {
         >
           {/* Full address on wide screens; a short version where it would crowd the contacts. */}
           <Box component="span" sx={{ display: { md: "none", lg: "inline" } }}>
-            {company.address.line1}, {company.address.line2}
+            {company.address.short} · {company.address.landmark}
           </Box>
           <Box component="span" sx={{ display: { md: "inline", lg: "none" } }}>
-            Crawford Market, Mumbai
+            M. J. Phule (Crawford) Market, Mumbai
           </Box>
           <Stack direction="row" spacing={3} alignItems="center">
             <Box
@@ -274,6 +274,8 @@ export default function Navbar() {
             {company.address.line1}
             <br />
             {company.address.line2}
+            <br />
+            {company.address.landmark}
           </Typography>
           <Typography variant="body2" sx={{ mt: 1 }}>
             <Box component="a" href={`mailto:${company.email}`} target="_blank" rel="noopener noreferrer" sx={{ color: brand.ink }}>

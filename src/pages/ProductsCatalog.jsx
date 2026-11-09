@@ -11,7 +11,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { HiOutlineSearch, HiOutlineClipboardList } from "react-icons/hi";
+import { HiOutlineSearch, HiOutlineClipboardList, HiOutlineDownload } from "react-icons/hi";
 import { useSearchParams } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import useEnquiry from "../enquiry/useEnquiry";
@@ -180,6 +180,15 @@ export default function ProductsCatalog() {
             Trade supply only: add items to your enquiry list and we will reply on WhatsApp with current
             prices and minimum order quantities.
           </Typography>
+          <Button
+            variant="outlined"
+            href="/downloads/Delux-Enterprise-Catalogue.pdf"
+            download
+            startIcon={<HiOutlineDownload size={18} />}
+            sx={{ mt: 2.5, borderColor: brand.ink }}
+          >
+            Download catalogue (PDF)
+          </Button>
         </Box>
 
         {/* Filters */}

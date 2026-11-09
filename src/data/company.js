@@ -7,7 +7,9 @@ const company = {
   tagline: "Imported food ingredients for professional kitchens",
   address: {
     line1: "Shop No. 304/305, Inside 3rd Lane",
-    line2: "Crawford Market, Dhobi Talao, Fort, Mumbai 400001",
+    line2: "M. J. Phule Market (Crawford Market), Fort, Mumbai 400001",
+    landmark: "Opp. Sadanand Hotel",
+    short: "Shop 304/305, M. J. Phule Market (Crawford Market), Mumbai",
   },
   gstin: "27AICPM2320B1ZZ",
   mapUrl: "https://share.google/PKSmjCwpK2OAdr9sp",

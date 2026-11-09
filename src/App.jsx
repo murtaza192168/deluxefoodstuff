@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
 import CookieBanner from "./privacy/CookieBanner";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import Analytics from "./seo/Analytics";
 import DiwaliCelebration from "./festive/DiwaliCelebration";
 import Footer from "./components/Footer";
@@ -33,6 +34,7 @@ export default function App() {
       <EnquiryDrawer />
       <Analytics />
       <CookieBanner />
+      <FloatingWhatsApp />
       <DiwaliCelebration />
     </>
   );

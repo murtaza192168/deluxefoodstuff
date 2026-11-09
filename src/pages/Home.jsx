@@ -442,6 +442,8 @@ export default function Home() {
                 {company.address.line1}
                 <br />
                 {company.address.line2}
+                <br />
+                {company.address.landmark}
               </Typography>
               <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
                 GSTIN {company.gstin}

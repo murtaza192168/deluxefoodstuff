@@ -65,6 +65,12 @@ export default function Footer() {
                   {item.label}
                 </Box>
               ))}
+              <Box component="a" href="/downloads/Delux-Enterprise-Catalogue.pdf" download sx={linkSx}>
+                Catalogue (PDF)
+              </Box>
+              <Box component="a" href="/delux-enterprise.vcf" download="Delux-Enterprise.vcf" sx={linkSx}>
+                Save our contact
+              </Box>
             </Stack>
           </Grid>
 
@@ -81,6 +87,8 @@ export default function Footer() {
               {company.address.line1}
               <br />
               {company.address.line2}
+                <br />
+                {company.address.landmark}
             </Box>
             <Stack spacing={0.5}>
               <Box component="a" href={company.whatsapp} target="_blank" rel="noopener noreferrer" sx={linkSx}>
