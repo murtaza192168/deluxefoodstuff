@@ -22,6 +22,7 @@ function DataTable() {
   const rows = [
     ["Enquiry form and enquiry list", "Your name, business name, type of business, city, and the products and quantities you ask about", "To reply to your enquiry with prices, availability and minimum order quantities"],
     ["Your WhatsApp message or email", "Your phone number or email address, and anything you write to us", "To talk to you about your enquiry and order"],
+    ["Chat assistant", "The questions you type into the chat (answered on your own device, not sent to us or anyone else)", "To answer common questions instantly. Only if you tap \"Ask our team on WhatsApp\" is your question passed to WhatsApp for you to send"],
     ["Enquiry list in your browser", "The products you add (stored only on your own device, not sent to us)", "So your list is still there when you come back"],
     ["Google Analytics (only if you accept)", "Pages you view, approximate location, device and browser type, via cookies", "To understand which pages are useful and improve the website"],
   ];

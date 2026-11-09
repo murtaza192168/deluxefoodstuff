@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import CookieBanner from "./privacy/CookieBanner";
-import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import ChatAssistant from "./assistant/ChatAssistant";
 import Analytics from "./seo/Analytics";
 import Footer from "./components/Footer";
 import EnquiryDrawer from "./enquiry/EnquiryDrawer";
@@ -44,7 +44,7 @@ export default function App() {
       <EnquiryDrawer />
       <Analytics />
       <CookieBanner />
-      <FloatingWhatsApp />
+      <ChatAssistant />
       <Suspense fallback={null}>
         <DiwaliCelebration />
       </Suspense>
