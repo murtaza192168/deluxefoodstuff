@@ -8,6 +8,8 @@ import Social from "./pages/Social";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Privacy from "./pages/Privacy";
+import CookieBanner from "./privacy/CookieBanner";
 import Analytics from "./seo/Analytics";
 import DiwaliCelebration from "./festive/DiwaliCelebration";
 import Footer from "./components/Footer";
@@ -24,11 +26,13 @@ export default function App() {
         <Route path="/posts" element={<Social />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<Privacy />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
       <EnquiryDrawer />
       <Analytics />
+      <CookieBanner />
       <DiwaliCelebration />
     </>
   );

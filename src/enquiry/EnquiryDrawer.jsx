@@ -16,6 +16,7 @@ import useEnquiry from "./useEnquiry";
 import catalogue from "../data/catalogue.json";
 import company from "../data/company";
 import { brand, fonts } from "../theme";
+import ConsentCheckbox from "../privacy/ConsentCheckbox";
 
 const productsById = Object.fromEntries(catalogue.products.map((p) => [p.id, p]));
 
@@ -75,6 +76,8 @@ function QtyStepper({ value, onChange }) {
 export default function EnquiryDrawer() {
   const { items, open, setOpen, update, remove, clear } = useEnquiry();
   const [contact, setContact] = useState({ name: "", business: "", city: "" });
+  const [agreed, setAgreed] = useState(false);
+  const [tried, setTried] = useState(false);
 
   const whatsappUrl = useMemo(
     () => `${company.whatsapp}?text=${encodeURIComponent(buildMessage(items, contact))}`,
@@ -204,10 +207,17 @@ export default function EnquiryDrawer() {
                 />
               </Stack>
             </Stack>
+            <Box sx={{ mb: 2 }}>
+              <ConsentCheckbox compact checked={agreed} onChange={setAgreed} error={tried && !agreed} onNavigate={() => setOpen(false)} />
+            </Box>
             <Button
               fullWidth
               variant="contained"
-              href={whatsappUrl}
+              href={agreed ? whatsappUrl : undefined}
+              onClick={(e) => {
+                setTried(true);
+                if (!agreed) e.preventDefault();
+              }}
               target="_blank"
               rel="noopener noreferrer"
               startIcon={<FaWhatsapp size={18} />}

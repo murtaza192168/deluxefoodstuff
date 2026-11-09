@@ -115,7 +115,10 @@ export default function Footer() {
           }}
         >
           <Typography sx={{ fontSize: 13, color: "rgba(255,255,255,0.55)" }}>
-            © {new Date().getFullYear()} {company.name}. All rights reserved.
+            © {new Date().getFullYear()} {company.name}. All rights reserved. ·{" "}
+            <Box component={Link} to="/privacy" sx={{ color: "inherit", "&:hover": { color: brand.goldLight } }}>
+              Privacy Policy
+            </Box>
           </Typography>
           <Stack direction="row" spacing={0.5}>
             {[
