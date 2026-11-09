@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Button, Container, Typography } from "@mui/material";
 import usePageMeta from "../seo/usePageMeta";
+import { pageMeta } from "../seo/pageMeta";
 import { setAnalyticsConsent } from "../privacy/consent";
 import company from "../data/company";
 import { brand, fonts } from "../theme";
@@ -43,11 +44,7 @@ function DataTable() {
 }
 
 export default function Privacy() {
-  usePageMeta({
-    title: "Privacy Policy | Delux Enterprise",
-    description: "How Delux Enterprise collects, uses and protects the personal data you share through deluxefoodstuff.online, and your rights under India's DPDP Act, 2023.",
-    path: "/privacy",
-  });
+  usePageMeta({ ...pageMeta["/privacy"], path: "/privacy" });
 
   return (
     <Box sx={{ pt: { xs: "96px", md: "140px" } }}>

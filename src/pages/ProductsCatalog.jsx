@@ -19,6 +19,7 @@ import useBump from "../motion/useBump";
 import catalogue from "../data/catalogue.json";
 import { brand, fonts } from "../theme";
 import usePageMeta from "../seo/usePageMeta";
+import { pageMeta } from "../seo/pageMeta";
 
 const { categories, products } = catalogue;
 const allBrands = [...new Set(products.flatMap((p) => p.brands))].sort((a, b) =>
@@ -113,11 +114,7 @@ function ProductGrid({ items }) {
 }
 
 export default function ProductsCatalog() {
-  usePageMeta({
-    title: "Imported Food Products Wholesale Catalogue | Delux Enterprise",
-    description: `Browse ${products.length} imported food products: Lee Kum Kee, Kikkoman, Monin, Nutella, Reggia, Knorr and more. Trade prices on request. Enquire on WhatsApp.`,
-    path: "/products",
-  });
+  usePageMeta({ ...pageMeta["/products"], path: "/products" });
   const [params, setParams] = useSearchParams();
   const activeCategory = categories.some((c) => c.id === params.get("category")) ? params.get("category") : null;
   // Brand lives in the URL (?brand=) so the Brands page can link straight to a brand's products.

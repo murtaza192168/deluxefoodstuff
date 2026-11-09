@@ -10,6 +10,7 @@ import catalogue from "../data/catalogue.json";
 import company from "../data/company";
 import { brand, fonts } from "../theme";
 import usePageMeta from "../seo/usePageMeta";
+import { pageMeta } from "../seo/pageMeta";
 
 const { categories, products, brands } = catalogue;
 
@@ -119,11 +120,7 @@ function ArrowLink({ to, children }) {
 }
 
 export default function Home() {
-  usePageMeta({
-    title: "Delux Enterprise | Imported Food Wholesaler, Crawford Market Mumbai",
-    description: `Imported food wholesaler since 1986: ${products.length} products from ${brands.length} brands. Sauces, oils, noodles, spices and syrups for restaurants, hotels and cafés.`,
-    path: "/",
-  });
+  usePageMeta({ ...pageMeta["/"], path: "/" });
   const instagram = useInstagramFeed();
   return (
     <Box sx={{ pt: { xs: "64px", md: "108px" } }}>

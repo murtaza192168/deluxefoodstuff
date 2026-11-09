@@ -19,6 +19,7 @@ import useEnquiry from "../enquiry/useEnquiry";
 import company from "../data/company";
 import { brand, fonts } from "../theme";
 import usePageMeta from "../seo/usePageMeta";
+import { pageMeta } from "../seo/pageMeta";
 import ConsentCheckbox from "../privacy/ConsentCheckbox";
 import ShopMap from "../components/ShopMap";
 import { HiOutlineUserAdd, HiOutlineDownload } from "react-icons/hi";
@@ -123,11 +124,7 @@ function buildMessage(form) {
 }
 
 export default function Contact() {
-  usePageMeta({
-    title: "Contact Delux Enterprise | Imported Food Wholesale Enquiries, Mumbai",
-    description: "Trade enquiries for imported food ingredients: WhatsApp +91 93247 89432, email or visit Shop 304/305, M. J. Phule (Crawford) Market, Mumbai, opp. Sadanand Hotel. Prices and MOQ on request.",
-    path: "/contact",
-  });
+  usePageMeta({ ...pageMeta["/contact"], path: "/contact" });
   const { count, setOpen } = useEnquiry();
   const [form, setForm] = useState({ name: "", business: "", type: "", city: "", products: "" });
   const [touched, setTouched] = useState(false);
