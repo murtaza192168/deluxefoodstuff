@@ -274,7 +274,7 @@ export default function About() {
             Come to the counter that started it all
           </Typography>
           <Typography color="text.secondary" sx={{ mb: 4 }}>
-            {company.address.line1}, {company.address.line2}
+            {company.address.line1}, {company.address.line2} · {company.address.landmark}
           </Typography>
           <Stack direction={{ xs: "column", sm: "row" }} spacing={1.5} justifyContent="center">
             <Button

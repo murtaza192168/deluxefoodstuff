@@ -1,0 +1,17 @@
+BEGIN:VCARD
+VERSION:3.0
+N:;Delux Enterprise;;;
+FN:Delux Enterprise
+ORG:Delux Enterprise (Deluxe Food Stuff)
+TITLE:Imported food ingredients · Wholesale
+item1.TEL;TYPE=CELL,VOICE,pref:+919324789432
+item1.X-ABLabel:Murtaza
+item2.TEL;TYPE=CELL,VOICE:+919867843069
+item2.X-ABLabel:Shabbir
+item3.TEL;TYPE=CELL,VOICE:+919821607573
+item3.X-ABLabel:Kutub
+EMAIL;TYPE=WORK:info.deluxfoodstuffs@gmail.com
+URL:https://deluxefoodstuff.online
+ADR;TYPE=WORK:;;Shop No. 304/305\, Inside 3rd Lane\, M. J. Phule Market (Crawford Market)\, Opp. Sadanand Hotel;Fort\, Mumbai;Maharashtra;400001;India
+NOTE:Wholesale and trade supply of imported food ingredients since 1986. Shabbir +91 98678 43069 · Kutub +91 98216 07573 · Murtaza +91 93247 89432. Instagram @info.deluxfoodstuff. GSTIN 27AICPM2320B1ZZ.
+END:VCARD

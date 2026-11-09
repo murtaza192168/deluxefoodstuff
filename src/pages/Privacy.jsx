@@ -61,7 +61,7 @@ export default function Privacy() {
 
         <Section title="Who we are">
           <p>
-            {company.name}, {company.address.line1}, {company.address.line2}. GSTIN {company.gstin}. We are the
+            {company.name}, {company.address.line1}, {company.address.line2}, {company.address.landmark}. GSTIN {company.gstin}. We are the
             "Data Fiduciary" for the personal data described here.
           </p>
         </Section>
@@ -100,6 +100,7 @@ export default function Privacy() {
             <li><b>Google Analytics</b>, only if you accept analytics cookies.</li>
             <li><b>Cloudflare</b>, which hosts the website and may keep short-term technical logs (such as IP addresses) for security.</li>
             <li><b>Behold</b>, which shows our Instagram posts on the website. It does not receive your enquiry details.</li>
+            <li><b>Google Maps</b>, only if you tap "Show map" on the Contact page.</li>
           </ul>
           <p>We may also disclose data where Indian law requires it.</p>
         </Section>
@@ -143,7 +144,7 @@ export default function Privacy() {
             <br />
             WhatsApp / phone: <a href={company.whatsapp} target="_blank" rel="noopener noreferrer">{company.phoneDisplay}</a>
             <br />
-            Post: {company.address.line1}, {company.address.line2}
+            Post: {company.address.line1}, {company.address.line2}, {company.address.landmark}
           </p>
         </Section>
 

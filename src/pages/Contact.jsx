@@ -20,6 +20,8 @@ import company from "../data/company";
 import { brand, fonts } from "../theme";
 import usePageMeta from "../seo/usePageMeta";
 import ConsentCheckbox from "../privacy/ConsentCheckbox";
+import ShopMap from "../components/ShopMap";
+import { HiOutlineUserAdd, HiOutlineDownload } from "react-icons/hi";
 
 const businessTypes = [
   "Restaurant / Hotel",
@@ -123,7 +125,7 @@ function buildMessage(form) {
 export default function Contact() {
   usePageMeta({
     title: "Contact Delux Enterprise | Imported Food Wholesale Enquiries, Mumbai",
-    description: "Trade enquiries for imported food ingredients: WhatsApp +91 93247 89432, email or visit Shop 304/305, Crawford Market, Mumbai. Prices and MOQ on request.",
+    description: "Trade enquiries for imported food ingredients: WhatsApp +91 93247 89432, email or visit Shop 304/305, M. J. Phule (Crawford) Market, Mumbai, opp. Sadanand Hotel. Prices and MOQ on request.",
     path: "/contact",
   });
   const { count, setOpen } = useEnquiry();
@@ -192,6 +194,8 @@ export default function Contact() {
                 {company.address.line1}
                 <br />
                 {company.address.line2}
+                <br />
+                {company.address.landmark}
               </ContactRow>
               <ContactRow icon={<FaInstagram size={20} />} label="Instagram" href={company.instagram}>
                 @info.deluxfoodstuff
@@ -203,6 +207,29 @@ export default function Contact() {
               <br />
               GSTIN {company.gstin}
             </Typography>
+
+            <Stack direction={{ xs: "column", sm: "row", md: "column", lg: "row" }} spacing={1.5} sx={{ mt: 3 }}>
+              <Button
+                variant="outlined"
+                href="/delux-enterprise.vcf"
+                download="Delux-Enterprise.vcf"
+                startIcon={<HiOutlineUserAdd size={18} />}
+                sx={{ flex: 1, height: 46, borderColor: brand.ink }}
+              >
+                Save contact
+              </Button>
+              <Button
+                variant="outlined"
+                href="/downloads/Delux-Enterprise-Catalogue.pdf"
+                download
+                startIcon={<HiOutlineDownload size={18} />}
+                sx={{ flex: 1, height: 46, borderColor: brand.ink }}
+              >
+                Download catalogue
+              </Button>
+            </Stack>
+
+            <ShopMap />
           </Grid>
 
           {/* Enquiry form */}
