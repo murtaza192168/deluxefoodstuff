@@ -10,15 +10,43 @@ import { SplashDone, RouteLoader } from "./loading/Splash";
 import ScrollReveal from "./motion/ScrollReveal";
 
 // Each page downloads only when it is first opened, so the site starts faster.
-const Home = lazy(() => import("./pages/Home"));
-const ProductsCatalog = lazy(() => import("./pages/ProductsCatalog"));
-const Brands = lazy(() => import("./pages/Brands"));
-const Social = lazy(() => import("./pages/Social"));
-const About = lazy(() => import("./pages/About"));
-const Contact = lazy(() => import("./pages/Contact"));
-const Privacy = lazy(() => import("./pages/Privacy"));
-const NotFound = lazy(() => import("./pages/NotFound"));
-const DiwaliCelebration = lazy(() => import("./festive/DiwaliCelebration"));
+// If a new version went live while the visitor had the site open, the old page files are
+// gone: reload once to pick up the new version instead of showing a blank page.
+const RELOAD_KEY = "delux-reloaded-for-update";
+const page = (load) =>
+  lazy(() =>
+    load()
+      .then((m) => {
+        try {
+          sessionStorage.removeItem(RELOAD_KEY);
+        } catch {
+          /* storage blocked */
+        }
+        return m;
+      })
+      .catch((err) => {
+        let reloaded = true;
+        try {
+          reloaded = sessionStorage.getItem(RELOAD_KEY) === "1";
+          if (!reloaded) sessionStorage.setItem(RELOAD_KEY, "1");
+        } catch {
+          /* storage blocked: don't risk a reload loop */
+        }
+        if (reloaded) throw err;
+        window.location.reload();
+        return new Promise(() => {});
+      })
+  );
+
+const Home = page(() => import("./pages/Home"));
+const ProductsCatalog = page(() => import("./pages/ProductsCatalog"));
+const Brands = page(() => import("./pages/Brands"));
+const Social = page(() => import("./pages/Social"));
+const About = page(() => import("./pages/About"));
+const Contact = page(() => import("./pages/Contact"));
+const Privacy = page(() => import("./pages/Privacy"));
+const NotFound = page(() => import("./pages/NotFound"));
+const DiwaliCelebration = page(() => import("./festive/DiwaliCelebration"));
 
 export default function App() {
   return (
