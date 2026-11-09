@@ -55,9 +55,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <style>
+      /* Instant branded loader: visible before any JavaScript arrives */
+      #splash{position:fixed;inset:0;z-index:2000;display:flex;align-items:center;justify-content:center;background:#FAF8F3;transition:opacity .45s ease,visibility .45s ease}
+      #splash.gone{opacity:0;visibility:hidden}
+      .dl-box{display:flex;flex-direction:column;align-items:center;text-align:center;padding:24px}
+      .dl-logo{width:76px;height:76px;margin-bottom:14px;animation:dl-breathe 2.4s ease-in-out infinite}
+      .dl-name{font:600 30px/1.1 "Cormorant Garamond",Georgia,serif;color:#1C2621;letter-spacing:.01em}
+      .dl-tag{font:500 11px/1 Inter,system-ui,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#8A8274;margin-top:10px}
+      .dl-icons{display:flex;gap:22px;margin-top:30px;color:#C9C1B1}
+      .dl-icons svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;animation:dl-pick 2s ease-in-out infinite}
+      .dl-icons svg:nth-child(2){animation-delay:.25s}.dl-icons svg:nth-child(3){animation-delay:.5s}
+      .dl-icons svg:nth-child(4){animation-delay:.75s}.dl-icons svg:nth-child(5){animation-delay:1s}
+      .dl-line{width:150px;height:1px;background:#E6DFD1;margin-top:26px;position:relative;overflow:hidden}
+      .dl-line:after{content:"";position:absolute;inset:0;width:40%;background:#B8913F;animation:dl-sweep 1.4s ease-in-out infinite}
+      .dl-inline{min-height:70vh;display:flex;align-items:center;justify-content:center}
+      @keyframes dl-pick{0%,55%,100%{color:#C9C1B1;transform:translateY(0)}20%{color:#B8913F;transform:translateY(-7px)}}
+      @keyframes dl-sweep{0%{transform:translateX(-100%)}100%{transform:translateX(250%)}}
+      @keyframes dl-breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+      @media (prefers-reduced-motion:reduce){.dl-icons svg,.dl-line:after,.dl-logo{animation:none}}
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    <div id="splash" role="status" aria-label="Loading Delux Enterprise">
+      <div class="dl-box">
+        <img class="dl-logo" src="/images/logo-192.webp" alt="" width="76" height="76" />
+        <div class="dl-name">Delux Enterprise</div>
+        <div class="dl-tag">Crawford Market · Since 1986</div>
+        <div class="dl-icons" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M13 3h6v4l2 3v17a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2V10l2-3z"/><path d="M11 15h10M11 22h10"/></svg>
+          <svg viewBox="0 0 32 32"><path d="M20 6c-1-2 0-3 2-3M20 6c-3 0-4 2-5 6-1 5-4 10-10 13 9 1 15-4 16-11 .4-3 0-6-1-8z"/></svg>
+          <svg viewBox="0 0 32 32"><path d="M16 29V9M16 13c-3 0-5-2-5-5 3 0 5 2 5 5zm0 0c3 0 5-2 5-5-3 0-5 2-5 5zm0 7c-3 0-5-2-5-5 3 0 5 2 5 5zm0 0c3 0 5-2 5-5-3 0-5 2-5 5zM16 9V4"/></svg>
+          <svg viewBox="0 0 32 32"><path d="M4 15h24a12 9 0 0 1-24 0zM11 24l-1 4h12l-1-4M13 15c0-4 1-8 2-11M18 15c0-4 1-8 3-11"/></svg>
+          <svg viewBox="0 0 32 32"><path d="M10 9h12v4H10zM9 13h14v14a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2zM9 19h14"/></svg>
+        </div>
+        <div class="dl-line"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
