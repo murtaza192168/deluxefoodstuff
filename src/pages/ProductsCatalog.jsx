@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import {
   Autocomplete,
   Box,
@@ -122,7 +122,12 @@ export default function ProductsCatalog() {
   const activeCategory = categories.some((c) => c.id === params.get("category")) ? params.get("category") : null;
   // Brand lives in the URL (?brand=) so the Brands page can link straight to a brand's products.
   const brandFilter = allBrands.includes(params.get("brand")) ? params.get("brand") : null;
-  const [query, setQuery] = useState("");
+  // ?q= lets the chat assistant link straight to a search.
+  const urlQuery = params.get("q") ?? "";
+  const [query, setQuery] = useState(urlQuery);
+  useEffect(() => {
+    if (urlQuery) setQuery(urlQuery);
+  }, [urlQuery]);
   const [cuisine, setCuisine] = useState("");
   const { count, setOpen } = useEnquiry();
   const bump = useBump(count);
