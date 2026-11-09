@@ -40,6 +40,7 @@ export default function EnquiryProvider({ children }) {
               variant: product.variants[0] ?? "",
               packSize: product.packSizes[0] ?? "",
               qty: 1,
+              unit: "carton",
             },
           ]
     );
