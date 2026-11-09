@@ -127,6 +127,13 @@ export default function Footer() {
             <Box component={Link} to="/privacy" sx={{ color: "inherit", "&:hover": { color: brand.goldLight } }}>
               Privacy Policy
             </Box>
+            <Box component="span" sx={{ display: "block", mt: 0.5, fontSize: 11.5, color: "rgba(255,255,255,0.4)" }}>
+              Some product photos:{" "}
+              <Box component="a" href="https://world.openfoodfacts.org" target="_blank" rel="noopener noreferrer" sx={{ color: "inherit" }}>
+                Open Food Facts
+              </Box>{" "}
+              contributors, CC BY-SA 3.0, background edited.
+            </Box>
           </Typography>
           <Stack direction="row" spacing={0.5}>
             {[
