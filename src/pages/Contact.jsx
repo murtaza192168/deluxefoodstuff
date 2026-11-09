@@ -19,6 +19,7 @@ import useEnquiry from "../enquiry/useEnquiry";
 import company from "../data/company";
 import { brand, fonts } from "../theme";
 import usePageMeta from "../seo/usePageMeta";
+import ConsentCheckbox from "../privacy/ConsentCheckbox";
 
 const businessTypes = [
   "Restaurant / Hotel",
@@ -128,9 +129,10 @@ export default function Contact() {
   const { count, setOpen } = useEnquiry();
   const [form, setForm] = useState({ name: "", business: "", type: "", city: "", products: "" });
   const [touched, setTouched] = useState(false);
+  const [agreed, setAgreed] = useState(false);
   const set = (key) => (e) => setForm({ ...form, [key]: e.target.value });
 
-  const valid = form.name.trim() && form.products.trim();
+  const valid = form.name.trim() && form.products.trim() && agreed;
   const message = buildMessage(form);
 
   const send = (e) => {
@@ -283,6 +285,10 @@ export default function Contact() {
                   />
                 </Grid>
               </Grid>
+
+              <Box sx={{ mt: 0.5, mb: 2 }}>
+                <ConsentCheckbox checked={agreed} onChange={setAgreed} error={touched && !agreed} />
+              </Box>
 
               <Stack direction={{ xs: "column", sm: "row" }} spacing={1.5} sx={{ mt: 1 }}>
                 <Button
