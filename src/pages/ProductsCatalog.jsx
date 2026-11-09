@@ -15,6 +15,7 @@ import { HiOutlineSearch, HiOutlineClipboardList, HiOutlineDownload } from "reac
 import { useSearchParams } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import useEnquiry from "../enquiry/useEnquiry";
+import useBump from "../motion/useBump";
 import catalogue from "../data/catalogue.json";
 import { brand, fonts } from "../theme";
 import usePageMeta from "../seo/usePageMeta";
@@ -124,6 +125,7 @@ export default function ProductsCatalog() {
   const [query, setQuery] = useState("");
   const [cuisine, setCuisine] = useState("");
   const { count, setOpen } = useEnquiry();
+  const bump = useBump(count);
 
   const filtered = useMemo(
     () => products.filter((p) => matches(p, { query: query.trim(), brandFilter, cuisine })),
@@ -355,6 +357,7 @@ export default function ProductsCatalog() {
       {/* Mobile enquiry bar */}
       {count > 0 && (
         <Box
+          className="dl-rise"
           sx={{
             display: { xs: "block", md: "none" },
             position: "fixed",
@@ -368,7 +371,11 @@ export default function ProductsCatalog() {
             fullWidth
             variant="contained"
             onClick={() => setOpen(true)}
-            startIcon={<HiOutlineClipboardList size={20} />}
+            startIcon={
+              <Box component="span" key={bump} className={bump ? "dl-bump" : undefined}>
+                <HiOutlineClipboardList size={20} />
+              </Box>
+            }
             sx={{ height: 50, boxShadow: "0 12px 30px -10px rgba(0,0,0,.45)" }}
           >
             View enquiry list ({count})
