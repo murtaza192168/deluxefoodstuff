@@ -33,7 +33,7 @@ function NameTile({ product }) {
   );
 }
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, tourTarget = false }) {
   const { has, add, remove } = useEnquiry();
   const [imgFailed, setImgFailed] = useState(false);
   const added = has(product.id);
@@ -147,6 +147,7 @@ export default function ProductCard({ product }) {
 
         <Box sx={{ flex: 1 }} />
         <Button
+          data-tour={tourTarget ? "add" : undefined}
           fullWidth
           variant={added ? "contained" : "outlined"}
           color="primary"
