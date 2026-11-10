@@ -19,12 +19,12 @@ const chapters = [
     year: "1986",
     title: "It began with a kirana counter.",
     text: [
-      "In 1986, our family opened a small kirana shop inside the third lane of Crawford Market. Rice, dal, spices, the everyday things a Mumbai kitchen runs on.",
+      "In 1986, our grandfather opened a small kirana shop inside the third lane of Crawford Market. Rice, dal, spices, the everyday things a Mumbai kitchen runs on.",
       "What it had was a counter that opened every morning, and customers who learned that what they were promised was what they got.",
     ],
     image: "/images/about/chapter-1986.webp",
-    alt: "Our family at the packed kirana counter in Crawford Market, 1986",
-    caption: "Crawford Market, 1986",
+    alt: "The family at the packed kirana counter in Crawford Market, in the early years",
+    caption: "The early years at the counter",
     print: true,
   },
   {
@@ -35,13 +35,13 @@ const chapters = [
       "So the family turned its kirana into something new: a specialist in imported foodstuff. Same counter, same family. A very different pantry.",
     ],
     image: "/images/about/chapter-2000.webp",
-    alt: "The family behind the new white counter and shelves, around 2000",
-    caption: "Around 2000",
+    alt: "The family behind the white counter and shelves, in the 2000s",
+    caption: "The 2000s",
     print: true,
     inset: {
       image: "/images/about/chapter-2000-counter.webp",
       alt: "The same counter in the years after, with the next generation",
-      caption: "The years after",
+      caption: "And the years that followed",
     },
   },
   {
