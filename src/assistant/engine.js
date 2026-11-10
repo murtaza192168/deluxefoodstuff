@@ -97,6 +97,8 @@ const THANKS = /\b(thanks?|thank you|thx|ty|shukriya|dhanyavad|ok(ay)?|great|coo
 const categoryFor = (p) => categories.find((c) => c.name === p.category);
 
 // Returns { text, products?, actions?, handoff? }
+const textOf = (topic) => (typeof topic.answer === "function" ? topic.answer() : topic.answer);
+
 export function answer(question) {
   const q = normalise(question);
   if (!q) return null;
@@ -116,7 +118,7 @@ export function answer(question) {
       ? `Yes, we stock ${hits[0].name}.`
       : `Yes, we have ${hits.length} matching products${many ? ". Here are a few." : "."}`;
     const handoff = Boolean(topic && (topic.handoff || topic.answer === null));
-    if (topic && topic.answer && topic.id !== "catalogue") text += ` ${topic.answer}`;
+    if (topic && topic.answer && topic.id !== "catalogue") text += ` ${textOf(topic)}`;
     else if (topic && topic.answer === null) text += ` For ${topic.topic ?? topic.label.toLowerCase()}, our team will confirm for you on WhatsApp.`;
     else text += ` Add ${one ? "it" : "any of them"} to your enquiry list and we'll reply with today's price and minimum quantity.`;
     const brandHit = hits.length > 1 && hits.every((p) => p.brands[0] && p.brands[0] === hits[0].brands[0]);
@@ -131,7 +133,7 @@ export function answer(question) {
   if (topic) {
     if (topic.answer === null)
       return { text: `Good question. I don't want to guess about ${topic.topic ?? topic.label.toLowerCase()}, so let our team confirm it for you on WhatsApp.`, handoff: true, unsure: true };
-    return { text: topic.answer, actions: topic.actions, handoff: Boolean(topic.handoff) };
+    return { text: textOf(topic), actions: topic.actions, handoff: Boolean(topic.handoff) };
   }
 
   if (terms.length && terms.length <= 4)

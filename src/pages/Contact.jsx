@@ -21,8 +21,9 @@ import { brand, fonts } from "../theme";
 import usePageMeta from "../seo/usePageMeta";
 import { pageMeta } from "../seo/pageMeta";
 import ConsentCheckbox from "../privacy/ConsentCheckbox";
+import { contactFormMessage, enquirySubject } from "../enquiry/messageFormat";
 import ShopMap from "../components/ShopMap";
-import { HiOutlineUserAdd, HiOutlineDownload } from "react-icons/hi";
+import { HiOutlineUserAdd, HiOutlineDownload, HiOutlineClock } from "react-icons/hi";
 
 const businessTypes = [
   "Restaurant / Hotel",
@@ -59,10 +60,7 @@ function ContactRow({ icon, label, children, href, action }) {
   return (
     <Stack direction="row" alignItems="center" spacing={1} sx={{ borderBottom: `1px solid ${brand.line}` }}>
       <Box
-        component="a"
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
+        {...(href ? { component: "a", href, target: "_blank", rel: "noopener noreferrer" } : {})}
         sx={{
           flex: 1,
           minWidth: 0,
@@ -71,7 +69,7 @@ function ContactRow({ icon, label, children, href, action }) {
           py: 2.5,
           color: "inherit",
           textDecoration: "none",
-          "&:hover .value": { color: brand.gold },
+          ...(href ? { "&:hover .value": { color: brand.gold } } : {}),
         }}
       >
         <Box sx={{ color: brand.gold, pt: 0.25, flexShrink: 0 }}>{icon}</Box>
@@ -113,15 +111,6 @@ function CopyButton({ text }) {
   );
 }
 
-function buildMessage(form) {
-  const details = [
-    `Name: ${form.name}`,
-    form.business && `Business: ${form.business}`,
-    form.type && `Type: ${form.type}`,
-    form.city && `City: ${form.city}`,
-  ].filter(Boolean);
-  return [`Hello ${company.name}, I have a trade enquiry.`, ...details, "", "Products needed:", form.products].join("\n");
-}
 
 export default function Contact() {
   usePageMeta({ ...pageMeta["/contact"], path: "/contact" });
@@ -132,7 +121,8 @@ export default function Contact() {
   const set = (key) => (e) => setForm({ ...form, [key]: e.target.value });
 
   const valid = form.name.trim() && form.products.trim() && agreed;
-  const message = buildMessage(form);
+  const message = contactFormMessage(form);
+  const emailBody = contactFormMessage(form, { whatsapp: false });
 
   const send = (e) => {
     setTouched(true);
@@ -193,6 +183,13 @@ export default function Contact() {
                 {company.address.line2}
                 <br />
                 {company.address.landmark}
+              </ContactRow>
+              <ContactRow icon={<HiOutlineClock size={22} />} label="Shop timings">
+                {company.hours.daysShort}, {company.hours.display}
+                <br />
+                <Box component="span" sx={{ color: brand.muted, fontSize: "0.92em" }}>
+                  {company.hours.closedNote}
+                </Box>
               </ContactRow>
               <ContactRow icon={<FaInstagram size={20} />} label="Instagram" href={company.instagram}>
                 @info.deluxfoodstuff
@@ -332,7 +329,7 @@ export default function Contact() {
                   size="large"
                   href={
                     valid
-                      ? `mailto:${company.email}?subject=${encodeURIComponent("Trade enquiry")}&body=${encodeURIComponent(message)}`
+                      ? `mailto:${company.email}?subject=${encodeURIComponent(enquirySubject(form))}&body=${encodeURIComponent(emailBody)}`
                       : undefined
                   }
                   target="_blank"

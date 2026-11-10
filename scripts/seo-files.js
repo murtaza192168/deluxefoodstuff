@@ -46,7 +46,8 @@ function facts() {
     "- Trade supply for restaurants and hotels, cafés and bakeries, caterers and cloud kitchens, resellers and bulk buyers, and ship provisions.",
     "- Prices are not published because they change with each import shipment. Current trade prices, pack sizes and minimum order quantities are given on request over WhatsApp.",
     "- How to order: 1) build a list on the website's Products page or message what you need, 2) receive a trade quote on WhatsApp, 3) confirm on WhatsApp or by phone and the order is made ready.",
-    "- Shop timings, delivery and payment terms are confirmed by the team on WhatsApp.",
+    `- Shop timings: ${company.hours.days}, ${company.hours.display} (India time). ${company.hours.closedNote}.`,
+    "- Delivery and payment terms are confirmed by the team on WhatsApp.",
   ].join("\n");
 }
 

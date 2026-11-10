@@ -11,6 +11,16 @@ import company from "../data/company";
 
 const a = company.address;
 
+// "We're open now." / "We're closed right now." in India time, from company.hours.
+function openNowText() {
+  const now = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
+  const mins = now.getHours() * 60 + now.getMinutes();
+  const [oh, om] = company.hours.open.split(":").map(Number);
+  const [ch, cm] = company.hours.close.split(":").map(Number);
+  const open = now.getDay() !== 0 && mins >= oh * 60 + om && mins < ch * 60 + cm;
+  return open ? "We're open right now." : "We're closed right now.";
+}
+
 export const faq = [
   {
     id: "location",
@@ -24,7 +34,12 @@ export const faq = [
     topic: "our shop timings",
     label: "Shop timings",
     keywords: ["timing", "timings", "time", "hours", "open", "opening", "close", "closing", "closed", "sunday", "holiday", "today", "kab", "khula", "band"],
-    answer: null,
+    // A function so it can say whether the shop is open right now.
+    answer: () => {
+      const h = company.hours;
+      return `We're open ${h.days}, ${h.display}. ${openNowText()} On Sundays the shop is closed, but feel free to message us on WhatsApp.`;
+    },
+    actions: [{ label: "Get directions", href: company.mapUrl }],
   },
   {
     id: "price",

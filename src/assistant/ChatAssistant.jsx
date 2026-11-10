@@ -10,6 +10,7 @@ import Logo from "/images/logo-192.webp";
 import { brand, fonts } from "../theme";
 import { answer } from "./engine";
 import { starters } from "./faq";
+import { chatHandoffMessage } from "../enquiry/messageFormat";
 
 const GREETING = {
   from: "bot",
@@ -18,8 +19,7 @@ const GREETING = {
 };
 
 const waLink = (text) => `${company.whatsapp}?text=${encodeURIComponent(text)}`;
-const handoffText = (q) =>
-  q ? `Hello ${company.name}, I asked on your website: "${q}"` : `Hello ${company.name}, I have a trade enquiry.`;
+const handoffText = chatHandoffMessage;
 
 function ProductRow({ product, onNavigate }) {
   const { has, add } = useEnquiry();
