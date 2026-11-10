@@ -12,6 +12,15 @@ const company = {
     short: "Shop 304/305, M. J. Phule Market (Crawford Market), Mumbai",
   },
   gstin: "27AICPM2320B1ZZ",
+  // Shop timings (India time). Sunday closed, but WhatsApp messages are welcome.
+  hours: {
+    days: "Monday to Saturday",
+    daysShort: "Mon–Sat",
+    open: "10:30",
+    close: "20:00",
+    display: "10:30 AM – 8:00 PM",
+    closedNote: "Sunday closed · WhatsApp messages welcome",
+  },
   mapUrl: "https://share.google/PKSmjCwpK2OAdr9sp",
   phoneDisplay: "+91 93247 89432",
   phoneTel: "+919324789432",

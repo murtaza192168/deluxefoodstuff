@@ -18,6 +18,7 @@ import catalogue from "../data/catalogue.json";
 import company from "../data/company";
 import { brand, fonts } from "../theme";
 import ConsentCheckbox from "../privacy/ConsentCheckbox";
+import { enquiryListMessage } from "./messageFormat";
 
 const productsById = Object.fromEntries(catalogue.products.map((p) => [p.id, p]));
 
@@ -30,25 +31,6 @@ const MAX_QTY = 9999;
 const unitOf = (item) => UNITS.find((u) => u.id === item.unit) ?? UNITS[0];
 const clampQty = (n) => Math.min(MAX_QTY, Math.max(1, n));
 
-function buildMessage(items, contact, note) {
-  const lines = items.map((item, n) => {
-    const details = [item.variant, item.packSize].filter(Boolean).join(", ");
-    const u = unitOf(item);
-    return `${n + 1}. ${item.name}${details ? ` (${details})` : ""}: ${item.qty} ${item.qty === 1 ? u.one : u.many}`;
-  });
-  const who = [
-    contact.name && `Name: ${contact.name}`,
-    contact.business && `Business: ${contact.business}`,
-    contact.city && `City: ${contact.city}`,
-  ].filter(Boolean);
-  return [
-    `Hello ${company.name}, I would like a trade quote for:`,
-    "",
-    ...lines,
-    ...(note.trim() ? ["", `Note: ${note.trim()}`] : []),
-    ...(who.length ? ["", ...who] : []),
-  ].join("\n");
-}
 
 function UnitToggle({ value, onChange }) {
   return (
@@ -147,7 +129,7 @@ export default function EnquiryDrawer() {
   const [tried, setTried] = useState(false);
 
   const whatsappUrl = useMemo(
-    () => `${company.whatsapp}?text=${encodeURIComponent(buildMessage(items, contact, note))}`,
+    () => `${company.whatsapp}?text=${encodeURIComponent(enquiryListMessage(items, contact, note))}`,
     [items, contact, note]
   );
 

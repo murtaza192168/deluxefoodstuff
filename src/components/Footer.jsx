@@ -87,9 +87,16 @@ export default function Footer() {
               {company.address.line1}
               <br />
               {company.address.line2}
-                <br />
-                {company.address.landmark}
+              <br />
+              {company.address.landmark}
             </Box>
+            <Typography sx={{ fontSize: 14.5, color: "rgba(255,255,255,0.72)", lineHeight: 1.7, mb: 2 }}>
+              {company.hours.daysShort}, {company.hours.display}
+              <br />
+              <Box component="span" sx={{ color: "rgba(255,255,255,0.5)", fontSize: 13 }}>
+                {company.hours.closedNote}
+              </Box>
+            </Typography>
             <Stack spacing={0.5}>
               <Box component="a" href={company.whatsapp} target="_blank" rel="noopener noreferrer" sx={linkSx}>
                 WhatsApp {company.phoneDisplay}
