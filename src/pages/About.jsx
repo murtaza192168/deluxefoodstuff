@@ -54,6 +54,8 @@ const chapters = [
     image: "/images/home/storefront.webp",
     alt: `${company.name} today, shops 304 and 305 at Crawford Market`,
     caption: "Shops 304 & 305, today",
+    print: true,
+    wide: true,
   },
 ];
 
@@ -121,7 +123,7 @@ function ChapterImage({ chapter: c, flip }) {
   }
   if (!c.inset) {
     return (
-      <Box sx={{ maxWidth: { xs: 380, md: 440 }, mx: "auto", px: 1 }}>
+      <Box sx={{ maxWidth: c.wide ? { xs: 520, md: 560 } : { xs: 380, md: 440 }, mx: "auto", px: 1 }}>
         <Print src={c.image} alt={c.alt} caption={c.caption} tilt={flip ? 1.2 : -1.2} />
       </Box>
     );
