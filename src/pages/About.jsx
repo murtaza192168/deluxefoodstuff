@@ -22,8 +22,10 @@ const chapters = [
       "In 1986, our family opened a small kirana shop inside the third lane of Crawford Market. Rice, dal, spices, the everyday things a Mumbai kitchen runs on.",
       "What it had was a counter that opened every morning, and customers who learned that what they were promised was what they got.",
     ],
-    image: "/images/home/dry-goods.webp",
-    alt: "Shelves of pasta, rice, tea and spice mixes at the shop",
+    image: "/images/about/chapter-1986.webp",
+    alt: "Our family at the packed kirana counter in Crawford Market, 1986",
+    caption: "Crawford Market, 1986",
+    print: true,
   },
   {
     year: "2000",
@@ -32,8 +34,15 @@ const chapters = [
       "By 2000 the city's kitchens were cooking the world. Chefs were asking for soy sauce from Hong Kong, tahina from the Middle East, pasta from Italy, syrups for a new kind of café.",
       "So the family turned its kirana into something new: a specialist in imported foodstuff. Same counter, same family. A very different pantry.",
     ],
-    image: "/images/home/sauces.webp",
-    alt: "Imported sauces, vinegars and oils on the shop's shelves",
+    image: "/images/about/chapter-2000.webp",
+    alt: "The family behind the new white counter and shelves, around 2000",
+    caption: "Around 2000",
+    print: true,
+    inset: {
+      image: "/images/about/chapter-2000-counter.webp",
+      alt: "The same counter in the years after, with the next generation",
+      caption: "The years after",
+    },
   },
   {
     year: "Today",
@@ -42,8 +51,11 @@ const chapters = [
       `Today ${company.name} | ${company.tradingName} supplies restaurants, hotels, cafés, resellers, bulk buyers and ship provisions with ${catalogue.products.length} products from ${catalogue.brands.length} international brands.`,
       "Crawford Market has seen empires rise and fall. We were here then. We are here now.",
     ],
-    image: "/images/home/oils-syrups.webp",
-    alt: "Monin syrups above a row of imported olive oils",
+    image: "/images/home/storefront.webp",
+    alt: `${company.name} today, shops 304 and 305 at Crawford Market`,
+    caption: "Shops 304 & 305, today",
+    print: true,
+    wide: true,
   },
 ];
 
@@ -61,6 +73,76 @@ const brandsWithPhotos = [...new Set(catalogue.products.filter((p) => p.image).f
 const shelfBrands = [...new Set([...brandsWithPhotos, "Lee Kum Kee", "Monin", "Kikkoman", "Hershey's", "Knorr", "Reggia", "Twinings", "Kewpie"])];
 
 const pageX = { px: { xs: 2, sm: 3 } };
+
+// Old family photos are shown as real prints: white border, soft shadow, a slight tilt.
+function Print({ src, alt, caption, tilt = 0, sx }) {
+  return (
+    <Box
+      component="figure"
+      sx={{
+        m: 0,
+        p: { xs: 1, md: 1.5 },
+        pb: { xs: 1, md: 1.25 },
+        backgroundColor: "#fff",
+        boxShadow: "0 18px 40px -18px rgba(28,38,33,.45), 0 2px 6px rgba(28,38,33,.08)",
+        rotate: `${tilt}deg`,
+        ...sx,
+      }}
+    >
+      <Box component="img" src={src} alt={alt} loading="lazy" sx={{ width: "100%", display: "block" }} />
+      {caption && (
+        <Typography
+          component="figcaption"
+          sx={{ mt: 1, fontFamily: fonts.serif, fontStyle: "italic", fontSize: { xs: 15, md: 17 }, color: brand.muted, textAlign: "center" }}
+        >
+          {caption}
+        </Typography>
+      )}
+    </Box>
+  );
+}
+
+function ChapterImage({ chapter: c, flip }) {
+  if (!c.print) {
+    return (
+      <Box component="figure" sx={{ m: 0 }}>
+        <Box
+          component="img"
+          src={c.image}
+          alt={c.alt}
+          loading="lazy"
+          sx={{ width: "100%", aspectRatio: "4 / 3", objectFit: "cover", objectPosition: "center top", display: "block" }}
+        />
+        {c.caption && (
+          <Typography component="figcaption" variant="body2" color="text.secondary" sx={{ mt: 1.25 }}>
+            {c.caption}
+          </Typography>
+        )}
+      </Box>
+    );
+  }
+  if (!c.inset) {
+    return (
+      <Box sx={{ maxWidth: c.wide ? { xs: 520, md: 560 } : { xs: 380, md: 440 }, mx: "auto", px: 1 }}>
+        <Print src={c.image} alt={c.alt} caption={c.caption} tilt={flip ? 1.2 : -1.2} />
+      </Box>
+    );
+  }
+  // Two prints: the main one, and a smaller one laid over its lower-left corner (shelves,
+  // not faces), leaving room underneath for its overhang.
+  return (
+    <Box sx={{ position: "relative", pb: { xs: "34%", sm: "30%" }, pl: { xs: "14%", md: "12%" } }}>
+      <Print src={c.image} alt={c.alt} caption={c.caption} tilt={flip ? 1 : -1} />
+      <Print
+        src={c.inset.image}
+        alt={c.inset.alt}
+        caption={c.inset.caption}
+        tilt={-3}
+        sx={{ position: "absolute", left: 0, bottom: 0, width: { xs: "42%", md: "38%" }, p: { xs: 0.75, md: 1 } }}
+      />
+    </Box>
+  );
+}
 
 function Overline({ children, light }) {
   return (
@@ -154,13 +236,7 @@ export default function About() {
               ))}
             </Grid>
             <Grid size={{ xs: 12, md: 6 }} sx={{ width: "100%" }}>
-              <Box
-                component="img"
-                src={c.image}
-                alt={c.alt}
-                loading="lazy"
-                sx={{ width: "100%", aspectRatio: "4 / 3", objectFit: "cover", objectPosition: "center top", display: "block" }}
-              />
+              <ChapterImage chapter={c} flip={i % 2 === 1} />
             </Grid>
           </Grid>
         ))}
