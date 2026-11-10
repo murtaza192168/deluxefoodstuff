@@ -16,6 +16,17 @@ import { useSearchParams } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import useEnquiry from "../enquiry/useEnquiry";
 import useBump from "../motion/useBump";
+import Tour from "../tour/Tour";
+import { markSeen, tourSeen } from "../tour/seen";
+
+const ADD_TIP_KEY = "delux-tip-add-v1";
+const ADD_TIP = [
+  {
+    target: "add",
+    title: "Build your enquiry list",
+    text: "Tap Add on the products you need. Then open your list to choose quantities and send it on WhatsApp.",
+  },
+];
 import catalogue from "../data/catalogue.json";
 import { brand, fonts } from "../theme";
 import usePageMeta from "../seo/usePageMeta";
@@ -101,12 +112,12 @@ function CategoryChip({ active, label, onClick }) {
   );
 }
 
-function ProductGrid({ items }) {
+function ProductGrid({ items, tourFirst = false }) {
   return (
     <Grid container spacing={{ xs: 1.5, sm: 2.5 }}>
-      {items.map((p) => (
+      {items.map((p, n) => (
         <Grid key={p.id} size={{ xs: 6, sm: 4 }}>
-          <ProductCard product={p} />
+          <ProductCard product={p} tourTarget={tourFirst && n === 0} />
         </Grid>
       ))}
     </Grid>
@@ -128,6 +139,27 @@ export default function ProductsCatalog() {
   const [cuisine, setCuisine] = useState("");
   const { count, setOpen } = useEnquiry();
   const bump = useBump(count);
+
+  // One-time tip, shown once the first Add button is on screen (never scrolls the page).
+  const [addTip, setAddTip] = useState(false);
+  useEffect(() => {
+    if (count > 0) markSeen(ADD_TIP_KEY); // they've found it: never show the tip again
+    if (count > 0 || tourSeen(ADD_TIP_KEY) || !("IntersectionObserver" in window)) return;
+    const el = document.querySelector('[data-tour="add"]');
+    if (!el) return;
+    let t = 0;
+    const io = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) {
+        t = setTimeout(() => setAddTip(true), 900);
+        io.disconnect();
+      }
+    }, { rootMargin: "0px 0px -20% 0px" });
+    io.observe(el);
+    return () => {
+      io.disconnect();
+      clearTimeout(t);
+    };
+  }, [count]);
 
   const filtered = useMemo(
     () => products.filter((p) => matches(p, { query: query.trim(), brandFilter, cuisine })),
@@ -333,7 +365,7 @@ export default function ProductsCatalog() {
                 )}
               </Box>
             ) : (
-              sections.map((s) => (
+              sections.map((s, si) => (
                 <Box key={s.id} component="section" sx={{ mb: { xs: 5, md: 7 } }}>
                   <Stack
                     direction="row"
@@ -348,13 +380,22 @@ export default function ProductsCatalog() {
                       {s.items.length}
                     </Typography>
                   </Stack>
-                  <ProductGrid items={s.items} />
+                  <ProductGrid items={s.items} tourFirst={si === 0} />
                 </Box>
               ))
             )}
           </Grid>
         </Grid>
       </Container>
+
+      <Tour
+        steps={ADD_TIP}
+        storageKey={ADD_TIP_KEY}
+        open={addTip && count === 0}
+        onClose={() => setAddTip(false)}
+        spotlight={false}
+        scroll={false}
+      />
 
       {/* Mobile enquiry bar */}
       {count > 0 && (

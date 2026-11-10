@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import {
   Box,
   Button,
@@ -19,6 +19,17 @@ import company from "../data/company";
 import { brand, fonts } from "../theme";
 import ConsentCheckbox from "../privacy/ConsentCheckbox";
 import { enquiryListMessage } from "./messageFormat";
+import Tour from "../tour/Tour";
+import { tourSeen } from "../tour/seen";
+
+const TOUR_KEY = "delux-tour-enquiry-v1";
+const TOUR_STEPS = [
+  { target: "unit", title: "Cartons or pieces", text: "Choose how you'd like to buy each product. Most trade orders are in cartons." },
+  { target: "qty", title: "Quantity in one tap", text: "Tap 1, 5, 10, 25 or 50, or tap the number box and type any amount." },
+  { target: "all", title: "Same for every product", text: "Set one quantity for the whole list at once. You can still change any single item." },
+  { target: "details", title: "A note and your details", text: "Optional: other products, a delivery date, your name and business. It helps us reply faster." },
+  { target: "send", title: "Send on WhatsApp", text: "Your list opens in WhatsApp, neatly formatted. We reply with today's trade price and minimum order." },
+];
 
 const productsById = Object.fromEntries(catalogue.products.map((p) => [p.id, p]));
 
@@ -125,6 +136,14 @@ export default function EnquiryDrawer() {
   const { items, open, setOpen, update, remove, clear } = useEnquiry();
   const [contact, setContact] = useState({ name: "", business: "", city: "" });
   const [note, setNote] = useState("");
+  const [tourOpen, setTourOpen] = useState(false);
+
+  // First time the list opens with products in it, show a short guide (once per browser).
+  useEffect(() => {
+    if (!open || items.length === 0 || tourSeen(TOUR_KEY)) return;
+    const t = setTimeout(() => setTourOpen(true), 550);
+    return () => clearTimeout(t);
+  }, [open, items.length]);
   const [agreed, setAgreed] = useState(false);
   const [tried, setTried] = useState(false);
 
@@ -137,7 +156,11 @@ export default function EnquiryDrawer() {
     <Drawer
       anchor="right"
       open={open}
-      onClose={() => setOpen(false)}
+      onClose={() => {
+        setTourOpen(false);
+        setOpen(false);
+      }}
+      disableEnforceFocus={tourOpen}
       PaperProps={{ sx: { width: "min(100vw, 440px)", backgroundColor: brand.ivory } }}
     >
       <Stack sx={{ height: "100%" }}>
@@ -176,7 +199,7 @@ export default function EnquiryDrawer() {
           ) : (
             <>
               {items.length > 1 && (
-                <Box sx={{ mt: 2.5, p: 1.75, backgroundColor: brand.paper, border: `1px dashed ${brand.gold}` }}>
+                <Box data-tour="all" sx={{ mt: 2.5, p: 1.75, backgroundColor: brand.paper, border: `1px dashed ${brand.gold}` }}>
                   <Typography sx={{ fontSize: 12, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: brand.gold, mb: 1 }}>
                     Same for every product
                   </Typography>
@@ -193,7 +216,7 @@ export default function EnquiryDrawer() {
                   </Stack>
                 </Box>
               )}
-              {items.map((item) => {
+              {items.map((item, n) => {
                 const product = productsById[item.id];
                 return (
                   <Box key={item.id} sx={{ py: 2.5, borderBottom: `1px solid ${brand.line}` }}>
@@ -244,17 +267,17 @@ export default function EnquiryDrawer() {
                       </Stack>
                     )}
 
-                    <Stack direction="row" sx={{ mt: 1.5, gap: 1, flexWrap: "wrap", alignItems: "center" }}>
+                    <Stack data-tour={n === 0 ? "unit" : undefined} direction="row" sx={{ mt: 1.5, gap: 1, flexWrap: "wrap", alignItems: "center" }}>
                       <UnitToggle value={unitOf(item).id} onChange={(unit) => update(item.id, { unit })} />
                       <QtyStepper value={item.qty} onChange={(qty) => update(item.id, { qty })} />
                     </Stack>
-                    <Box sx={{ mt: 1 }}>
+                    <Box data-tour={n === 0 ? "qty" : undefined} sx={{ mt: 1 }}>
                       <QuickPicks value={item.qty} onPick={(qty) => update(item.id, { qty })} />
                     </Box>
                   </Box>
                 );
               })}
-              <Box sx={{ py: 2.5 }}>
+              <Box data-tour="details" sx={{ py: 2.5 }}>
                 <Typography sx={{ fontSize: 12, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: brand.muted, mb: 1.5 }}>
                   Your details
                 </Typography>
@@ -303,6 +326,7 @@ export default function EnquiryDrawer() {
         {items.length > 0 && (
           <Box sx={{ px: 3, pt: 2, pb: 1.5, borderTop: `1px solid ${brand.line}`, backgroundColor: brand.paper }}>
             <Button
+              data-tour="send"
               fullWidth
               variant="contained"
               href={agreed ? whatsappUrl : undefined}
@@ -326,6 +350,7 @@ export default function EnquiryDrawer() {
           </Box>
         )}
       </Stack>
+      <Tour steps={TOUR_STEPS} storageKey={TOUR_KEY} open={open && tourOpen} onClose={() => setTourOpen(false)} />
     </Drawer>
   );
 }
