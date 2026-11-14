@@ -46,7 +46,6 @@ const About = page(() => import("./pages/About"));
 const Contact = page(() => import("./pages/Contact"));
 const Privacy = page(() => import("./pages/Privacy"));
 const NotFound = page(() => import("./pages/NotFound"));
-const DiwaliCelebration = page(() => import("./festive/DiwaliCelebration"));
 
 export default function App() {
   return (
@@ -73,9 +72,6 @@ export default function App() {
       <Analytics />
       <CookieBanner />
       <ChatAssistant />
-      <Suspense fallback={null}>
-        <DiwaliCelebration />
-      </Suspense>
     </>
   );
 }
